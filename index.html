@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corso IA e coding per Informatica e TLC - IISS Marconi-Hack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Vista 1: Dashboard iniziale a sezione unica -->
+  <main id="dashboard-view" class="dashboard-view">
+    <section class="dashboard-hero">
+      <div class="brand-hero-badge">IISS Marconi-Hack</div>
+      <h1>Corso IA e coding per Informatica e TLC</h1>
+      <p class="dashboard-subtitle">
+        Percorso formativo per docenti della scuola secondaria di secondo grado: dall'alfabetizzazione all'IA all'architettura dei
+        sistemi agentici e alla didattica laboratoriale con Google Antigravity.
+      </p>
+    </section>
+    <!-- Prospetto Moduli (tabella 3x2) e separatore -->
+    <div class="course-summary-bar" aria-label="Prospetto di riepilogo moduli">
+      <div class="summary-col">
+        <span class="summary-label">LEZIONI</span>
+        <span class="summary-val">5</span>
+      </div>
+      <div class="summary-col">
+        <span class="summary-label">DATE</span>
+        <span class="summary-val">23 Ott – 05 Nov 2026</span>
+      </div>
+      <div class="summary-col">
+        <span class="summary-label">DURATA</span>
+        <span class="summary-val">14 ore</span>
+      </div>
+    </div>
+
+    <hr class="dashboard-divider">
+
+    <section id="lessons-grid" class="lessons-grid" aria-label="Elenco delle lezioni">
+      <!-- Le schede delle lezioni vengono iniettate dinamicamente da app.js -->
+    </section>
+
+    <!-- Footer istituzionale discreto -->
+    <footer class="dashboard-footer">
+      <p class="project-reference">
+        Progetto "IA in classe: dalla consapevolezza alla sperimentazione"<br>(D.M. 219/2025, Avviso prot. n. 73226 del
+        27/03/2026)
+      </p>
+    </footer>
+  </main>
+
+  <!-- Vista 2: Slide viewer a sezione unica (senza header superiore) -->
+  <main id="viewer-view" class="viewer-view" style="display: none;">
+    <!-- Palcoscenico della slide -->
+    <section id="slide-stage" class="slide-stage">
+      <article id="slide-container" class="slide-container" aria-live="polite">
+        <!-- Indicatore di contesto lezione e contenuto slide iniettati dinamicamente -->
+      </article>
+    </section>
+  </main>
+
+  <!-- Barra comandi fluttuante verticale a destra -->
+  <aside id="floating-dock" class="floating-dock" aria-label="Barra comandi rapidi">
+    <!-- Controlli specifici per la lezione (visibili quando viewer-view è attivo) -->
+    <div id="dock-lesson-tools" class="dock-group">
+      <button id="btn-dock-dashboard" class="dock-btn" data-tooltip="Tutte le lezioni [D]"
+        aria-label="Torna alla dashboard">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+      </button>
+
+      <button id="btn-dock-overview" class="dock-btn" data-tooltip="Panoramica slide [G]" aria-label="Panoramica slide">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="7"></rect>
+          <rect x="14" y="3" width="7" height="7"></rect>
+          <rect x="14" y="14" width="7" height="7"></rect>
+          <rect x="3" y="14" width="7" height="7"></rect>
+        </svg>
+      </button>
+
+      <button id="btn-dock-index" class="dock-btn" data-tooltip="Indice lezione [I]" aria-label="Salta all'indice della lezione">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="8" y1="6" x2="21" y2="6"></line>
+          <line x1="8" y1="12" x2="21" y2="12"></line>
+          <line x1="8" y1="18" x2="21" y2="18"></line>
+          <line x1="3" y1="6" x2="3.01" y2="6"></line>
+          <line x1="3" y1="12" x2="3.01" y2="12"></line>
+          <line x1="3" y1="18" x2="3.01" y2="18"></line>
+        </svg>
+      </button>
+
+      <button id="btn-dock-notes" class="dock-btn" data-tooltip="Approfondimenti tecnici [N]"
+        aria-label="Approfondimenti tecnici">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+        </svg>
+      </button>
+
+      <button id="btn-dock-print" class="dock-btn" data-tooltip="Stampa o salva in PDF [P]"
+        aria-label="Stampa o salva in PDF">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 6 2 18 2 18 9"></polyline>
+          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+          <rect x="6" y="14" width="12" height="8"></rect>
+        </svg>
+      </button>
+
+      <div class="dock-separator"></div>
+
+      <button id="btn-dock-prev" class="dock-btn" data-tooltip="Slide precedente [Freccia sinistra]"
+        aria-label="Slide precedente">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <span id="dock-counter" class="dock-counter">1 / 1</span>
+
+      <button id="btn-dock-next" class="dock-btn dock-btn-primary"
+        data-tooltip="Slide successiva [Freccia destra o Spazio]" aria-label="Slide successiva">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Controlli globali (selettore tema visivo e aiuto scorciatoie da tastiera) -->
+    <div class="dock-group">
+      <button id="btn-dock-theme" class="dock-btn dock-btn-subtle" data-tooltip="Tema: Automatico (sistema) [T]"
+        aria-label="Cambia tema visivo">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+          <line x1="8" y1="21" x2="16" y2="21"></line>
+          <line x1="12" y1="17" x2="12" y2="21"></line>
+        </svg>
+      </button>
+
+      <button id="btn-dock-shortcuts" class="dock-btn dock-btn-subtle" data-tooltip="Scorciatoie tastiera [?]"
+        aria-label="Mostra scorciatoie tastiera">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+          <line x1="6" y1="8" x2="6" y2="8"></line>
+          <line x1="10" y1="8" x2="10" y2="8"></line>
+          <line x1="14" y1="8" x2="14" y2="8"></line>
+          <line x1="18" y1="8" x2="18" y2="8"></line>
+          <line x1="6" y1="12" x2="6" y2="12"></line>
+          <line x1="18" y1="12" x2="18" y2="12"></line>
+          <line x1="8" y1="16" x2="16" y2="16"></line>
+        </svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Modale per gli approfondimenti tecnici -->
+  <div id="notes-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="notes-title">
+    <div class="modal-window">
+      <header class="modal-header">
+        <h3 id="notes-title">&#128214; Note tecniche e risorse di approfondimento</h3>
+        <button id="btn-close-notes" class="btn btn-icon" aria-label="Chiudi finestra">&times;</button>
+      </header>
+      <div id="notes-modal-content" class="modal-body">
+        <!-- Contenuto dell'approfondimento iniettato dinamicamente -->
+      </div>
+      <footer class="modal-footer">
+        <button id="btn-close-notes-footer" class="btn">Chiudi</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Modale panoramica per saltare a qualsiasi slide -->
+  <div id="overview-modal" class="overview-backdrop hidden" role="dialog" aria-modal="true"
+    aria-labelledby="overview-title">
+    <div class="overview-header">
+      <div>
+        <h2 id="overview-title">Panoramica delle slide</h2>
+        <p>Seleziona una diapositiva per saltare direttamente al punto desiderato</p>
+      </div>
+      <button id="btn-close-overview" class="btn" aria-label="Chiudi panoramica">&times; Chiudi panoramica</button>
+    </div>
+    <div id="overview-grid" class="overview-grid">
+      <!-- Miniature generate dinamicamente -->
+    </div>
+  </div>
+
+  <!-- Modale aiuto scorciatoie da tastiera -->
+  <div id="shortcuts-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true"
+    aria-labelledby="shortcuts-title">
+    <div class="modal-window">
+      <header class="modal-header">
+        <h3 id="shortcuts-title">&#9000; Scorciatoie da tastiera</h3>
+        <button id="btn-close-shortcuts" class="btn btn-icon" aria-label="Chiudi finestra">&times;</button>
+      </header>
+      <div class="modal-body">
+        <table class="shortcuts-table">
+          <tbody>
+            <tr>
+              <td><kbd>&rarr;</kbd> oppure <kbd>Spazio</kbd> / <kbd>PageDown</kbd></td>
+              <td>Passa alla slide successiva</td>
+            </tr>
+            <tr>
+              <td><kbd>&larr;</kbd> oppure <kbd>PageUp</kbd></td>
+              <td>Torna alla slide precedente</td>
+            </tr>
+            <tr>
+              <td><kbd>G</kbd></td>
+              <td>Apri la griglia panoramica delle slide</td>
+            </tr>
+            <tr>
+              <td><kbd>I</kbd></td>
+              <td>Salta all'indice della lezione corrente</td>
+            </tr>
+            <tr>
+              <td><kbd>N</kbd></td>
+              <td>Apri le note e risorse di approfondimento</td>
+            </tr>
+            <tr>
+              <td><kbd>P</kbd> oppure <kbd>Ctrl/Cmd</kbd> + <kbd>P</kbd></td>
+              <td>Stampa o salva in PDF l'intera lezione</td>
+            </tr>
+            <tr>
+              <td><kbd>D</kbd></td>
+              <td>Torna alla dashboard di selezione lezioni</td>
+            </tr>
+            <tr>
+              <td><kbd>Esc</kbd></td>
+              <td>Chiudi la finestra aperta oppure torna alla dashboard</td>
+            </tr>
+            <tr>
+              <td><kbd>T</kbd></td>
+              <td>Cambia tema visivo (Automatico, Scuro, Chiaro, Alto contrasto)</td>
+            </tr>
+            <tr>
+              <td><kbd>?</kbd></td>
+              <td>Mostra questo riepilogo di scorciatoie</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <footer class="modal-footer">
+        <button id="btn-close-shortcuts-footer" class="btn">Ho capito</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Media Lightbox modale a tutto schermo per le figure -->
+  <div id="media-lightbox" class="modal-backdrop media-lightbox-backdrop hidden" role="dialog" aria-modal="true" aria-label="Visore figura a schermo intero">
+    <div class="media-lightbox-window">
+      <button id="btn-close-lightbox" class="media-lightbox-close" aria-label="Chiudi visore" title="Chiudi visore (Esc)">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div id="lightbox-viewport" class="media-lightbox-viewport">
+        <img id="lightbox-img" class="media-lightbox-img" src="" alt="Figura a schermo intero" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Area invisibile a video per l'impaginazione completa di stampa / PDF -->
+  <div id="print-container" aria-hidden="true"></div>
+
+  <!-- Logica applicativa ES6 -->
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>
