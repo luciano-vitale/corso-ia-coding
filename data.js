@@ -820,7 +820,7 @@ export const lezioniData = [
     "durata": "3 ore",
     "programmazione": "Lun 26 ott 2026 · 14:30–17:30",
     "inizio": "2026-10-19T00:00:00",
-    "attiva": true,
+    "attiva": false,
     "descrizione": "Dal chatbot a ciclo aperto all'agente ReAct a ciclo chiuso (Brain, Harness, Hands/Sandbox, Session Log), divulgazione progressiva di SKILL.md, moduli profondi (Ousterhout) e sviluppo della versione minima (v1) con to-tickets e implement.",
     "slides": [
       {
@@ -1421,7 +1421,7 @@ export const lezioniData = [
     "durata": "3 ore",
     "programmazione": "Gio 29 ott 2026 · 14:30–17:30",
     "inizio": "2026-10-19T00:00:00",
-    "attiva": true,
+    "attiva": false,
     "descrizione": "Tassonomia dei difetti dell'IA, distinzione tra allucinazione e distorsione sistematica (bias), test-driven development (tdd) sui punti di giunzione pubblici, ciclo scientifico diagnosing-bugs, protocollo S.C.A.N., sicurezza e casi limite riservati.",
     "slides": [
       {
@@ -2093,7 +2093,7 @@ export const lezioniData = [
     "durata": "3 ore",
     "programmazione": "Lun 02 nov 2026 · 14:30–17:30",
     "inizio": "2026-10-19T00:00:00",
-    "attiva": true,
+    "attiva": false,
     "descrizione": "Qualità del software oltre i test verdi, revisione su due assi (code-review: standard con i 12 code smell di Fowler + specifica), rifattorizzazione verso moduli profondi, ripristino con git revert, accessibilità UDL/BES (Frayer e fatica utile) e retrospettiva (retro).",
     "slides": [
       {
@@ -2673,7 +2673,7 @@ export const lezioniData = [
     "durata": "2 ore",
     "programmazione": "Gio 05 nov 2026 · 15:00–17:00",
     "inizio": "2026-10-19T00:00:00",
-    "attiva": true,
+    "attiva": false,
     "descrizione": "Superamento dei rilevatori automatici di IA (GDPR art. 22), le 5 leve della valutazione consapevole dell'IA, rubrica di processo 4×25%, patto didattico d'aula, esempi svolti (BookSwap e legge di Ohm), assemblaggio di UNITA_DIDATTICA.md, revisione tra pari a coppie e showcase finale.",
     "slides": [
       {
