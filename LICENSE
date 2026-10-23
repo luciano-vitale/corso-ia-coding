@@ -1,3 +1,14 @@
+# Licenza / License
+
+I contenuti di questo repository didattico sono distribuiti secondo due distinte licenze in base alla tipologia di risorsa.
+
+---
+
+## 1. Codice Sorgente (MIT License)
+
+Tutto il codice eseguibile, inclusi gli script Python (`.py`), le funzioni, i test e le celle di codice all'interno dei Jupyter Notebook (`.ipynb`), è rilasciato sotto licenza **MIT**:
+
+```text
 MIT License
 
 Copyright (c) 2026 Luciano Vitale
@@ -19,3 +30,34 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
+
+---
+
+## 2. Contenuti Didattici e Testi (CC BY 4.0)
+
+Tutti i testi esplicativi, le dispense teoriche, le celle Markdown all'interno dei Jupyter Notebook (`.ipynb`), le immagini, i diagrammi e i materiali di supporto sono rilasciati sotto licenza **Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)**.
+
+### Termini essenziali della licenza CC BY 4.0:
+
+Sei libero di:
+* **Condividere** — riprodurre, distribuire, comunicare al pubblico, esporre in pubblico e rappresentare il materiale con qualsiasi mezzo e formato.
+* **Modificare** — remixare, trasformare il materiale e basarti su di esso per qualsiasi fine, anche commerciale.
+
+Alle seguenti condizioni:
+* **Attribuzione** — Devi riconoscere una menzione di paternità adeguata, fornire un link alla licenza e indicare se sono state effettuate delle modifiche. Puoi farlo in qualsiasi maniera ragionevole, ma non in modo da suggerire che il licenziante avalli te o il modo in cui usi il materiale.
+* **Nessuna restrizione aggiuntiva** — Non puoi applicare termini legali o misure tecnologiche che impediscano legalmente ad altri di fare ciò che la licenza consente.
+
+Il testo legale completo della licenza è consultabile all'indirizzo:  
+https://creativecommons.org/licenses/by/4.0/legalcode.it
+
+---
+
+## Come citare questo lavoro / How to cite
+
+Se utilizzi questo materiale per scopi didattici, accademici o di ricerca, puoi citarlo come segue:
+
+```text
+Luciano Vitale, "Corso IA e Coding per Informatica e TLC", 2026. 
+https://github.com/luciano-vitale/corso-ia-coding
+```
