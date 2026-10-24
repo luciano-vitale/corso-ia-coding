@@ -4,7 +4,7 @@ export const lezioniData = [
     "titolo": "Come pensano gli LLM, alfabetizzazione all'IA e passaggio dal bisogno vago alla specifica",
     "durata": "3 ore",
     "programmazione": "Ven 23 ott 2026 · 14:30–17:30",
-    "inizio": "2026-10-19T00:00:00",
+    "inizio": "2026-10-23T00:00:00",
     "attiva": true,
     "descrizione": "Fondamentali degli LLM (messaggi e ruoli, system prompt, reasoning tokens, tokenizzazione BPE, limiti della context window e Lost in the Middle), meccanica interna e ciclo di vita a 3 stadi, ingegneria del contesto (smart e dumb zone, inquinamento da traiettoria), alfabetizzazione all'IA e quadro normativo (legge 132/2025, AI Act art. 50), anatomia del prompt e passaggio alla specifica formale tramite protocollo a skill.",
     "slides": [
@@ -188,10 +188,10 @@ export const lezioniData = [
       {
         "id": 10,
         "tipo": "SEZIONE",
-        "numeroSezione": "01",
+        "numeroSezione": "02",
         "titolo": "Fondamenti cognitivi, ingegneria del contesto e matrice pedagogica",
         "descrizione": "00:15–00:35 (20 minuti) · Come pensano gli LLM, la differenza tra contesto nominale ed effettivo (Smart e Dumb zone), l'inquinamento da traiettoria, il quadro normativo, le Skill su Google Gemini e la matrice pedagogica.",
-        "badge": "Sezione 1 · Teoria e governance",
+        "badge": "Sezione 2 · Teoria e governance",
         "approfondimento": "<h4>Regia e fonti (00:00–00:25)</h4><p>Suddividere i 25 minuti in tre segmenti: segmento 1A (10 min) su Karpathy, tokenizzazione e ingegneria del contesto (lezioni 01 e 04 formatori); segmento 1B (6 min) su alfabetizzazione all'IA e normativa (lezioni 02 e 05 formatori); segmento 1C (9 min) su prompt engineering, smart zone e riga 1 della matrice (lezione 03 formatori).</p>"
       },
       {
@@ -550,10 +550,10 @@ export const lezioniData = [
       {
         "id": 27,
         "tipo": "SEZIONE",
-        "numeroSezione": "02",
+        "numeroSezione": "03",
         "titolo": "Dimostrazione plenaria: Tutor maieutico",
         "descrizione": "00:35–01:10 (35 minuti) · Dal leak di codice della chat libera alla formulazione degli invarianti socratici con /grill-with-docs e alla specifica formale con /to-spec.",
-        "badge": "Sezione 2 · Dimostrazione dal vivo",
+        "badge": "Sezione 3 · Dimostrazione dal vivo",
         "approfondimento": "<h4>Regia e fonti (00:35–01:10)</h4><p>Proiettare Google Gemini web con account istituzionale (GWS-AI-01). Il progetto dimostrativo per tutte le 5 lezioni è 'Tutor Maieutico per lo Sviluppo Software d'Istituto'. Seguire la scansione: 7 min barriera anti-leak e tentativo ingenuo in chat libera (leak Bubble Sort vs Skill /tutor-maieutico), 16 min intervista socratica in 3 turni con /grill-with-docs, 12 min redazione di spec.md a 6 sezioni con /to-spec fissando tutor_engine.py come seam di collaudo.</p>"
       },
       {
@@ -653,10 +653,10 @@ export const lezioniData = [
       {
         "id": 33,
         "tipo": "SEZIONE",
-        "numeroSezione": "03",
+        "numeroSezione": "04",
         "titolo": "Laboratorio del progetto individuale",
         "descrizione": "01:25–02:45 (80 minuti dopo 15 min di pausa) · Scelta del brief tra le 5 tracce e redazione di GLOSSARY.md, spec.md e PROMPT_LOG.md.",
-        "badge": "Sezione 3 · Sprint individuale (80 min)",
+        "badge": "Sezione 4 · Sprint individuale (80 min)",
         "approfondimento": "<h4>Regia e fonti (01:25–02:45)</h4><p>Far scegliere a ciascuno dei 17 docenti una delle 5 tracce a 9 campi e lo stack tecnologico preferito (Python + Streamlit + SQLite oppure singolo file HTML5/Canvas/JS + localStorage). Alle 02:00 (16:30) tenere una clinica di supporto plenaria di 5 minuti per sbloccare eventuali stalli.</p>"
       },
       {
@@ -770,10 +770,10 @@ export const lezioniData = [
       {
         "id": 37,
         "tipo": "SEZIONE",
-        "numeroSezione": "04",
+        "numeroSezione": "05",
         "titolo": "Ponte didattico continuo: lunedì in classe (scheda #1)",
         "descrizione": "02:45–03:00 (15 minuti) · Trasporre il metodo nella preparazione di una lezione teorica (riquadro A) e del primo passo a prova di IA di laboratorio per gli studenti (riquadro B).",
-        "badge": "Sezione 4 · Trasposizione didattica",
+        "badge": "Sezione 5 · Trasposizione didattica",
         "approfondimento": "<h4>Regia e fonti (02:45–03:00)</h4><p>10 minuti di compilazione individuale di Scheda ponte #1 (Scheda ponte (BRIDGE_CARDS.md)) + 5 minuti di condivisione plenaria (2 docenti volontari su discipline o argomenti diversi). Ricordare che le 4 schede diventeranno l'unità didattica completa nella sessione 5.</p>"
       },
       {
@@ -818,8 +818,8 @@ export const lezioniData = [
     "id": 2,
     "titolo": "Anatomia degli agenti, ispezione dell'harness e sviluppo incrementale",
     "durata": "3 ore",
-    "programmazione": "Lun 26 ott 2026 · 14:30–17:30",
-    "inizio": "2026-10-19T00:00:00",
+    "programmazione": "Mar 27 ott 2026 · 14:30–17:30",
+    "inizio": "2026-10-23T00:00:00",
     "attiva": false,
     "descrizione": "Dal chatbot a ciclo aperto all'agente ReAct a ciclo chiuso (Brain, Harness, Hands/Sandbox, Session Log), divulgazione progressiva di SKILL.md, moduli profondi (Ousterhout) e sviluppo della versione minima (v1) con to-tickets e implement.",
     "slides": [
