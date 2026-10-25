@@ -2788,6 +2788,81 @@ kbd {
   .print-slide .duo-card.dimmed {
     opacity: 1 !important;
   }
+
+  /* Disattiva animazioni e forza visibilita immediata per stagger ed elementi dinamici */
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .stagger-item,
+  .print-slide .stagger-item,
+  .print-slide .figura-media-box,
+  .print-slide .figura-commento,
+  .print-slide .cover-meta-item,
+  .print-slide .animazione-media-box {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .print-slide .figura-container {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1rem !important;
+    margin-top: 0.75rem !important;
+  }
+
+  .print-slide .figura-media-box {
+    width: 100% !important;
+    max-width: 900px !important;
+    box-sizing: border-box !important;
+    background-color: #f9fafb !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 6px !important;
+    padding: 1rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .print-slide .figura-img {
+    display: block !important;
+    max-width: 100% !important;
+    max-height: 115mm !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    box-shadow: none !important;
+    margin: 0 auto !important;
+  }
+
+  .print-slide .figura-caption {
+    font-size: 0.8rem !important;
+    color: #4b5563 !important;
+    margin-top: 0.5rem !important;
+    text-align: center !important;
+  }
+
+  .print-slide .figura-commento {
+    width: 100% !important;
+    max-width: 900px !important;
+    box-sizing: border-box !important;
+    background-color: #f0f9ff !important;
+    border-left: 3px solid #0284c7 !important;
+    color: #0f172a !important;
+    padding: 0.75rem 1rem !important;
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
 }
 
 /* ==========================================================================
@@ -3231,3 +3306,4 @@ kbd {
 .btn-download-template {
   display: none !important;
 }
+

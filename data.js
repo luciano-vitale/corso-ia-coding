@@ -819,8 +819,8 @@ export const lezioniData = [
     "titolo": "Anatomia degli agenti, ispezione dell'harness e sviluppo incrementale",
     "durata": "3 ore",
     "programmazione": "Mar 27 ott 2026 · 14:30–17:30",
-    "inizio": "2026-10-23T00:00:00",
-    "attiva": false,
+    "inizio": "2026-10-27T00:00:00",
+    "attiva": true,
     "descrizione": "Dal chatbot a ciclo aperto all'agente ReAct a ciclo chiuso (Brain, Harness, Hands/Sandbox, Session Log), divulgazione progressiva di SKILL.md, moduli profondi (Ousterhout) e sviluppo della versione minima (v1) con to-tickets e implement.",
     "slides": [
       {
@@ -1420,7 +1420,7 @@ export const lezioniData = [
     "titolo": "Verifica rigorosa: test-driven development, debugging scientifico e sicurezza",
     "durata": "3 ore",
     "programmazione": "Gio 29 ott 2026 · 14:30–17:30",
-    "inizio": "2026-10-19T00:00:00",
+    "inizio": "2026-10-29T00:00:00",
     "attiva": false,
     "descrizione": "Tassonomia dei difetti dell'IA, distinzione tra allucinazione e distorsione sistematica (bias), test-driven development (tdd) sui punti di giunzione pubblici, ciclo scientifico diagnosing-bugs, protocollo S.C.A.N., sicurezza e casi limite riservati.",
     "slides": [
@@ -2092,7 +2092,7 @@ export const lezioniData = [
     "titolo": "Revisione su due assi, rifattorizzazione verso moduli profondi, accessibilità UDL/BES e retrospettiva",
     "durata": "3 ore",
     "programmazione": "Lun 02 nov 2026 · 14:30–17:30",
-    "inizio": "2026-10-19T00:00:00",
+    "inizio": "2026-11-02T00:00:00",
     "attiva": false,
     "descrizione": "Qualità del software oltre i test verdi, revisione su due assi (code-review: standard con i 12 code smell di Fowler + specifica), rifattorizzazione verso moduli profondi, ripristino con git revert, accessibilità UDL/BES (Frayer e fatica utile) e retrospettiva (retro).",
     "slides": [
@@ -2654,15 +2654,15 @@ export const lezioniData = [
         "titolo": "La padronanza si misura nella capacità di spiegare le differenze",
         "affermazione": "Saper dichiarare i limiti noti del proprio sistema nel file README.md e saper difendere a voce le scelte del proprio git diff rappresentano il confine invalicabile tra chi governa l'intelligenza artificiale e chi ne subisce gli output.",
         "nota": "È questo il cuore del quarto indicatore (25%) della rubrica di valutazione di processo che presenteremo nella sessione 5.",
-        "approfondimento": "<h4>Regia e fonti</h4><p>Anticipare l'organizzazione della sessione 5 (2 ore, 15:00–17:00, senza pausa intermedia).</p>"
+        "approfondimento": "<h4>Regia e fonti</h4><p>Anticipare l'organizzazione della sessione 5 (2 ore, 14:30–16:30, senza pausa intermedia).</p>"
       },
       {
         "id": 28,
         "tipo": "CONCLUSIONI",
         "badge": "Chiusura lezione 4 · Arrivederci a giovedì 5 novembre",
         "titolo": "Progetto capstone completato: pronti per la trasposizione e lo showcase",
-        "messaggio": "Avete portato a termine l'intero ciclo della pipeline del corso sul vostro progetto individuale (/grill-with-docs -> /to-spec -> /to-tickets -> /implement -> /tdd -> /diagnosing-bugs -> /code-review -> /retro) e completato tutte le 4 schede ponte! Giovedì 5 novembre (15:00–17:00, 2 ore) assembleremo UNITA_DIDATTICA.md, svolgeremo il collaudo didattico a coppie e presenteremo i lavori nello showcase finale.",
-        "prossimoPasso": "Giovedì 5 novembre 2026 (15:00–17:00, 2 ore): trasposizione didattica (UNITA_DIDATTICA.md), valutazione di processo e showcase finale.",
+        "messaggio": "Avete portato a termine l'intero ciclo della pipeline del corso sul vostro progetto individuale (/grill-with-docs -> /to-spec -> /to-tickets -> /implement -> /tdd -> /diagnosing-bugs -> /code-review -> /retro) e completato tutte le 4 schede ponte! Giovedì 5 novembre (14:30–16:30, 2 ore) assembleremo UNITA_DIDATTICA.md, svolgeremo il collaudo didattico a coppie e presenteremo i lavori nello showcase finale.",
+        "prossimoPasso": "Giovedì 5 novembre 2026 (14:30–16:30, 2 ore): trasposizione didattica (UNITA_DIDATTICA.md), valutazione di processo e showcase finale.",
         "approfondimento": "<h4>Regia e fonti</h4><p>Durante la settimana o nei primi minuti della sessione 5, individuare i 4 progetti rappresentativi (2 del binario A in Python/Streamlit, 1 web in HTML/JS, 1 del binario B di Fisica sul brief 4) per lo showcase curato da 25 minuti.</p>"
       }
     ]
@@ -2671,8 +2671,8 @@ export const lezioniData = [
     "id": 5,
     "titolo": "Trasposizione didattica, valutazione autentica di processo e showcase finale",
     "durata": "2 ore",
-    "programmazione": "Gio 05 nov 2026 · 15:00–17:00",
-    "inizio": "2026-10-19T00:00:00",
+    "programmazione": "Gio 05 nov 2026 · 14:30–16:30",
+    "inizio": "2026-11-05T00:00:00",
     "attiva": false,
     "descrizione": "Superamento dei rilevatori automatici di IA (GDPR art. 22), le 5 leve della valutazione consapevole dell'IA, rubrica di processo 4×25%, patto didattico d'aula, esempi svolti (BookSwap e legge di Ohm), assemblaggio di UNITA_DIDATTICA.md, revisione tra pari a coppie e showcase finale.",
     "slides": [
@@ -2693,10 +2693,10 @@ export const lezioniData = [
           },
           {
             "label": "Data",
-            "valore": "Giovedì 5 novembre 2026 · 15:00–17:00"
+            "valore": "Giovedì 5 novembre 2026 · 14:30–16:30"
           }
         ],
-        "approfondimento": "<h4>Regia e fonti (00:00–00:02)</h4><p>Benvenuti alla quinta e ultima sessione (120 minuti continui dalle 15:00 alle 17:00, senza pausa intermedia). Oggi compiamo il passaggio esplicito di ruolo: da sviluppatori del nostro progetto individuale a progettisti didattici che portano in classe un'unità didattica completa pronta per lunedì mattina.</p>"
+        "approfondimento": "<h4>Regia e fonti (00:00–00:02)</h4><p>Benvenuti alla quinta e ultima sessione (120 minuti continui dalle 14:30 alle 16:30, senza pausa intermedia). Oggi compiamo il passaggio esplicito di ruolo: da sviluppatori del nostro progetto individuale a progettisti didattici che portano in classe un'unità didattica completa pronta per lunedì mattina.</p>"
       },
       {
         "id": 2,

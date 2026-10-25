@@ -1949,6 +1949,12 @@ class SlideApp {
     });
 
     // Concediamo al motore del browser il tempo di reflow e calcolo layout
+    const cleanupPrint = () => {
+      this.printContainer.innerHTML = '';
+      window.removeEventListener('afterprint', cleanupPrint);
+    };
+    window.addEventListener('afterprint', cleanupPrint);
+
     setTimeout(() => {
       window.print();
     }, 150);
