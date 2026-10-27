@@ -1803,31 +1803,40 @@ kbd {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  padding: 0.75rem 1.25rem;
-  background: var(--bg-card);
+  gap: 0.5rem;
+  padding: 0.35rem 0.5rem;
+  background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-full);
   width: fit-content;
   margin: 0 auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 .duo-toggle-btn {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 0.85rem;
-  padding: 0.4rem 1rem;
+  padding: 0.45rem 1.15rem;
   border-radius: var(--radius-full);
   background: transparent;
-  border: none;
+  border: 1px solid transparent;
   color: var(--text-secondary);
   cursor: pointer;
   transition: all var(--transition-fast);
+  font-weight: 500;
+}
+
+.duo-toggle-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .duo-toggle-btn.active {
-  background: var(--accent-cyan);
-  color: #080b11;
-  font-weight: 700;
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+  font-weight: 600;
+  border-color: var(--border-focus);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 10px rgba(6, 182, 212, 0.2);
 }
 
 .duo-cards-grid {
@@ -2073,6 +2082,110 @@ kbd {
   font-size: 1.05rem;
   line-height: 1.65;
   color: var(--text-secondary);
+}
+
+/* Layout Strutturato per slide ATTENZIONE (Clinica degli errori / Punti + Callout) */
+.warn-structured-lead {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+  max-width: 960px;
+}
+
+.warn-points-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+
+.warn-point-card {
+  background: var(--bg-card, rgba(255, 255, 255, 0.04));
+  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.1));
+  border-left: 4px solid var(--accent-warning, #e8a33d);
+  border-radius: var(--radius-md, 8px);
+  padding: 1rem 1.15rem;
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+  transition: transform var(--transition-fast, 0.2s), border-color var(--transition-fast, 0.2s);
+}
+
+.warn-point-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-warning, #e8a33d);
+}
+
+.warn-point-badge {
+  background: rgba(232, 163, 61, 0.15);
+  color: var(--accent-warning, #e8a33d);
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.warn-point-text {
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.warn-point-text strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.warn-callout-box {
+  width: 100%;
+  background: rgba(232, 163, 61, 0.10);
+  border: 2px solid var(--accent-warning, #e8a33d);
+  border-radius: var(--radius-md, 10px);
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 0 16px rgba(232, 163, 61, 0.18);
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+.warn-callout-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.5rem;
+}
+
+.warn-callout-icon {
+  font-size: 1.35rem;
+  color: var(--accent-warning, #e8a33d);
+}
+
+.warn-callout-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-warning, #e8a33d);
+}
+
+.warn-callout-body {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .warn-points-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* LAB Layout */
@@ -2630,7 +2743,8 @@ kbd {
   .slide-container,
   .stagger-item,
   .checklist-item.is-checked .checklist-box svg,
-  .warn-box {
+  .warn-box,
+  .warn-callout-box {
     animation: none !important;
     transition: none !important;
   }

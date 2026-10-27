@@ -1411,11 +1411,11 @@ class SlideApp {
   renderWarn(slide) { return this.renderAttenzione(slide); }
   renderAttenzione(slide) {
     const badge = slide.badge || "";
-    const avviso = slide.avviso || slide.lead || slide.titolo;
-    const dettagli = slide.dettagli || "";
     const isSectionLayout = slide.layout === 'sezione' || slide.variante === 'sezione' || slide.stile === 'sezione';
 
     if (isSectionLayout) {
+      const avviso = slide.avviso || slide.lead || slide.titolo;
+      const dettagli = slide.dettagli || "";
       return `
         <div class="section-layout-container attention-section-layout">
           ${badge ? `<div class="slide-badge">${badge}</div>` : ''}
@@ -1436,6 +1436,63 @@ class SlideApp {
       `;
     }
 
+    const hasStructured = (Array.isArray(slide.punti) && slide.punti.length > 0) || Boolean(slide.callout);
+    if (hasStructured) {
+      const lead = slide.lead || slide.avviso || "";
+      let puntiHtml = "";
+      if (Array.isArray(slide.punti) && slide.punti.length > 0) {
+        puntiHtml = `
+          <div class="warn-points-container stagger-item" style="--stagger-index: 0">
+            ${slide.punti.map((punto, idx) => {
+              let formattedPunto = punto;
+              const colonIdx = punto.indexOf(':');
+              if (colonIdx > 0 && colonIdx < 80) {
+                const titlePart = punto.substring(0, colonIdx);
+                const descPart = punto.substring(colonIdx + 1);
+                formattedPunto = `<strong>${titlePart}:</strong>${descPart}`;
+              }
+              return `
+                <div class="warn-point-card">
+                  <div class="warn-point-badge">${idx + 1}</div>
+                  <div class="warn-point-text">${formattedPunto}</div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        `;
+      }
+
+      let calloutHtml = "";
+      if (slide.callout) {
+        let calloutTitle = "Regola d'Arresto Operativo";
+        let calloutBody = slide.callout;
+        const calloutColon = slide.callout.indexOf(':');
+        if (calloutColon > 0 && calloutColon < 60) {
+          calloutTitle = slide.callout.substring(0, calloutColon).trim();
+          calloutBody = slide.callout.substring(calloutColon + 1).trim();
+        }
+        calloutHtml = `
+          <div class="warn-callout-box stagger-item" style="--stagger-index: 1">
+            <div class="warn-callout-header">
+              <span class="warn-callout-icon" aria-hidden="true">&#9888;</span>
+              <span class="warn-callout-title">${calloutTitle}</span>
+            </div>
+            <p class="warn-callout-body"><strong>${calloutBody}</strong></p>
+          </div>
+        `;
+      }
+
+      return `
+        ${badge ? `<div class="slide-badge">${badge}</div>` : ''}
+        <h2>${slide.titolo}</h2>
+        ${lead ? `<p class="slide-lead warn-structured-lead">${lead}</p>` : ''}
+        ${puntiHtml}
+        ${calloutHtml}
+      `;
+    }
+
+    const avviso = slide.avviso || slide.lead || slide.titolo;
+    const dettagli = slide.dettagli || "";
     return `
       ${badge ? `<div class="slide-badge">${badge}</div>` : ''}
       <h2>${slide.titolo}</h2>

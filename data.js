@@ -816,19 +816,19 @@ export const lezioniData = [
   },
   {
     "id": 2,
-    "titolo": "Anatomia degli agenti, ispezione dell'harness e sviluppo incrementale",
+    "titolo": "Anatomia degli agenti, ingegneria del contesto e protocollo a skill per il coding assistito da IA",
     "durata": "3 ore",
     "programmazione": "Mar 27 ott 2026 · 14:30–17:30",
     "inizio": "2026-10-27T00:00:00",
     "attiva": true,
-    "descrizione": "Dal chatbot a ciclo aperto all'agente ReAct a ciclo chiuso (Brain, Harness, Hands/Sandbox, Session Log), divulgazione progressiva di SKILL.md, moduli profondi (Ousterhout) e sviluppo della versione minima (v1) con to-tickets e implement.",
+    "descrizione": "Dalla demistificazione dei tool e protocollo MCP al context engineering, pattern di workflow Anthropic, ambiente Google Antigravity IDE/CLI e sviluppo incrementale della v1 con il protocollo a skill.",
     "slides": [
       {
         "id": 1,
         "tipo": "COPERTINA",
         "badge": "Corso IA e coding · ITT e discipline STEM",
-        "titolo": "Anatomia degli agenti, ispezione dell'harness e sviluppo incrementale",
-        "sottotitolo": "Architettura disaccoppiata degli agenti moderni, programmazione strategica (moduli profondi) e realizzazione della versione minima (v1) con /to-tickets e /implement.",
+        "titolo": "Anatomia degli agenti, ingegneria del contesto e protocollo a skill per il coding assistito da IA",
+        "sottotitolo": "Dalla demistificazione dei tool e protocollo MCP all'ambiente Google Antigravity, sviluppo incrementale a fette verticali e protocollo a skill.",
         "metadati": [
           {
             "label": "Durata",
@@ -840,578 +840,642 @@ export const lezioniData = [
           },
           {
             "label": "Data",
-            "valore": "Lunedì 26 ottobre 2026 · 14:30–17:30"
+            "valore": "Martedì 27 ottobre 2026 · 14:30–17:30"
           }
         ],
-        "approfondimento": "<h4>Regia e fonti (00:00–00:03)</h4><p>Benvenuti alla sessione 2. Oggi passiamo dalla specifica (spec.md) al codice funzionante (versione minima v1), ma prima apriamo il cofano di Google Antigravity per comprendere la differenza strutturale tra un chatbot e un agente software.</p>"
+        "approfondimento": "<h4>Regia e fonti (00:00–00:05)</h4><p>Benvenuti alla sessione 2. Oggi apriamo la scatola nera degli agenti software: superiamo l'illusione antropomorfa dei modelli linguistici per comprendere come funzionano davvero i tool (chiamate JSON strutturate governate dall'ambiente host), come preservare la memoria di lavoro tramite il context engineering, quali pattern architetturali governano i workflow moderni (ricerche Anthropic) e come incapsulare l'intero ciclo di sviluppo nel protocollo operativo a skill per il coding assistito da IA (ispirato a Matt Pocock) integrato in Google Antigravity.</p><p><strong>Fonti primarie di riferimento:</strong> Anthropic Research (<em>Writing effective tools for AI agents</em>, <em>Building effective agents</em>, <em>Effective context engineering</em>, <em>Harnesses for long-running agents</em>); Matt Pocock / AI Hero (<em>What are tools?</em>, <em>What is an agent?</em>, <em>AI skills for real engineers</em>); Specifica aperta <a href='https://modelcontextprotocol.io' target='_blank'>Model Context Protocol (MCP)</a>; Skill Hub Antigravity.</p>"
       },
       {
         "id": 2,
         "tipo": "INDICE",
         "badge": "Agenda della sessione 2",
         "titolo": "Percorso della lezione 2 (180 minuti)",
-        "lead": "Dalla teoria dell'architettura agentica e dei moduli profondi allo sprint di sviluppo incrementale su fette verticali.",
+        "lead": "Dai fondamenti di ACI, MCP e context engineering all'ambiente Google Antigravity e alla disciplina del protocollo a skill su fette verticali autentiche.",
         "voci": [
           {
             "numero": 1,
-            "testo": "Anatomia degli agenti, harness e programmazione strategica",
-            "descrizione": "00:00–00:25 (25 min) · Ciclo ReAct, i 4 componenti disaccoppiati, divulgazione progressiva, moduli profondi e regola dei 3 tentativi."
+            "testo": "Strumenti (tool), MCP e ingegneria del contesto",
+            "descrizione": "00:00–00:30 (30 min) · Il modello come cervello isolato, ACI, ciclo in 4 passaggi, standard aperto MCP e context engineering per agenti."
           },
           {
             "numero": 2,
-            "testo": "Raggi X dell'harness e dimostrazione plenaria di BookSwap v1",
-            "descrizione": "00:25–01:00 (35 min) · 5 min di ispezione dal vivo in Antigravity + 30 min con /to-tickets e /implement (binario A Python + binario B HTML5/JS)."
+            "testo": "Workflow deterministici, agenti autonomi e Google Antigravity",
+            "descrizione": "00:30–01:05 (35 min) · Codice vs loop ReAct, i 5 pattern Anthropic, disaccoppiamento a 4 componenti e configurazione di Antigravity IDE/CLI (skill globali vs progetto)."
           },
           {
             "numero": 3,
-            "testo": "Sprint del progetto individuale: costruire la versione minima (v1)",
-            "descrizione": "01:15–02:45 (90 min) · Scomposizione in 3 ticket verticali, implementazione assistita, revisione del git diff e clinica di supporto."
+            "testo": "Il metodo pragmatico: protocollo a skill e sviluppo incrementale",
+            "descrizione": "01:20–02:45 (85 min) · Setup iniziale (/setup-matt-pocock-skills), le 6 fasi del protocollo a skill, scomposizione su fette verticali end-to-end con /to-tickets e sviluppo v1 con /implement."
           },
           {
             "numero": 4,
             "testo": "Ponte didattico continuo: lunedì in classe (scheda #2)",
-            "descrizione": "02:45–03:00 (15 min) · Compilazione della scheda #2 (riquadro A micro-simulazione alla LIM + riquadro B sviluppo incrementale assistito da IA)."
+            "descrizione": "02:45–03:00 (15 min) · Compilazione della scheda ponte #2 (Box A: artefatto concettuale LIM + Box B: consegna di laboratorio a fette verticali per studenti)."
           }
         ],
-        "approfondimento": "<h4>Regia e fonti</h4><p>Fonti principali della sessione: dispense del repository (0001, 0002, architettura-agenti-moderni.html), John Ousterhout ('A Philosophy of Software Design') e Corso formazione formatori IA (lezione 04).</p>"
+        "approfondimento": "<h4>Regia e timing d'aula (00:05–00:10)</h4><p>Punti chiave per la gestione della classe:</p><ul><li><strong>Blocco 1 (30 min):</strong> Superare i miti sui tool e mostrare l'anatomia JSON e MCP (connessione live se possibile).</li><li><strong>Blocco 2 (35 min):</strong> Evidenziare la differenza capitale tra workflow guidati da codice e cicli autonomi a loop libero; presentare Google Antigravity IDE + CLI e la struttura delle skill.</li><li><strong>Pausa rigenerativa (15 min):</strong> 01:05–01:20.</li><li><strong>Blocco 3 (85 min):</strong> Il cuore operativo. I docenti inizializzano il repo con /setup-matt-pocock-skills, scompongono la specifica in fette verticali reali con /to-tickets e implementano con /implement e TDD.</li><li><strong>Blocco 4 (15 min):</strong> Compilazione guidata della Scheda ponte #2 per portare la metodologia in classe.</li></ul>"
       },
       {
         "id": 3,
         "tipo": "SEZIONE",
         "numeroSezione": "01",
-        "titolo": "Anatomia degli agenti, harness e programmazione strategica",
-        "descrizione": "00:00–00:25 (25 minuti) · Perché un agente non è un semplice chatbot: il ciclo ReAct, i 4 componenti disaccoppiati, la divulgazione progressiva e i moduli profondi.",
-        "badge": "Blocco 1 · Teoria focalizzata",
-        "approfondimento": "<h4>Regia e fonti (00:00–00:25)</h4><p>Scansione dei 25 minuti: segmento 2A (7 min) su chatbot contro agente ReAct e scala a 3 livelli; segmento 2B (10 min) sui 4 componenti disaccoppiati e memoria persistente contro memoria episodica; segmento 2C (8 min) su divulgazione progressiva, moduli profondi, 4 limiti del vibe coding e riga 2 della matrice.</p>"
+        "titolo": "Strumenti (tool), MCP e ingegneria del contesto",
+        "descrizione": "00:00–00:30 (30 minuti) · Perché un LLM non tocca il computer: il ciclo in 4 passaggi, lo standard Model Context Protocol e il passaggio dal prompt al context engineering.",
+        "badge": "Blocco 1 · Teoria e protocolli",
+        "approfondimento": "<h4>Regia e fonti (00:10–00:12)</h4><p>Scansione dei primi 30 minuti: demistificare la natura dei tool (10 min), illustrare l'interfaccia ACI e il protocollo MCP (8 min), spiegare i 3 pilastri del context engineering per agenti (12 min).</p><p><strong>Fonti primarie:</strong> Anthropic Research (<a href='https://www.anthropic.com/research/writing-tools-for-agents' target='_blank'>Writing effective tools for AI agents</a>); Matt Pocock (<a href='https://www.aihero.dev/topics/learn-how-llms-think' target='_blank'>What are tools?</a>); Specifica ufficiale <a href='https://modelcontextprotocol.io' target='_blank'>Model Context Protocol</a>.</p>"
       },
       {
         "id": 4,
-        "tipo": "BIVIO",
-        "badge": "Dispensa 0001 · Ciclo aperto contro ciclo chiuso",
-        "titolo": "Chatbot a ciclo aperto contro agente software a ciclo chiuso (ReAct)",
-        "lead": "La differenza fondamentale non risiede nel modello linguistico, ma nella presenza di un anello di retroazione con l'ambiente di esecuzione.",
-        "opzioneA": {
-          "etichetta": "Chatbot conversazionale (ciclo aperto)",
-          "sottotitolo": "Prompt -> risposta testuale statica",
-          "testo": "Il modello riceve il testo dell'utente ed emette una sequenza di token basata solo sulla probabilità statistica, senza poter verificare se il codice compila, se i file esistono o se i test passano.",
-          "esito": "L'umano fa da 'copia-incollatore manuale' tra browser e IDE, riportando a mano gli errori di esecuzione nella conversazione."
+        "tipo": "FIGURA",
+        "badge": "Fondamenti ACI · Matt Pocock & Anthropic",
+        "titolo": "Demistificazione dei tool: cervello isolato vs ambiente & MCP",
+        "lead": "Un LLM è un cervello isolato in una stanza senza finestre: riceve prompt e schemi e produce solo stringhe strutturate in JSON. È l'ambiente esterno che esegue le azioni reali sul sistema operativo.",
+        "media": {
+          "sorgente": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22760%22%20height%3D%22320%22%20viewBox%3D%220%200%20760%20320%22%20role%3D%22img%22%3E%0A%20%20%3Ctitle%3EDemistificazione%20dei%20tool%20e%20Model%20Context%20Protocol%3C/title%3E%0A%20%20%3Cdesc%3EDiagramma%20hand-drawn%20che%20illustra%20il%20ciclo%20in%204%20passaggi%20del%20tool%20calling%3A%20prompt%20utente%20e%20definizione%20JSON%2C%20chiamata%2C%20esecuzione%20e%20risultato.%3C/desc%3E%0A%20%20%3Crect%20width%3D%22760%22%20height%3D%22320%22%20fill%3D%22%230F172A%22/%3E%0A%20%20%3Ctext%20x%3D%2240.0%22%20y%3D%2226.0%22%20text-anchor%3D%22start%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2213%22%20fill%3D%22%23F2F2F2%22%20font-weight%3D%22bold%22%3EDemistificazione%20dei%20tool%3A%20cervello%20isolato%20vs%20ambiente%20%26amp%3B%20MCP%3C/text%3E%0A%20%20%3Ctext%20x%3D%2240.0%22%20y%3D%2242.0%22%20text-anchor%3D%22start%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.2%22%20fill%3D%22%239A9A9A%22%3EL%27LLM%20non%20tocca%20il%20computer%3A%20riceve%20prompt%20e%20schemi%2C%20genera%20chiamate%20JSON%3B%20l%27host%20le%20esegue%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M48.2%2059.1%20C129.9%2059.3%20211.6%2060.4%20293.3%2061.2%20C297.5%2061.4%20299.8%2063.6%20299.9%2068.5%20C299.9%20127.7%20300.1%20187.0%20299.2%20246.2%20C298.7%20251.1%20296.1%20255.8%20291.4%20255.5%20C210.0%20254.4%20128.6%20256.4%2047.2%20256.3%20C42.6%20256.2%2038.7%20250.8%2038.8%20246.1%20C37.0%20187.0%2038.7%20127.9%2038.8%2068.8%20C38.9%2064.1%2043.1%2059.4%2048.2%2059.1%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235AA9F5%22%20stroke-width%3D%222.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22170.0%22%20y%3D%2284.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2212%22%20fill%3D%22%235AA9F5%22%20font-weight%3D%22bold%22%3EBRAIN%20%28LLM%29%3C/text%3E%0A%20%20%3Ctext%20x%3D%22170.0%22%20y%3D%22102.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%239A9A9A%22%20font-style%3D%22italic%22%3EStanza%20senza%20finestre%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M62.0%20118.3%20C133.4%20117.1%20204.7%20119.6%20276.1%20118.6%20C280.8%20118.7%20285.2%20121.3%20285.3%20125.7%20C286.3%20134.5%20285.2%20143.3%20285.3%20152.2%20C284.8%20156.8%20280.3%20160.3%20275.7%20160.1%20C204.9%20161.0%20134.1%20161.5%2063.3%20160.1%20C58.7%20160.3%2056.1%20157.4%2056.1%20152.7%20C55.3%20143.5%2054.8%20134.4%2054.7%20125.2%20C55.2%20120.4%2057.2%20118.4%2062.0%20118.3%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235AA9F5%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22170.0%22%20y%3D%22134.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%23CBD5E1%22%3EInput%3A%20solo%20stringhe%20di%20testo%3C/text%3E%0A%20%20%3Ctext%20x%3D%22170.0%22%20y%3D%22150.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%23CBD5E1%22%3EOutput%3A%20solo%20stringhe%20di%20testo%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M64.3%20171.9%20C135.4%20171.1%20206.5%20171.0%20277.6%20172.7%20C281.5%20172.7%20283.8%20174.3%20284.2%20178.8%20C283.7%20196.2%20284.1%20213.6%20285.3%20230.9%20C285.2%20235.8%20281.2%20241.5%20276.7%20241.1%20C205.8%20241.3%20134.9%20240.1%2064.0%20238.9%20C59.7%20239.6%2054.0%20235.6%2053.8%20231.2%20C53.6%20213.7%2054.4%20196.2%2055.9%20178.7%20C55.5%20174.9%2060.5%20172.4%2064.3%20171.9%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23E0453A%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22170.0%22%20y%3D%22192.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229%22%20fill%3D%22%23E0453A%22%20font-weight%3D%22bold%22%3ENESSUN%20ACCESSO%20DIRETTO%20A%3A%3C/text%3E%0A%20%20%3Ctext%20x%3D%22170.0%22%20y%3D%22210.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229%22%20fill%3D%22%23F2F2F2%22%3E%E2%80%A2%20Filesystem%20e%20disco%20locale%3C/text%3E%0A%20%20%3Ctext%20x%3D%22170.0%22%20y%3D%22226.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229%22%20fill%3D%22%23F2F2F2%22%3E%E2%80%A2%20Bash%2C%20terminale%20e%20rete%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M469.3%2061.0%20C550.4%2060.0%20631.5%2059.2%20712.6%2059.2%20C717.2%2059.4%20719.4%2064.1%20719.5%2068.6%20C719.8%20127.6%20721.3%20186.6%20720.9%20245.6%20C720.4%20250.2%20714.9%20256.2%20711.1%20256.1%20C629.7%20254.8%20548.3%20254.5%20466.9%20255.4%20C462.2%20255.3%20460.1%20251.6%20459.5%20247.4%20C461.8%20187.7%20459.4%20127.9%20461.0%2068.2%20C461.5%2063.2%20465.1%2061.5%20469.3%2061.0%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235CBF60%22%20stroke-width%3D%222.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22590.0%22%20y%3D%2284.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2212%22%20fill%3D%22%235CBF60%22%20font-weight%3D%22bold%22%3EAMBIENTE%20%28LE%20MANI%29%3C/text%3E%0A%20%20%3Ctext%20x%3D%22590.0%22%20y%3D%22102.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%239A9A9A%22%20font-style%3D%22italic%22%3EHost%20OS%20/%20Sandbox%20/%20Server%20MCP%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M484.1%20117.6%20C555.3%20118.0%20626.6%20120.1%20697.8%20119.3%20C702.8%20118.9%20705.2%20122.5%20704.5%20126.8%20C702.8%20140.9%20703.4%20155.0%20704.5%20169.1%20C704.6%20173.1%20701.6%20179.4%20696.6%20178.7%20C625.1%20178.2%20553.5%20179.9%20482.0%20178.4%20C478.0%20178.8%20475.1%20174.2%20474.6%20169.1%20C476.4%20154.6%20475.6%20140.2%20474.8%20125.7%20C474.7%20121.3%20479.6%20117.9%20484.1%20117.6%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235CBF60%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22590.0%22%20y%3D%22136.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%235CBF60%22%20font-weight%3D%22bold%22%3EEsecuzione%20deterministica%3A%3C/text%3E%0A%20%20%3Ctext%20x%3D%22590.0%22%20y%3D%22152.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229%22%20fill%3D%22%23F2F2F2%22%3E%E2%80%A2%20Lettura%20e%20scrittura%20file%20reali%3C/text%3E%0A%20%20%3Ctext%20x%3D%22590.0%22%20y%3D%22168.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229%22%20fill%3D%22%23F2F2F2%22%3E%E2%80%A2%20Esecuzione%20comandi%20e%20test%20suite%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M483.6%20191.1%20C554.3%20191.1%20625.0%20189.9%20695.6%20191.2%20C699.8%20191.2%20705.3%20192.1%20705.9%20196.8%20C704.7%20208.8%20707.0%20220.8%20705.9%20232.9%20C705.8%20236.6%20700.9%20240.8%20696.1%20241.3%20C624.9%20242.0%20553.8%20239.5%20482.6%20239.9%20C478.1%20239.9%20475.6%20236.9%20475.4%20232.5%20C475.2%20220.8%20474.3%20209.1%20475.7%20197.4%20C475.2%20192.5%20478.8%20190.9%20483.6%20191.1%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23A98BFF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22590.0%22%20y%3D%22208.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.2%22%20fill%3D%22%23A98BFF%22%20font-weight%3D%22bold%22%3EStandard%20aperto%20MCP%20%28Model%20Context%20Protocol%29%3C/text%3E%0A%20%20%3Ctext%20x%3D%22590.0%22%20y%3D%22226.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%23CBD5E1%22%3EContratto%20client/server%20aperto%20e%20agnostico%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M460.0%2095.0%20C408.3%2094.3%20356.7%2095.6%20305.0%2095.0%22%20fill%3D%22none%22%20stroke%3D%22%235CBF60%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M315.5%2089.4%20L305.0%2095.0%20L313.6%2099.6%22%20fill%3D%22none%22%20stroke%3D%22%235CBF60%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22382.0%22%20y%3D%2289.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%227.8%22%20fill%3D%22%235CBF60%22%20font-weight%3D%22bold%22%3E1.%20Prompt%20utente%20%2B%20Schema%20tool%20%28ACI%29%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M305.0%20138.0%20C355.0%20138.0%20405.0%20138.3%20455.0%20138.0%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M443.8%20144.0%20L455.0%20138.0%20L446.4%20133.4%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22382.0%22%20y%3D%22131.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.0%22%20fill%3D%22%23F2A03D%22%20font-weight%3D%22bold%22%3E2.%20Chiamata%20tool%3A%20%7B%22tool%22%3A%22read_file%22%7D%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M380.9%20161.9%20C388.4%20162.0%20396.5%20165.8%20396.5%20173.8%20C396.5%20181.4%20389.8%20188.9%20382.1%20188.4%20C374.7%20187.8%20368.7%20184.1%20368.9%20175.8%20C369.2%20168.2%20373.3%20162.1%20380.9%20161.9%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22382.0%22%20y%3D%22179.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2211%22%20fill%3D%22%23F2A03D%22%20font-weight%3D%22bold%22%3E3%3C/text%3E%0A%20%20%3Ctext%20x%3D%22382.0%22%20y%3D%22197.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%239A9A9A%22%3EHost%20esegue%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M460.0%20220.0%20C408.3%20220.5%20356.7%20220.8%20305.0%20220.0%22%20fill%3D%22none%22%20stroke%3D%22%235AA9F5%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M313.3%20215.6%20L305.0%20220.0%20L315.0%20225.3%22%20fill%3D%22none%22%20stroke%3D%22%235AA9F5%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22382.0%22%20y%3D%22214.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.2%22%20fill%3D%22%235AA9F5%22%20font-weight%3D%22bold%22%3E4.%20Risultato%20tool%20%28dati%20o%20errori%29%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M40.0%20272.0%20C266.7%20272.0%20493.3%20271.4%20720.0%20272.0%22%20fill%3D%22none%22%20stroke%3D%22%238C90A8%22%20stroke-width%3D%221.8%22%20stroke-dasharray%3D%228%206%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22380.0%22%20y%3D%22294.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2210%22%20fill%3D%22%23F2A03D%22%3EPrincipio%20ACI%3A%20i%20tool%20sono%20contratti%20strutturati%3B%20l%27ambiente%20governa%20l%27accesso%20e%20la%20sicurezza%3C/text%3E%0A%20%20%3Ctext%20x%3D%22380.0%22%20y%3D%22309.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.8%22%20fill%3D%22%239A9A9A%22%3ENessun%20prompt%20injection%20pu%C3%B2%20violare%20il%20sistema%20se%20la%20sandbox%20non%20espone%20credenziali%20o%20permessi%20non%20necessari%3C/text%3E%0A%0A%3C/svg%3E",
+          "didascalia": "Figura 2.1 - Il ciclo in 4 passaggi dell'interfaccia agente-computer (ACI) e il protocollo aperto MCP.",
+          "alt": "Diagramma hand-drawn che illustra Brain LLM isolato a sinistra, Ambiente Host a destra e il ciclo a 4 passaggi di tool calling con prompt utente e standard MCP."
         },
-        "opzioneB": {
-          "etichetta": "Agente autonomo (ciclo chiuso ReAct)",
-          "sottotitolo": "Pensiero -> azione -> osservazione (ciclo ripetuto)",
-          "testo": "Il sistema alterna ragionamento (thought), invocazione di strumenti reali nel terminale o nel filesystem (action) e lettura dell'output deterministico del compilatore o dei test (observation).",
-          "esito": "L'agente corregge autonomamente errori sintattici e verifica le proprie ipotesi contro la realtà dell'ambiente prima di rispondere."
-        },
-        "approfondimento": "<h4>Regia e fonti (segmento 2A · 4 min)</h4><p>Fonte: lessons/0001-anatomia-degli-agenti-ai-moderni.html e GLOSSARY.md. Per i colleghi di TLC, Fisica e Automazione, l'analogia è immediata: il chatbot è un sistema in catena aperta; l'agente è un controllo in retroazione (closed-loop feedback system).</p>"
+        "commento": "Regola di sicurezza ACI fondamentale: l'ambiente host (Hands / Sandbox) esegue il codice e i comandi bash, ma non deve mai contenere credenziali non necessarie né password di produzione, scongiurando rischi di esfiltrazione da prompt injection.",
+        "approfondimento": "<h4>Regia e fonti (segmento 1 · 8 min)</h4><p><strong>Fonti primarie:</strong> Matt Pocock – <em>What are tools?</em> (<a href='https://www.aihero.dev/topics/learn-how-llms-think' target='_blank'>aihero.dev</a>); Anthropic – <em>Writing effective tools for AI agents</em> (<a href='https://www.anthropic.com/research/writing-tools-for-agents' target='_blank'>anthropic.com</a>); Specifica <a href='https://modelcontextprotocol.io' target='_blank'>Model Context Protocol (MCP)</a>.</p><p><strong>Spiegazione d'aula:</strong> Chiedere ai docenti: 'Quando l'agente crea un file, chi ha eseguito la system call sul disco?' Spiegare che il modello ha solo emesso una stringa JSON in risposta al prompt utente corredato di schema; l'interprete locale dell'editor o dell'harness ha chiamato le API del sistema operativo. L'LLM non possiede occhi né mani al di fuori di questo ciclo di messaggi.</p>"
       },
       {
         "id": 5,
-        "tipo": "GRIGLIA",
-        "badge": "Tassonomia evolutiva · Formatori L04",
-        "titolo": "La scala a 3 livelli dei sistemi di IA e la memoria di progetto",
-        "lead": "Distinguere i livelli di autonomia e comprendere la differenza tra configurazione persistente e memoria episodica.",
-        "schede": [
-          {
-            "evidenza": "Livello 1 · Senza stato",
-            "titolo": "Chatbot generico senza stato",
-            "testo": "Risponde al singolo prompt partendo da zero. Ogni nuova conversazione dimentica le convenzioni del progetto, lo stile del codice e i vincoli didattici.",
-            "punti": [
-              "Utile solo per micro-domande isolate"
-            ]
-          },
-          {
-            "evidenza": "Livello 2 · Istruzioni persistenti",
-            "titolo": "Assistente configurato (Gem o GPT personalizzato)",
-            "testo": "Integra un prompt di sistema fisso in 4 parti (identità, registro, confini, obiettivo) e documenti di conoscenza, ma non opera sul filesystem locale.",
-            "punti": [
-              "Ideale per tutor disciplinari o generatori di schede"
-            ]
-          },
-          {
-            "evidenza": "Livello 3 · Agente con strumenti",
-            "titolo": "Agente di sviluppo (Google Antigravity)",
-            "testo": "Combina configurazione persistente su file (AGENTS.md, SKILL.md), memoria episodica della sessione e strumenti di lettura, scrittura e collaudo nel repository Git.",
-            "punti": [
-              "Opera su ticket autoconsistenti salvati in .scratch/"
-            ]
-          }
-        ],
-        "approfondimento": "<h4>Regia e fonti (segmento 2A · 3 min)</h4><p>Fonte: Corso formazione formatori IA, lezione 04. Punto cruciale: la memoria episodica della conversazione si svuota a ogni nuova sessione; la configurazione persistente (AGENTS.md, spec.md e i file dei ticket in .scratch/) sopravvive tra le sessioni. Ecco perché ogni ticket deve essere autoconsistente!</p>"
+        "tipo": "BIVIO",
+        "badge": "Architettura di integrazione strumenti",
+        "titolo": "Invocazione diretta ad-hoc vs standard aperto Model Context Protocol (MCP)",
+        "lead": "La scelta tra implementare wrapper proprietari chiusi o adottare lo standard aperto universale per connettere qualsiasi modello a qualsiasi tool.",
+        "opzioneA": {
+          "etichetta": "Integrazione ad-hoc proprietaria",
+          "sottotitolo": "Codice custom specifico per singolo vendor",
+          "testo": "Ogni applicazione o script scrive il proprio formato di tool call, accoppiando strettamente il modello linguistico alle funzioni locali con codice rigido e non riutilizzabile.",
+          "esito": "Lock-in tecnologico verso un unico fornitore: riscrivere da capo l'infrastruttura di tool al cambio di modello o ambiente."
+        },
+        "opzioneB": {
+          "etichetta": "Standard aperto Model Context Protocol (MCP)",
+          "sottotitolo": "Architettura client/server universale e agnostica",
+          "testo": "I tool e le risorse risiedono su server MCP standardizzati. Qualsiasi client agentico (da IDE open-source a script da terminale) può scoprire ed invocare i tool tramite JSON-RPC.",
+          "esito": "Modularità totale: strumenti di database, filesystem e API esterne rimangono identici e intercambiabili su qualsiasi agente."
+        },
+        "approfondimento": "<h4>Regia e fonti (segmento 1 · 5 min)</h4><p><strong>Fonti primarie:</strong> Anthropic Research e Consorzio MCP (<a href='https://modelcontextprotocol.io' target='_blank'>modelcontextprotocol.io</a>); Anthropic – <em>Writing effective tools for AI agents</em>.</p><p><strong>Domanda stimolo:</strong> 'Se domani passate da Claude a Gemini o a un modello locale aperto su Ollama, quanti tool dovete riscrivere se avete usato MCP?' Risposta: zero. Il server MCP espone la stessa interfaccia standardizzata a qualsiasi client.</p>"
       },
       {
         "id": 6,
-        "tipo": "FIGURA",
-        "badge": "Architettura di riferimento · Dispensa 0001",
-        "titolo": "I 4 componenti disaccoppiati: Brain, Harness, Hands e Session Log",
-        "lead": "Separare il modello probabilistico (Brain) dal motore deterministico di orchestrazione (Harness), dall'ambiente isolato (Hands) e dal registro degli eventi (Session Log).",
-        "media": {
-          "sorgente": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20760%20320%22%20width%3D%22760%22%20height%3D%22320%22%3E%0A%20%20%3Crect%20width%3D%22760%22%20height%3D%22320%22%20rx%3D%2214%22%20fill%3D%22%230f172a%22/%3E%0A%20%20%3Ctext%20x%3D%22380%22%20y%3D%2234%22%20fill%3D%22%23f8fafc%22%20font-family%3D%22sans-serif%22%20font-size%3D%2216%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%3EArchitettura%20disaccoppiata%20di%20un%20agente%20moderno%20%28Brain%20%C2%B7%20Harness%20%C2%B7%20Hands%20%C2%B7%20Session%20Log%29%3C/text%3E%0A%20%20%3Crect%20x%3D%2240%22%20y%3D%2275%22%20width%3D%22165%22%20height%3D%22110%22%20rx%3D%2210%22%20fill%3D%22%231e293b%22%20stroke%3D%22%2338bdf8%22%20stroke-width%3D%222.5%22/%3E%0A%20%20%3Ctext%20x%3D%22122%22%20y%3D%22108%22%20fill%3D%22%2338bdf8%22%20font-family%3D%22sans-serif%22%20font-size%3D%2215%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%3E1.%20BRAIN%20%28LLM%29%3C/text%3E%0A%20%20%3Ctext%20x%3D%22122%22%20y%3D%22132%22%20fill%3D%22%23cbd5e1%22%20font-family%3D%22sans-serif%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%3EValuta%20lo%20stato%3C/text%3E%0A%20%20%3Ctext%20x%3D%22122%22%20y%3D%22152%22%20fill%3D%22%23cbd5e1%22%20font-family%3D%22sans-serif%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%3ESceglie%20la%20prossima%20azione%3C/text%3E%0A%20%20%3Crect%20x%3D%22275%22%20y%3D%2265%22%20width%3D%22210%22%20height%3D%22130%22%20rx%3D%2210%22%20fill%3D%22%231e293b%22%20stroke%3D%22%23f59e0b%22%20stroke-width%3D%223%22/%3E%0A%20%20%3Ctext%20x%3D%22380%22%20y%3D%22100%22%20fill%3D%22%23f59e0b%22%20font-family%3D%22sans-serif%22%20font-size%3D%2215%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%3E2.%20HARNESS%20%28ciclo%20runtime%29%3C/text%3E%0A%20%20%3Ctext%20x%3D%22380%22%20y%3D%22124%22%20fill%3D%22%23cbd5e1%22%20font-family%3D%22sans-serif%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%3EOrchestra%20il%20ciclo%20ReAct%3C/text%3E%0A%20%20%3Ctext%20x%3D%22380%22%20y%3D%22144%22%20fill%3D%22%23cbd5e1%22%20font-family%3D%22sans-serif%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%3EInietta%20AGENTS.md%20e%20SKILL.md%3C/text%3E%0A%20%20%3Ctext%20x%3D%22380%22%20y%3D%22164%22%20fill%3D%22%23cbd5e1%22%20font-family%3D%22sans-serif%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%3ESmista%20le%20chiamate%20agli%20strumenti%3C/text%3E%0A%20%20%3Crect%20x%3D%22555%22%20y%3D%2275%22%20width%3D%22165%22%20height%3D%22110%22%20rx%3D%2210%22%20fill%3D%22%231e293b%22%20stroke%3D%22%2322c55e%22%20stroke-width%3D%222.5%22/%3E%0A%20%20%3Ctext%20x%3D%22637%22%20y%3D%22108%22%20fill%3D%22%2322c55e%22%20font-family%3D%22sans-serif%22%20font-size%3D%2215%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%3E3.%20HANDS%20/%20SANDBOX%3C/text%3E%0A%20%20%3Ctext%20x%3D%22637%22%20y%3D%22132%22%20fill%3D%22%23cbd5e1%22%20font-family%3D%22sans-serif%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%3EEsegue%20modifiche%2C%20bash%2C%20pytest%3C/text%3E%0A%20%20%3Ctext%20x%3D%22637%22%20y%3D%22152%22%20fill%3D%22%23f87171%22%20font-family%3D%22sans-serif%22%20font-size%3D%2211%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%3EZero%20segreti%20/%20zero%20chiavi%20API%3C/text%3E%0A%20%20%3Crect%20x%3D%22180%22%20y%3D%22230%22%20width%3D%22400%22%20height%3D%2262%22%20rx%3D%2210%22%20fill%3D%22%231e293b%22%20stroke%3D%22%23a855f7%22%20stroke-width%3D%222.5%22/%3E%0A%20%20%3Ctext%20x%3D%22380%22%20y%3D%22256%22%20fill%3D%22%23c084fc%22%20font-family%3D%22sans-serif%22%20font-size%3D%2214%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%3E4.%20SESSION%20LOG%20%28transcript.jsonl%20-%20stato%20immutabile%20esterno%29%3C/text%3E%0A%20%20%3Ctext%20x%3D%22380%22%20y%3D%22276%22%20fill%3D%22%23cbd5e1%22%20font-family%3D%22sans-serif%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%3ERegistra%20ogni%20pensiero%2C%20azione%20e%20osservazione%20fuori%20dalla%20finestra%20di%20contesto%3C/text%3E%0A%20%20%3Cline%20x1%3D%22205%22%20y1%3D%22120%22%20x2%3D%22275%22%20y2%3D%22120%22%20stroke%3D%22%2338bdf8%22%20stroke-width%3D%222.5%22/%3E%0A%20%20%3Cline%20x1%3D%22275%22%20y1%3D%22145%22%20x2%3D%22205%22%20y2%3D%22145%22%20stroke%3D%22%23f59e0b%22%20stroke-width%3D%222.5%22/%3E%0A%20%20%3Cline%20x1%3D%22485%22%20y1%3D%22120%22%20x2%3D%22555%22%20y2%3D%22120%22%20stroke%3D%22%23f59e0b%22%20stroke-width%3D%222.5%22/%3E%0A%20%20%3Cline%20x1%3D%22555%22%20y1%3D%22145%22%20x2%3D%22485%22%20y2%3D%22145%22%20stroke%3D%22%2322c55e%22%20stroke-width%3D%222.5%22/%3E%0A%20%20%3Cline%20x1%3D%22380%22%20y1%3D%22195%22%20x2%3D%22380%22%20y2%3D%22230%22%20stroke%3D%22%23a855f7%22%20stroke-width%3D%222.5%22/%3E%0A%3C/svg%3E",
-          "didascalia": "Figura 2.1 - Architettura a 4 componenti disaccoppiati (reference/architettura-agenti-moderni.html e GLOSSARY.md).",
-          "alt": "Schema architetturale con Brain LLM, Harness Runtime Loop al centro, Hands Sandbox a destra e Session Log transcript.jsonl in basso"
-        },
-        "commento": "Regola di sicurezza fondamentale per i laboratori scolastici: l'ambiente di esecuzione (Hands / Sandbox) esegue il codice e i test ma NON deve mai contenere segreti, password del registro elettronico o chiavi API di produzione, prevenendo qualsiasi esfiltrazione da prompt injection.",
-        "approfondimento": "<h4>Regia e fonti (segmento 2B · 6 min)</h4><p>Fonte: reference/architettura-agenti-moderni.html e GLOSSARY.md. Chiedere ai docenti: 'Quale dei 4 componenti è probabilistico e quali 3 sono software deterministico tradizionale?' Risposta: solo il Brain è probabilistico; Harness, Hands e Session Log sono codice deterministico!</p>"
+        "tipo": "CONTENUTO",
+        "badge": "Pilastri di architettura · Anthropic Research",
+        "titolo": "I 3 pilastri del context engineering per agenti software",
+        "lead": "Passare dall'ingegneria del prompt (come formulare le frasi) all'ingegneria del contesto (cosa risiede nella memoria di lavoro dell'agente ad ogni ciclo).",
+        "contenuto": "<div class='content-grid-3'><div class='content-card'><h3>1. Recupero just-in-time</h3><p>Non iniettare l'intera base di codice nel prompt iniziale. L'agente deve disporre di tool di esplorazione (<code>glob</code>, <code>grep</code>, <code>read_file</code>) per caricare nel contesto solo i file rilevanti nel momento esatto in cui servono.</p></div><div class='content-card'><h3>2. Compattezza dell'output dei tool</h3><p>I tool non devono mai riversare 10.000 righe di output non filtrato. Vanno progettati per restituire diff mirati, riassunti di stato, estratti pertinenti e codici di errore sintetici, preservando la memoria di lavoro.</p></div><div class='content-card'><h3>3. Artefatti persistenti su disco</h3><p>La memoria volatile della chat si degrada ed evapora. Le decisioni chiave, i requisiti e l'avanzamento vanno scritti immediatamente sul filesystem (<code>spec.md</code>, <code>GLOSSARY.md</code>, cartelle ticket <code>.scratch/</code>).</p></div></div>",
+        "approfondimento": "<h4>Regia e fonti (segmento 1 · 6 min)</h4><p><strong>Fonti primarie:</strong> Anthropic Research (<a href='https://www.anthropic.com/research/effective-context-engineering-for-ai-agents' target='_blank'>Effective context engineering for AI agents</a>); Matt Pocock (<a href='https://www.aihero.dev/topics/learn-how-llms-think' target='_blank'>What is the context window?</a>).</p><p><strong>Analogia d'aula:</strong> Paragonare la context window alla scrivania di un professionista. Se la riempiamo di 500 documenti aperti alla rinfusa, non troverà più nulla. Il context engineering consiste nel tenere sul tavolo solo la scheda del task corrente e archiviare tutto il resto nello schedario (disco).</p>"
       },
       {
         "id": 7,
-        "tipo": "SEQUENZA",
-        "badge": "Esecuzione operativa · Ciclo ReAct",
-        "titolo": "Dentro un singolo giro del ciclo ReAct (pensiero -> azione -> osservazione)",
-        "lead": "Seguiamo passo dopo passo ciò che accade quando chiediamo all'agente di implementare il primo ticket di BookSwap.",
-        "step": [
-          {
-            "numero": 1,
-            "fase": "1. Iniezione del contesto (Harness -> Brain)",
-            "descrizione": "L'Harness legge AGENTS.md, l'elenco leggero dei nomi delle skill (divulgazione progressiva) e il ticket 01-student-and-book-catalog.md, inviandoli al Brain.",
-            "ruolo": "Harness"
-          },
-          {
-            "numero": 2,
-            "fase": "2. Pensiero (ragionamento del Brain)",
-            "descrizione": "Il Brain analizza il ticket e decide: 'Devo prima leggere la skill tdd/SKILL.md e poi scrivere un test che fallisce per la creazione dello studente con bonus di 60 crediti in terza'.",
-            "ruolo": "Brain (LLM)"
-          },
-          {
-            "numero": 3,
-            "fase": "3. Azione (invocazione dello strumento nella Sandbox)",
-            "descrizione": "L'Harness intercetta la chiamata strutturata (schema JSON) ed esegue nella Sandbox la scrittura di test_bookswap.py e il comando pytest.",
-            "ruolo": "Hands / Sandbox"
-          },
-          {
-            "numero": 4,
-            "fase": "4. Osservazione e Session Log (riscontro deterministico)",
-            "descrizione": "L'output di pytest (prima 1 fallito, poi 1 superato dopo l'implementazione) viene registrato in transcript.jsonl e restituito al Brain per chiudere il passo in sicurezza.",
-            "ruolo": "Session Log e Harness"
-          }
-        ],
-        "approfondimento": "<h4>Regia e fonti (segmento 2B · 4 min)</h4><p>Mostrare come il ciclo ReAct impedisca all'agente di 'dichiarare vittoria' finché l'osservazione deterministica dell'esecutore dei test non restituisce codice di uscita 0 (verde).</p>"
+        "tipo": "FIGURA",
+        "badge": "Disciplina ingegneristica · Anthropic Research",
+        "titolo": "Dal prompt engineering al context engineering",
+        "lead": "La memoria di lavoro dell'agente è una risorsa finita: superare l'illusione del contesto infinito attraverso l'igiene rigorosa dei token.",
+        "media": {
+          "sorgente": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22760%22%20height%3D%22320%22%20viewBox%3D%220%200%20760%20320%22%20role%3D%22img%22%3E%0A%20%20%3Ctitle%3EContext%20engineering%20per%20agenti%20software%3C/title%3E%0A%20%20%3Cdesc%3EDiagramma%20hand-drawn%20di%20confronto%20tra%20la%20saturazione%20caotica%20del%20prompt%20engineering%20e%20la%20disciplina%20del%20context%20engineering.%3C/desc%3E%0A%20%20%3Crect%20width%3D%22760%22%20height%3D%22320%22%20fill%3D%22%230F172A%22/%3E%0A%20%20%3Ctext%20x%3D%2240.0%22%20y%3D%2226.0%22%20text-anchor%3D%22start%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2213%22%20fill%3D%22%23F2F2F2%22%20font-weight%3D%22bold%22%3EDal%20prompt%20engineering%20al%20context%20engineering%3C/text%3E%0A%20%20%3Ctext%20x%3D%2240.0%22%20y%3D%2242.0%22%20text-anchor%3D%22start%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%239A9A9A%22%3ELa%20memoria%20di%20lavoro%20%C3%A8%20una%20risorsa%20finita%3A%20curare%20cosa%20entra%20e%20cosa%20esce%20ad%20ogni%20turno%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M46.8%2059.5%20C148.1%2060.2%20249.3%2058.3%20350.6%2059.4%20C354.7%2059.0%20360.4%2063.7%20360.7%2068.5%20C359.5%20128.3%20359.6%20188.0%20359.9%20247.7%20C359.3%20252.2%20355.7%20256.2%20351.9%20256.0%20C250.7%20255.7%20149.5%20254.5%2048.3%20254.0%20C44.3%20254.4%2040.4%20251.1%2040.2%20246.9%20C38.7%20187.0%2040.4%20127.1%2040.1%2067.2%20C40.1%2063.3%2042.9%2059.1%2046.8%2059.5%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23E0453A%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22200.0%22%20y%3D%2284.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2211%22%20fill%3D%22%23E0453A%22%20font-weight%3D%22bold%22%3EAPPROCCIO%20INGENUO%20%28CHAT%20LIBERA%29%3C/text%3E%0A%20%20%3Ctext%20x%3D%22200.0%22%20y%3D%22100.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229%22%20fill%3D%22%239A9A9A%22%20font-style%3D%22italic%22%3EVibe%20coding%20e%20accumulo%20caotico%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M63.7%20115.4%20C154.7%20114.4%20245.7%20113.2%20336.7%20114.2%20C341.1%20114.5%20345.8%20119.2%20345.5%20124.3%20C346.2%20130.9%20345.9%20137.5%20344.8%20144.0%20C344.8%20148.9%20339.8%20150.4%20335.7%20151.1%20C244.5%20149.6%20153.3%20149.7%2062.2%20151.0%20C58.1%20150.3%2055.0%20148.0%2055.3%20144.0%20C56.7%20137.3%2053.8%20130.7%2055.1%20124.0%20C54.5%20119.2%2059.7%20115.0%2063.7%20115.4%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23E0453A%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22200.0%22%20y%3D%22132.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229%22%20fill%3D%22%23F2F2F2%22%3EDump%20massivo%3A%2050%20file%20incollati%20nel%20prompt%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M61.9%20159.0%20C153.7%20157.8%20245.5%20156.9%20337.3%20157.2%20C341.5%20156.8%20346.1%20161.6%20345.8%20166.3%20C347.4%20172.9%20345.5%20179.6%20345.9%20186.3%20C345.6%20190.3%20341.4%20195.2%20337.6%20194.8%20C245.9%20194.6%20154.3%20193.1%2062.6%20192.9%20C58.1%20193.4%2055.5%20189.5%2056.1%20184.9%20C57.0%20179.0%2054.7%20173.3%2055.2%20167.4%20C55.1%20162.7%2057.2%20159.6%2061.9%20159.0%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23E0453A%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22200.0%22%20y%3D%22175.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229%22%20fill%3D%22%23F2F2F2%22%3EOutput%20grezzi%3A%205.000%20righe%20di%20stack%20trace%20e%20log%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M62.7%20199.8%20C154.2%20198.8%20245.7%20199.2%20337.2%20200.0%20C341.3%20199.5%20344.7%20203.9%20344.9%20208.5%20C345.8%20217.0%20344.2%20225.6%20345.5%20234.0%20C346.0%20237.9%20342.8%20242.1%20338.3%20241.8%20C246.1%20244.1%20154.0%20241.3%2061.8%20243.5%20C57.5%20243.4%2056.2%20241.0%2056.4%20236.0%20C56.3%20226.7%2055.8%20217.4%2055.9%20208.0%20C56.5%20203.2%2058.2%20200.4%2062.7%20199.8%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23E0453A%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22200.0%22%20y%3D%22218.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229%22%20fill%3D%22%23F2F2F2%22%3EStato%20volatile%20affidato%20solo%20alla%20chat%3C/text%3E%0A%20%20%3Ctext%20x%3D%22200.0%22%20y%3D%22233.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%23E0453A%22%20font-weight%3D%22bold%22%3E%E2%86%92%20Diluizione%20attentiva%20e%20amnesia%20precoce%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M407.8%2060.6%20C509.2%2062.1%20610.7%2058.4%20712.1%2060.0%20C716.2%2060.2%20720.6%2062.6%20720.9%2067.2%20C722.5%20127.2%20720.8%20187.1%20721.3%20247.1%20C721.8%20251.2%20715.5%20255.7%20710.9%20255.7%20C609.7%20255.2%20508.4%20254.3%20407.2%20256.3%20C402.9%20256.1%20400.5%20250.9%20400.5%20246.2%20C402.6%20186.6%20402.8%20127.1%20401.3%2067.5%20C401.0%2062.5%20404.0%2060.2%20407.8%2060.6%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235CBF60%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22560.0%22%20y%3D%2284.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2211%22%20fill%3D%22%235CBF60%22%20font-weight%3D%22bold%22%3ECONTEXT%20ENGINEERING%20%28DISCIPLINATO%29%3C/text%3E%0A%20%20%3Ctext%20x%3D%22560.0%22%20y%3D%22100.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229%22%20fill%3D%22%239A9A9A%22%20font-style%3D%22italic%22%3EProtocollo%20ingegneristico%20sostenibile%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M421.6%20114.5%20C513.6%20114.7%20605.6%20116.1%20697.7%20116.0%20C702.2%20115.7%20706.7%20119.7%20706.1%20124.3%20C706.1%20130.4%20706.2%20136.5%20704.1%20142.3%20C704.7%20147.0%20701.7%20151.4%20697.1%20151.4%20C605.4%20152.6%20513.8%20153.4%20422.1%20151.7%20C417.8%20152.1%20415.1%20147.4%20414.4%20143.5%20C413.1%20136.4%20413.5%20129.4%20415.4%20122.5%20C414.9%20118.4%20417.5%20114.9%20421.6%20114.5%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235CBF60%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22560.0%22%20y%3D%22130.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%235CBF60%22%20font-weight%3D%22bold%22%3E1.%20Recupero%20just-in-time%3C/text%3E%0A%20%20%3Ctext%20x%3D%22560.0%22%20y%3D%22143.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%23F2F2F2%22%3EL%27agente%20esplora%20le%20directory%20e%20legge%20solo%20i%20file%20mirati%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M423.0%20158.5%20C514.7%20156.9%20606.3%20156.4%20698.0%20157.2%20C701.9%20156.6%20704.5%20162.3%20704.0%20166.5%20C704.8%20173.2%20703.5%20179.9%20704.6%20186.5%20C705.2%20190.6%20702.6%20192.2%20698.0%20192.8%20C606.2%20193.6%20514.4%20193.5%20422.6%20193.1%20C418.2%20193.3%20414.3%20191.4%20414.5%20187.2%20C415.4%20180.0%20413.8%20172.9%20414.2%20165.7%20C414.4%20161.6%20419.2%20158.1%20423.0%20158.5%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235CBF60%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22560.0%22%20y%3D%22173.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%235CBF60%22%20font-weight%3D%22bold%22%3E2.%20Compattezza%20dell%27output%20dei%20tool%3C/text%3E%0A%20%20%3Ctext%20x%3D%22560.0%22%20y%3D%22186.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%23F2F2F2%22%3ETool%20sintetici%3A%20diff%20focalizzati%2C%20filtri%20di%20rumore%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M422.4%20201.8%20C513.5%20202.0%20604.6%20200.5%20695.8%20201.8%20C700.0%20201.7%20704.5%20204.4%20704.3%20209.2%20C704.7%20217.6%20705.2%20226.0%20705.9%20234.3%20C705.6%20239.2%20701.9%20244.8%20697.5%20244.3%20C606.1%20242.3%20514.8%20242.3%20423.4%20242.6%20C419.2%20242.8%20413.6%20241.1%20414.1%20236.4%20C415.8%20227.6%20414.9%20218.8%20414.4%20210.0%20C414.7%20206.0%20418.1%20202.4%20422.4%20201.8%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235CBF60%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22560.0%22%20y%3D%22216.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%235CBF60%22%20font-weight%3D%22bold%22%3E3.%20Artefatti%20persistenti%20su%20file%3C/text%3E%0A%20%20%3Ctext%20x%3D%22560.0%22%20y%3D%22232.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%23F2F2F2%22%3EDecisioni%20e%20stato%20salvati%20su%20spec.md%20e%20GLOSSARY.md%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M40.0%20272.0%20C266.7%20271.1%20493.3%20272.8%20720.0%20272.0%22%20fill%3D%22none%22%20stroke%3D%22%238C90A8%22%20stroke-width%3D%221.8%22%20stroke-dasharray%3D%228%206%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22380.0%22%20y%3D%22294.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2210%22%20fill%3D%22%23F2A03D%22%3ERegola%20d%27oro%3A%20la%20cronologia%20della%20chat%20%C3%A8%20effimera%2C%20il%20filesystem%20del%20repository%20%C3%A8%20permanente%3C/text%3E%0A%20%20%3Ctext%20x%3D%22380.0%22%20y%3D%22309.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.8%22%20fill%3D%22%239A9A9A%22%3EMeno%20token%20inutili%20riceve%20il%20modello%2C%20pi%C3%B9%20alta%20rimane%20la%20sua%20lucidit%C3%A0%20logica%20sui%20requisiti%3C/text%3E%0A%0A%3C/svg%3E",
+          "didascalia": "Figura 2.2 - Confronto tra la saturazione caotica della chat libera e la disciplina del context engineering per agenti.",
+          "alt": "Diagramma hand-drawn a due colonne: a sinistra l'approccio ingenuo con dump massivo e amnesia, a destra i 3 pilastri del context engineering con recupero mirato e artefatti su disco."
+        },
+        "commento": "Igiene del contesto: la chat è effimera, il filesystem del repository è la fonte di verità permanente. Ogni token inutile iniettato degrada l'attenzione del modello sul problema logico reale.",
+        "approfondimento": "<h4>Regia e fonti (segmento 1 · 5 min)</h4><p><strong>Fonti primarie:</strong> Anthropic Research – <em>Effective context engineering for AI agents</em> (<a href='https://www.anthropic.com/research/effective-context-engineering-for-ai-agents' target='_blank'>anthropic.com</a>); Matt Pocock – <em>What is the context window?</em>.</p><p><strong>Punto pedagogico:</strong> Questo diagramma spiega perché gli studenti ottengono allucinazioni dopo 20 messaggi di chat: la finestra si riempie di tentativi errati e rumore. L'antidoto non è 'scrivere prompt più lunghi', ma ripulire il contesto e salvare lo stato su disco in modalità just-in-time.</p>"
       },
       {
         "id": 8,
-        "tipo": "CONTENUTO",
-        "badge": "Dispensa 0002 · Economia della finestra di contesto",
-        "titolo": "Governo del contesto e divulgazione progressiva di SKILL.md",
-        "lead": "Se caricassimo tutte le 15 guide metodologiche (SKILL.md) a inizio sessione, satureremmo la finestra di contesto prima ancora di leggere il codice.",
-        "paragrafi": [
-          "Google Antigravity risolve il problema con la tecnica della divulgazione progressiva (progressive disclosure): all'avvio della sessione l'Harness carica in memoria esclusivamente l'intestazione YAML di 3 righe di ciascuna skill (nome e descrizione, circa 50 token a skill).",
-          "Solo quando il compito richiede una competenza specifica (es. /to-tickets o /implement), il Brain invoca lo strumento di lettura per caricare il corpo procedurale completo di quel singolo file SKILL.md giusto in tempo."
+        "tipo": "VERIFICA",
+        "badge": "Verifica di comprensione · Sezione 1",
+        "titolo": "Verifica: ingegneria del contesto e funzionamento dei tool",
+        "lead": "Metti alla prova la comprensione dei principi architetturali ACI, MCP e Context Engineering.",
+        "domanda": "Perché un agente software alimentato da LLM non deve mai ricevere l'intero repository di codice nel messaggio iniziale?",
+        "opzioni": [
+          {
+            "id": "A",
+            "testo": "Perché i modelli linguistici non sono capaci di leggere file di codice sorgente se superano le 100 righe complessive.",
+            "corretta": false,
+            "spiegazione": "I modelli leggono codice sorgente agevolmente; il vincolo non è la lunghezza dei file ma la diluizione dell'attenzione sull'intero contesto."
+          },
+          {
+            "id": "B",
+            "testo": "Perché saturare il contesto diluisce l'attenzione del modello, aumenta i costi e causa allucinazioni sui dettagli critici, mentre è preferibile il recupero mirato just-in-time.",
+            "corretta": true,
+            "spiegazione": "Risposta corretta. Come documentato dalle ricerche di Anthropic sul Needle-in-a-Haystack, la saturazione del contesto riduce la lucidità del modello e moltiplica i fallimenti nei compiti complessi."
+          },
+          {
+            "id": "C",
+            "testo": "Perché il protocollo Model Context Protocol (MCP) vieta l'apertura di più di un file alla volta sul filesystem dell'host.",
+            "corretta": false,
+            "spiegazione": "Falso: MCP non impone limiti arbitrari sul numero di file; è una buona pratica architetturale mantenere le letture selettive e pertinenti."
+          },
+          {
+            "id": "D",
+            "testo": "Perché il modello linguistico esegue la compilazione del codice all'interno della propria rete neurale e andrebbe in overflow di memoria.",
+            "corretta": false,
+            "spiegazione": "Falso: il modello non compila né esegue codice. L'esecuzione avviene sempre e solo nell'ambiente host esterno."
+          }
         ],
-        "puntiChiave": [
-          "AGENTS.md: regole globali sempre attive (1–2 pagine concise, lette a ogni turno).",
-          "Intestazione YAML di SKILL.md: indice semantico leggero per l'attivazione su richiesta.",
-          "Corpo di SKILL.md e cartella references/: istruzioni operative caricate solo quando servono, preservando la memoria di lavoro per il codice."
-        ],
-        "approfondimento": "<h4>Regia e fonti (segmento 2C · 3 min)</h4><p>Fonte: lessons/0002-utilizzo-e-personalizzazione-di-google-antigravity.html e GLOSSARY.md. Ricordare la regola vista nella lezione 1: poiché SKILL.md viene letto integralmente dall'agente quando invochiamo /to-tickets o /implement, i nostri prompt non devono mai ripetere le istruzioni già contenute nella skill!</p>"
+        "approfondimento": "<h4>Regia e discussione (segmento 1 · 4 min)</h4><p>Far rispondere i docenti a schermo. Utilizzare l'opzione D come leva maieutica per ribadire: <em>'Ricordate sempre la slide 4: il modello non ha CPU né interprete Python; produce solo token testuali!'</em></p>"
       },
       {
         "id": 9,
-        "tipo": "GRIGLIA",
-        "badge": "John Ousterhout · A Philosophy of Software Design",
-        "titolo": "Programmazione strategica e moduli profondi (deep modules)",
-        "lead": "Perché il codice generato con il vibe coding diventa rapidamente ingestibile e come progettare architetture adatte sia agli umani sia agli agenti di IA.",
-        "schede": [
-          {
-            "evidenza": "Antipattern · Tactical tornado",
-            "titolo": "Programmazione tattica e moduli superficiali",
-            "testo": "Chi programma in modo tattico punta solo a far apparire qualcosa sullo schermo nei primi 5 minuti: mescola query SQL, calcoli matematici e pulsanti dell'interfaccia in un unico file.",
-            "punti": [
-              "Interfaccia confusa quanto l'implementazione",
-              "Ogni modifica successiva rompe tre funzioni lontane"
-            ]
-          },
-          {
-            "evidenza": "Buona pratica · Programmazione strategica",
-            "titolo": "Moduli profondi (deep modules) e information hiding",
-            "testo": "Un modulo profondo espone un'interfaccia pubblica minima e semplice (pochi parametri chiari) nascondendo al suo interno tutta la complessità delle regole di dominio.",
-            "punti": [
-              "Binario A: bookswap_engine.py puro, zero importazioni di Streamlit",
-              "Binario B: funzioni JS calcolaPartitore(Vin, R1, R2, RL) separate dal Canvas"
-            ]
-          }
-        ],
-        "approfondimento": "<h4>Regia e fonti (segmento 2C · 3 min)</h4><p>Fonte: John Ousterhout, 'A Philosophy of Software Design' e skill codebase-design. Spiegare ai docenti che un modulo profondo è il miglior alleato dell'IA: l'agente può testare e modificare la logica interna senza dover caricare l'intera interfaccia grafica nella finestra di contesto.</p>"
+        "tipo": "SEZIONE",
+        "numeroSezione": "02",
+        "titolo": "Workflow deterministici, agenti autonomi e architettura disaccoppiata",
+        "descrizione": "00:30–01:05 (35 minuti) · Chi controlla il flusso del software? I 5 pattern di workflow di Anthropic, i 4 componenti disaccoppiati e il pattern a turni indipendenti per task complessi.",
+        "badge": "Blocco 2 · Architettura del software",
+        "approfondimento": "<h4>Regia e fonti (00:30–00:33)</h4><p>Scansione dei 35 minuti: workflow vs agenti e chi guida il controllo del flusso (8 min); i 5 pattern di workflow Anthropic (10 min); architettura a 4 componenti disaccoppiati e pattern a turni indipendenti in Antigravity (12 min); clinica sui rischi del vibe coding (5 min).</p><p><strong>Fonti primarie:</strong> Anthropic Research (<a href='https://www.anthropic.com/research/building-effective-agents' target='_blank'>Building effective agents</a>, <a href='https://www.anthropic.com/research/managed-agents' target='_blank'>Scaling managed agents: Decoupling the brain from the hands</a>, <a href='https://www.anthropic.com/research/effective-harnesses-for-long-running-agents' target='_blank'>Effective harnesses for long-running agents</a>); Matt Pocock (<a href='https://www.aihero.dev/what-is-an-agent' target='_blank'>What is an agent?</a>).</p>"
       },
       {
         "id": 10,
-        "tipo": "ATTENZIONE",
-        "badge": "Igiene dello sviluppo · Formatori L04",
-        "titolo": "I 4 limiti strutturali del vibe coding e la regola dei 3 tentativi",
-        "avviso": "Regola dei 3 tentativi: se un difetto o un errore architetturale si ripresenta identico dopo 3 tentativi di correzione in conversazione, il problema NON è nel codice ma nella specifica iniziale.",
-        "dettagli": "I 4 limiti strutturali del vibe coding (lezione 04 formatori) sono: 1) riservatezza dei dati (assenza di confini sui dati inseriti); 2) scalabilità (crollo al crescere delle funzioni); 3) debugging profondo impossibile (codice opaco non testabile); 4) manutenzione a lungo termine nulla. Quando scatta il terzo tentativo fallito, fermate subito la generazione, tornate a .scratch/<slug>/spec.md o al ticket corrente, chiarite il vincolo mancante e ripartite da un'interfaccia pulita.",
-        "approfondimento": "<h4>Regia e fonti (segmento 2C · 2 min)</h4><p>Fonte: Corso formazione formatori IA, lezione 04. Questa regola risparmia decine di ore in laboratorio sia ai docenti sia agli studenti: vietato ostinarsi con 'non funziona ancora, correggi' per 15 messaggi consecutivi!</p>"
+        "tipo": "FIGURA",
+        "badge": "Pattern di orchestrazione · Anthropic Research",
+        "titolo": "Workflow deterministici vs agenti autonomi & i 5 pattern di workflow",
+        "lead": "Confronto strutturale tra pipeline deterministiche governate da codice e anelli decisionali autonomi, con i 5 pattern canonici di workflow.",
+        "media": {
+          "sorgente": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22760%22%20height%3D%22320%22%20viewBox%3D%220%200%20760%20320%22%20role%3D%22img%22%3E%0A%20%20%3Ctitle%3EWorkflow%20deterministici%20vs%20agenti%20autonomi%20e%20i%205%20pattern%20di%20workflow%3C/title%3E%0A%20%20%3Cdesc%3EDiagramma%20hand-drawn%20che%20confronta%20flussi%20di%20lavoro%20rigidi%20e%20cicli%20agentici%20autonomi%20con%20i%205%20pattern%20di%20workflow%20di%20Anthropic.%3C/desc%3E%0A%20%20%3Crect%20width%3D%22760%22%20height%3D%22320%22%20fill%3D%22%230F172A%22/%3E%0A%20%20%3Ctext%20x%3D%2240.0%22%20y%3D%2226.0%22%20text-anchor%3D%22start%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2213%22%20fill%3D%22%23F2F2F2%22%20font-weight%3D%22bold%22%3EWorkflow%20deterministici%20vs%20agenti%20autonomi%20%26amp%3B%20i%205%20pattern%20di%20workflow%3C/text%3E%0A%20%20%3Ctext%20x%3D%2240.0%22%20y%3D%2242.0%22%20text-anchor%3D%22start%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%239A9A9A%22%3EChi%20controlla%20il%20flusso%3F%20Il%20codice%20rigido%20%28workflow%29%20o%20il%20ciclo%20decisionale%20dell%27LLM%20%28agente%29%3F%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M47.7%2056.8%20C150.8%2057.0%20253.9%2057.5%20357.0%2055.9%20C360.9%2056.3%20364.7%2060.7%20364.3%2064.5%20C365.3%2091.1%20363.4%20117.7%20364.3%20144.3%20C364.3%20149.4%20361.1%20151.6%20356.3%20152.3%20C253.2%20150.2%20150.0%20150.2%2046.9%20150.8%20C42.1%20151.5%2039.7%20149.3%2040.1%20144.3%20C40.8%20117.3%2039.0%2090.4%2041.0%2063.5%20C41.4%2058.8%2042.7%2056.4%2047.7%2056.8%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235AA9F5%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22202.0%22%20y%3D%2274.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2210.5%22%20fill%3D%22%235AA9F5%22%20font-weight%3D%22bold%22%3EWORKFLOW%20%28Il%20codice%20guida%20il%20flusso%29%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M64.3%2085.1%20C83.6%2086.8%20102.9%2085.6%20122.1%2084.9%20C126.6%2085.4%20129.8%2087.1%20129.1%2091.7%20C128.0%2096.9%20130.3%20101.9%20129.7%20107.0%20C130.0%20111.9%20127.0%20114.8%20122.8%20114.6%20C103.3%20113.5%2083.8%20115.6%2064.3%20113.9%20C60.3%20113.5%2055.1%20109.7%2055.4%20105.7%20C54.3%20101.2%2056.2%2096.4%2054.2%2092.0%20C54.1%2088.0%2059.4%2084.8%2064.3%2085.1%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235AA9F5%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%2292.0%22%20y%3D%22104.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%23CBD5E1%22%3E%5BInput%5D%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M130.0%20100.0%20C135.0%2099.1%20140.0%20100.9%20145.0%20100.0%22%20fill%3D%22none%22%20stroke%3D%22%235AA9F5%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M135.1%20105.3%20L145.0%20100.0%20L136.4%2095.4%22%20fill%3D%22none%22%20stroke%3D%22%235AA9F5%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M152.0%2084.8%20C174.0%2084.4%20196.0%2085.1%20218.0%2084.9%20C223.0%2085.5%20224.0%2089.4%20224.3%2093.5%20C224.5%2098.1%20225.8%20102.6%20224.5%20107.2%20C224.1%20111.4%20220.5%20116.4%20216.2%20115.7%20C194.8%20114.2%20173.2%20116.3%20151.7%20114.4%20C147.4%20114.1%20145.9%20110.8%20146.2%20105.8%20C144.1%20101.4%20146.0%2096.6%20144.7%2092.1%20C145.2%2087.0%20147.3%2085.2%20152.0%2084.8%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235AA9F5%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22185.0%22%20y%3D%22104.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%23CBD5E1%22%3EStep%201%20%28LLM%29%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M225.0%20100.0%20C230.0%2099.4%20235.0%20100.1%20240.0%20100.0%22%20fill%3D%22none%22%20stroke%3D%22%235AA9F5%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M229.8%20105.4%20L240.0%20100.0%20L229.7%2094.5%22%20fill%3D%22none%22%20stroke%3D%22%235AA9F5%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M247.8%2085.1%20C268.9%2085.7%20290.0%2086.1%20311.1%2085.7%20C316.2%2085.6%20319.8%2088.6%20319.2%2093.6%20C320.2%2098.2%20319.1%20102.9%20319.7%20107.5%20C319.8%20112.4%20317.6%20113.4%20312.8%20113.7%20C291.6%20114.3%20270.4%20114.1%20249.2%20113.8%20C244.4%20114.3%20241.7%20110.3%20241.1%20105.8%20C241.2%20101.6%20239.3%2097.4%20241.0%2093.2%20C241.5%2088.8%20243.0%2085.5%20247.8%2085.1%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235AA9F5%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22280.0%22%20y%3D%22104.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228%22%20fill%3D%22%23CBD5E1%22%3EStep%202%20%28Codice%29%3C/text%3E%0A%20%20%3Ctext%20x%3D%22202.0%22%20y%3D%22138.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%239A9A9A%22%3EArresto%20deterministico%3A%20il%20codice%20decide%20quando%20finire%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M403.4%2055.4%20C506.4%2057.0%20609.5%2054.2%20712.5%2056.1%20C716.7%2055.7%20719.4%2058.1%20719.8%2062.7%20C719.7%2089.6%20718.5%20116.5%20719.7%20143.4%20C719.4%20147.6%20716.1%20149.9%20711.2%20150.6%20C608.2%20152.7%20505.2%20153.0%20402.2%20151.7%20C398.2%20152.1%20395.8%20147.9%20395.7%20143.9%20C396.7%20117.5%20394.7%2091.0%20396.1%2064.6%20C396.6%2060.9%20399.4%2055.0%20403.4%2055.4%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22557.0%22%20y%3D%2274.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2210.2%22%20fill%3D%22%23F2A03D%22%20font-weight%3D%22bold%22%3EAGENTE%20AUTONOMO%20%28Loop%20ReAct%3A%20LLM%20%E2%87%84%20Tools%29%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M415.1%2086.3%20C432.6%2086.8%20450.1%2085.9%20467.6%2085.8%20C472.2%2085.7%20475.9%2088.4%20475.3%2092.8%20C475.7%2098.0%20477.4%20102.9%20477.0%20108.2%20C476.9%20112.9%20473.5%20114.5%20469.1%20114.8%20C451.1%20116.1%20433.1%20113.4%20415.1%20115.2%20C410.6%20114.9%20406.8%20110.5%20406.8%20105.8%20C406.9%20101.6%20406.3%2097.5%20407.3%2093.4%20C407.1%2088.4%20410.8%2086.4%20415.1%2086.3%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22442.0%22%20y%3D%22104.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%23CBD5E1%22%3E%5BObiettivo%5D%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M476.0%20100.0%20C481.3%2099.1%20486.7%2099.0%20492.0%20100.0%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M484.0%20104.3%20L492.0%20100.0%20L480.7%2094.0%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M500.1%2084.1%20C527.9%2084.7%20555.6%2083.1%20583.3%2084.4%20C588.0%2084.9%20592.9%2089.8%20592.2%2094.0%20C592.0%2098.6%20592.8%20103.2%20592.1%20107.8%20C592.3%20112.0%20587.6%20114.7%20583.5%20114.8%20C555.9%20116.7%20528.3%20117.2%20500.7%20116.0%20C495.7%20116.4%20491.6%20110.8%20491.1%20106.4%20C492.0%20101.7%20491.8%2096.9%20491.0%2092.2%20C490.9%2088.2%20495.4%2084.3%20500.1%2084.1%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22542.0%22%20y%3D%22104.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228%22%20fill%3D%22%23CBD5E1%22%3ELLM%20Call%20%28%22Decide%22%29%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M592.0%2094.0%20C597.3%2094.6%20602.7%2093.5%20608.0%2094.0%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M597.6%2099.5%20L608.0%2094.0%20L599.9%2089.7%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M616.4%2085.4%20C643.8%2083.7%20671.3%2085.3%20698.7%2084.0%20C702.8%2084.4%20709.0%2087.3%20709.3%2092.1%20C710.2%2097.1%20707.3%20101.9%20708.5%20106.8%20C708.2%20110.7%20705.2%20115.3%20701.3%20115.5%20C672.7%20115.2%20644.1%20115.7%20615.5%20114.0%20C611.3%20114.7%20608.0%20112.7%20607.5%20108.0%20C606.9%20103.1%20609.3%2098.6%20609.4%2093.7%20C609.5%2088.9%20612.5%2085.0%20616.4%2085.4%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22658.0%22%20y%3D%22104.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%23CBD5E1%22%3ECall%20Tools%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M608.0%20108.0%20C602.7%20107.9%20597.3%20107.1%20592.0%20108.0%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M601.5%20102.9%20L592.0%20108.0%20L602.2%20113.4%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22557.0%22%20y%3D%22142.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%239A9A9A%22%3EArresto%20dinamico%3A%20l%27LLM%20decide%20autonomamente%20quando%20fermarsi%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M47.2%20158.9%20C268.3%20158.8%20489.5%20161.0%20710.6%20160.4%20C715.0%20160.5%20718.9%20162.5%20719.3%20167.2%20C719.9%20194.7%20718.2%20222.3%20720.1%20249.9%20C720.3%20253.8%20716.2%20257.0%20712.4%20257.1%20C490.6%20256.7%20268.7%20257.1%2046.9%20257.3%20C43.1%20257.3%2038.0%20253.1%2038.7%20249.3%20C38.8%20221.9%2039.7%20194.6%2039.3%20167.2%20C39.3%20162.2%2042.2%20158.6%2047.2%20158.9%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23A98BFF%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22380.0%22%20y%3D%22178.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2210.5%22%20fill%3D%22%23A98BFF%22%20font-weight%3D%22bold%22%3EI%205%20PATTERN%20DI%20WORKFLOW%20%28ORCHESTRAZIONE%20VIA%20CODICE%20DETERMINISTICO%20%C2%B7%20ANTHROPIC%29%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M59.8%20192.4%20C96.2%20193.4%20132.5%20192.7%20168.8%20191.5%20C173.4%20191.2%20177.0%20194.9%20176.8%20198.9%20C177.0%20212.2%20175.5%20225.5%20177.0%20238.8%20C177.5%20242.8%20172.9%20245.8%20168.6%20246.3%20C132.5%20246.0%2096.3%20245.6%2060.2%20245.9%20C55.7%20245.8%2051.0%20241.9%2051.1%20237.9%20C53.1%20224.9%2052.1%20211.8%2052.0%20198.7%20C52.6%20194.1%2055.3%20191.9%2059.8%20192.4%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23A98BFF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22114.0%22%20y%3D%22212.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%23A98BFF%22%20font-weight%3D%22bold%22%3E1.%20Chaining%3C/text%3E%0A%20%20%3Ctext%20x%3D%22114.0%22%20y%3D%22230.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228%22%20fill%3D%22%23CBD5E1%22%3EPipeline%20lineare%20A%E2%86%92B%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M192.4%20191.0%20C229.0%20192.8%20265.6%20189.8%20302.2%20191.8%20C306.7%20192.5%20311.3%20197.6%20311.3%20201.3%20C312.3%20213.5%20309.6%20225.7%20311.2%20237.9%20C311.5%20243.0%20307.6%20246.2%20302.8%20246.5%20C266.1%20247.0%20229.4%20244.8%20192.8%20245.2%20C189.0%20245.7%20185.3%20244.1%20185.7%20239.1%20C185.5%20226.5%20186.3%20213.8%20186.3%20201.2%20C186.9%20197.1%20187.5%20190.6%20192.4%20191.0%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23A98BFF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22247.0%22%20y%3D%22212.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%23A98BFF%22%20font-weight%3D%22bold%22%3E2.%20Routing%3C/text%3E%0A%20%20%3Ctext%20x%3D%22247.0%22%20y%3D%22230.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228%22%20fill%3D%22%23CBD5E1%22%3ESmistamento%20a%20specialisti%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M327.0%20192.9%20C363.0%20192.1%20398.9%20192.0%20434.8%20190.8%20C439.7%20191.3%20442.3%20197.4%20442.4%20201.4%20C443.0%20213.3%20441.2%20225.2%20442.0%20237.1%20C442.5%20242.0%20440.0%20247.2%20435.1%20246.9%20C398.5%20244.7%20361.9%20244.7%20325.2%20245.3%20C320.9%20244.7%20316.8%20243.7%20317.2%20238.9%20C319.0%20226.3%20315.7%20213.6%20317.6%20201.0%20C317.3%20196.9%20322.5%20192.9%20327.0%20192.9%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23A98BFF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22380.0%22%20y%3D%22212.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%23A98BFF%22%20font-weight%3D%22bold%22%3E3.%20Parallel%3C/text%3E%0A%20%20%3Ctext%20x%3D%22380.0%22%20y%3D%22230.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228%22%20fill%3D%22%23CBD5E1%22%3ETask%20simultanei%20o%20voto%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M459.7%20192.6%20C495.4%20191.9%20531.2%20191.0%20567.0%20191.5%20C570.9%20190.8%20575.7%20196.1%20576.1%20200.5%20C576.1%20213.4%20577.9%20226.3%20577.1%20239.3%20C577.5%20244.4%20572.6%20246.3%20567.5%20246.8%20C531.2%20247.1%20495.0%20247.2%20458.8%20245.2%20C454.7%20245.1%20449.3%20241.6%20449.7%20237.3%20C449.8%20224.4%20450.5%20211.6%20451.7%20198.8%20C451.1%20195.0%20455.3%20192.2%20459.7%20192.6%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23A98BFF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22513.0%22%20y%3D%22212.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%23A98BFF%22%20font-weight%3D%22bold%22%3E4.%20Orchestrator%3C/text%3E%0A%20%20%3Ctext%20x%3D%22513.0%22%20y%3D%22230.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228%22%20fill%3D%22%23CBD5E1%22%3ECoordinatore%20%2B%20worker%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M592.3%20192.6%20C628.9%20193.6%20665.6%20192.0%20702.3%20191.9%20C706.2%20191.5%20709.4%20197.0%20709.1%20200.9%20C708.1%20213.0%20709.9%20225.3%20707.8%20237.3%20C707.1%20242.4%20704.7%20246.0%20700.1%20245.6%20C663.9%20244.7%20627.8%20245.1%20591.6%20246.4%20C587.6%20245.7%20584.0%20243.2%20583.7%20239.0%20C582.2%20226.3%20583.4%20213.5%20584.2%20200.8%20C583.7%20196.0%20588.2%20192.3%20592.3%20192.6%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23A98BFF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22646.0%22%20y%3D%22212.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%23A98BFF%22%20font-weight%3D%22bold%22%3E5.%20Evaluator%3C/text%3E%0A%20%20%3Ctext%20x%3D%22646.0%22%20y%3D%22230.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228%22%20fill%3D%22%23CBD5E1%22%3EGeneratore%20%2B%20critico/test%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M40.0%20272.0%20C266.7%20272.9%20493.3%20272.2%20720.0%20272.0%22%20fill%3D%22none%22%20stroke%3D%22%238C90A8%22%20stroke-width%3D%221.8%22%20stroke-dasharray%3D%228%206%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22380.0%22%20y%3D%22294.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%23F2A03D%22%3EIngegneria%20pragmatica%3A%20i%205%20pattern%20sono%20workflow%20governati%20da%20codice%3B%20l%27agente%20autonomo%20%C3%A8%20solo%20il%20loop%20ReAct%3C/text%3E%0A%20%20%3Ctext%20x%3D%22380.0%22%20y%3D%22309.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.8%22%20fill%3D%22%239A9A9A%22%3EPreferire%20sempre%20il%20workflow%20deterministico%20pi%C3%B9%20semplice%20prima%20di%20concedere%20piena%20autonomia%20all%27agente%3C/text%3E%0A%0A%3C/svg%3E",
+          "didascalia": "Figura 2.2 - Topologia dei workflow deterministici vs loop agentico autonomo ReAct e catalogo dei 5 pattern fondamentali.",
+          "alt": "Diagramma hand-drawn che mostra workflow deterministico a sinistra, loop autonomo ReAct a destra e i 5 pattern di workflow in basso (Prompt Chaining, Routing, Parallelization, Orchestrator-Workers, Evaluator-Optimizer)."
+        },
+        "commento": "I 5 pattern (Prompt Chaining, Routing, Parallelization, Orchestrator-Workers, Evaluator-Optimizer) sono workflow guidati da codice rigido. L'unico pattern agentico autonomo è il loop decisionale ReAct (LLM Call ⇄ Call Tools) governato dinamicamente dal modello.",
+        "approfondimento": "<h4>Regia e fonti (segmento 2 · 8 min)</h4><p><strong>Fonti primarie:</strong> Anthropic Research – <em>Building effective agents</em> (<a href='https://www.anthropic.com/research/building-effective-agents' target='_blank'>anthropic.com</a>); Matt Pocock – <em>What is an agent?</em>.</p><p><strong>Analisi d'aula:</strong> Guidare i docenti attraverso i 5 blocchi: mostrare come i 5 pattern siano in realtà composizioni di codice deterministico attorno a chiamate mirate di modelli. Al contrario, l'agente puro opera in un loop libero 'LLM Call ⇄ Call Tools'. La regola aurea di Anthropic è: 'Preferite sempre il workflow deterministico più semplice possibile prima di cedere il controllo a un loop autonomo aperto.'</p>"
       },
       {
         "id": 11,
-        "tipo": "TABELLA",
-        "badge": "Matrice pedagogica progressiva · Riga 2 di 5",
-        "titolo": "Didattica tradizionale, vibe coding e didattica assistita da IA (sessione 2)",
-        "lead": "Come cambia il passaggio dalla progettazione alla scrittura del codice con /to-tickets e /implement.",
-        "colonne": [
-          "Dimensione (sessione 2)",
-          "Didattica tradizionale del coding",
-          "Rischio del vibe coding ingenuo",
-          "Didattica assistita da IA (pipeline del corso)"
+        "tipo": "GRIGLIA",
+        "badge": "Tassonomia dei workflow · Anthropic Research",
+        "titolo": "I 5 pattern di workflow di Anthropic nel dettaglio",
+        "lead": "Come comporre modelli linguistici e codice deterministico per ottenere affidabilità e scalabilità ingegneristica.",
+        "schede": [
+          {
+            "evidenza": "Pattern 1",
+            "titolo": "Prompt Chaining",
+            "testo": "Una sequenza lineare di chiamate dove l'output di un passaggio alimenta il successivo. Il codice intermedio valida o trasforma i dati tra un turno e l'altro.",
+            "punti": [
+              "Ideale per task scomponibili in passi sequenziali fissi",
+              "Verifica deterministica tra un passo e il successivo"
+            ]
+          },
+          {
+            "evidenza": "Pattern 2",
+            "titolo": "Routing",
+            "testo": "Un modello classifica l'input e lo instrada verso il modulo specializzato, il prompt dedicato o il tool corretto, isolando le competenze.",
+            "punti": [
+              "Previene l'inquinamento da prompt monolitici",
+              "Ottimizza costi usando modelli piccoli per task semplici"
+            ]
+          },
+          {
+            "evidenza": "Pattern 3",
+            "titolo": "Parallelization",
+            "testo": "Esecuzione simultanea di compiti indipendenti: per sezionamento (sotto-task eseguiti in parallelo) o per votazione (più bozze confrontate a maggioranza).",
+            "punti": [
+              "Riduce la latenza totale delle pipeline",
+              "Aumenta la robustezza sui controlli di qualità"
+            ]
+          },
+          {
+            "evidenza": "Pattern 4",
+            "titolo": "Orchestrator-Workers",
+            "testo": "Un coordinatore centrale scompone il problema complesso, pianifica i compiti e delega compiti atomici a sub-agenti worker specializzati.",
+            "punti": [
+              "Mantiene pulita la memoria di ciascun worker",
+              "Fondamento dello sviluppo incrementale a fette verticali"
+            ]
+          }
         ],
-        "righe": [
-          [
-            "Organizzazione del lavoro",
-            "Spiegazione frontale della sintassi seguita dalla scrittura di un programma monolitico in un solo file.",
-            "Un unico prompt genera centinaia di righe di codice aggrovigliato con logica di dominio fusa nell'interfaccia grafica.",
-            "Lo studente scompone spec.md in moduli profondi e 3 fette verticali (to-tickets, fase a prova di IA) prima di generare codice."
-          ],
-          [
-            "Scrittura ed esecuzione",
-            "Stesura manuale riga per riga; chi si blocca su una virgola perde l'intera ora di laboratorio.",
-            "Accettazione cieca di tutto il codice generato senza leggere le differenze né usare il controllo di versione.",
-            "Implementazione di 1 ticket verticale alla volta (implement, fase assistita da IA) con ispezione obbligatoria del git diff e commit atomico."
-          ],
-          [
-            "Tracciabilità del processo",
-            "Nessuna traccia intermedia: esiste solo il file nello stato in cui suona la campanella.",
-            "Storia delle modifiche assente; se l'ultima richiesta rompe il programma, tutto il lavoro va perso.",
-            "Cronologia Git a 3 commit verticali + PROMPT_LOG.md con i prompt usati e le modifiche rifiutate."
-          ]
-        ],
-        "approfondimento": "<h4>Regia e fonti</h4><p>Fonte: ticket 01 e spec.md sez. 3 (riga 2). Far notare come il controllo di versione (Git) diventi uno strumento didattico di comprensione: lo studente accetta il commit solo se sa leggere il git diff di quella singola fetta verticale.</p>"
+        "approfondimento": "<h4>Regia e fonti (segmento 2 · 7 min)</h4><p><strong>Fonti primarie:</strong> Anthropic Research – <em>Building effective agents</em> (<a href='https://www.anthropic.com/research/building-effective-agents' target='_blank'>anthropic.com</a>).</p><p><strong>Aggancio pratico:</strong> Collegare il Pattern 4 (Orchestrator-Workers) e il Pattern 5 (Evaluator-Optimizer) all'attività che i docenti svolgeranno in laboratorio: il docente funge da orchestratore strategico, l'agente esegue il worker su un singolo ticket alla volta, e la suite di test automatizzati funge da evaluator imparziale.</p>"
       },
       {
         "id": 12,
-        "tipo": "VERIFICA",
-        "badge": "Controllo formativo · Sessione 2",
-        "titolo": "Verifica concettuale: fette orizzontali contro fette verticali (tracer bullets)",
-        "domanda": "Durante l'esecuzione di /to-tickets, quale delle seguenti scomposizioni in 3 ticket rispetta il principio delle fette verticali (vertical slices)?",
-        "opzioni": [
-          {
-            "id": "A",
-            "testo": "Ticket 1: creare tutte le 10 tabelle SQLite; ticket 2: scrivere tutte le funzioni Python di backend; ticket 3: costruire tutte le schermate Streamlit.",
-            "corretta": false
-          },
-          {
-            "id": "B",
-            "testo": "Ticket 1: catalogo studenti e libri con bonus di terzo anno e persistenza; ticket 2: apertura del prestito e blocco della cauzione di 15 crediti; ticket 3: restituzione del libro, calcolo dell'usura e liquidazione dei crediti.",
-            "corretta": true
-          },
-          {
-            "id": "C",
-            "testo": "Ticket 1: scrivere il codice senza test; ticket 2: aggiungere i commenti; ticket 3: correggere gli errori se avanza tempo.",
-            "corretta": false
-          },
-          {
-            "id": "D",
-            "testo": "Un singolo ticket 01 che implementa contemporaneamente la versione minima (v1) e tutte le estensioni opzionali.",
-            "corretta": false
-          }
-        ],
-        "spiegazione": "Esatto! L'opzione A è una scomposizione orizzontale per strati tecnologici: fino alla fine del ticket 3 non c'è nulla di verificabile o funzionante. L'opzione B taglia il sistema in 3 fette verticali complete: già dopo il ticket 1 abbiamo un motore testabile e persistente!",
-        "approfondimento": "<h4>Regia e fonti</h4><p>Fonte: spec.md sez. 5.2 (tabella di risoluzione problemi). Questo è l'errore più frequente quando si usa /to-tickets per la prima volta: rifiutare sempre le divisioni 'database -> backend -> interfaccia'.</p>"
+        "tipo": "FIGURA",
+        "badge": "Architettura disaccoppiata · Google Antigravity",
+        "titolo": "Architettura a 4 componenti & pattern a turni indipendenti",
+        "lead": "Disaccoppiare il cervello probabilistico (Brain) dal runtime deterministico (Harness), dalla sandbox isolata (Hands) e dal log immutabile (Session Log).",
+        "media": {
+          "sorgente": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22760%22%20height%3D%22320%22%20viewBox%3D%220%200%20760%20320%22%20role%3D%22img%22%3E%0A%20%20%3Ctitle%3EArchitettura%20disaccoppiata%20a%204%20componenti%20e%20pattern%20a%20turni%3C/title%3E%0A%20%20%3Cdesc%3EDiagramma%20hand-drawn%20che%20illustra%20Brain%2C%20Harness%2C%20Hands%2C%20Session%20Log%20e%20il%20flusso%20a%20turni%20di%20pianificazione%20ed%20esecuzione%20in%20Antigravity.%3C/desc%3E%0A%20%20%3Crect%20width%3D%22760%22%20height%3D%22320%22%20fill%3D%22%230F172A%22/%3E%0A%20%20%3Ctext%20x%3D%2240.0%22%20y%3D%2226.0%22%20text-anchor%3D%22start%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2213%22%20fill%3D%22%23F2F2F2%22%20font-weight%3D%22bold%22%3EArchitettura%20disaccoppiata%20a%204%20componenti%20%26amp%3B%20pattern%20a%20turni%3C/text%3E%0A%20%20%3Ctext%20x%3D%2240.0%22%20y%3D%2242.0%22%20text-anchor%3D%22start%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%239A9A9A%22%3EDisaccoppiare%20il%20cervello%20dalle%20mani%20e%20orchestrare%20turni%20a%20contesto%20pulito%20con%20Antigravity%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M48.0%2055.8%20C98.0%2056.2%20147.9%2054.7%20197.9%2056.8%20C202.5%2057.5%20206.4%2059.0%20205.8%2063.7%20C205.4%2087.5%20207.4%20111.3%20206.3%20135.1%20C206.3%20139.2%20202.3%20144.0%20197.8%20144.5%20C147.6%20144.8%2097.4%20145.4%2047.1%20145.2%20C42.4%20145.8%2041.1%20139.4%2040.5%20134.8%20C41.6%20111.4%2041.1%2087.9%2040.7%2064.5%20C41.1%2059.7%2043.3%2055.5%2048.0%2055.8%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235AA9F5%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22122.0%22%20y%3D%2278.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2210%22%20fill%3D%22%235AA9F5%22%20font-weight%3D%22bold%22%3E1.%20BRAIN%20%28LLM%29%3C/text%3E%0A%20%20%3Ctext%20x%3D%22122.0%22%20y%3D%2296.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%239A9A9A%22%20font-style%3D%22italic%22%3EProbabilistico%3C/text%3E%0A%20%20%3Ctext%20x%3D%22122.0%22%20y%3D%22122.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229%22%20fill%3D%22%23F2F2F2%22%3EValuta%20e%20decide%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M223.9%2054.9%20C273.4%2055.1%20322.9%2056.6%20372.4%2055.7%20C377.2%2055.7%20379.7%2059.0%20380.1%2063.7%20C380.9%2088.0%20380.3%20112.3%20379.7%20136.5%20C380.3%20140.4%20377.7%20143.2%20373.0%20143.1%20C323.2%20144.3%20273.5%20143.2%20223.8%20144.3%20C219.1%20144.0%20215.1%20141.2%20214.9%20136.5%20C216.2%20112.5%20215.2%2088.5%20215.7%2064.5%20C215.8%2060.6%20219.9%2054.5%20223.9%2054.9%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22297.0%22%20y%3D%2278.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2210%22%20fill%3D%22%23F2A03D%22%20font-weight%3D%22bold%22%3E2.%20HARNESS%3C/text%3E%0A%20%20%3Ctext%20x%3D%22297.0%22%20y%3D%2296.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%239A9A9A%22%20font-style%3D%22italic%22%3EDeterministico%3C/text%3E%0A%20%20%3Ctext%20x%3D%22297.0%22%20y%3D%22122.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229%22%20fill%3D%22%23F2F2F2%22%3ELoop%20%26amp%3B%20iniezione%20regole%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M397.3%2055.6%20C447.5%2057.5%20497.6%2058.1%20547.8%2057.1%20C551.7%2056.6%20556.7%2060.9%20556.4%2064.7%20C555.6%2088.9%20554.3%20113.1%20554.9%20137.4%20C555.3%20141.7%20552.9%20145.3%20548.1%20145.0%20C498.3%20143.3%20448.5%20144.2%20398.7%20145.1%20C393.6%20145.4%20390.1%20141.3%20389.7%20136.5%20C389.5%20112.5%20390.2%2088.5%20391.3%2064.4%20C391.1%2060.5%20393.1%2056.2%20397.3%2055.6%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235CBF60%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22472.0%22%20y%3D%2278.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2210%22%20fill%3D%22%235CBF60%22%20font-weight%3D%22bold%22%3E3.%20HANDS%20/%20SANDBOX%3C/text%3E%0A%20%20%3Ctext%20x%3D%22472.0%22%20y%3D%2296.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%239A9A9A%22%20font-style%3D%22italic%22%3EAmbiente%20isolato%3C/text%3E%0A%20%20%3Ctext%20x%3D%22472.0%22%20y%3D%22122.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229%22%20fill%3D%22%23F2F2F2%22%3EEsegue%20bash%2C%20zero%20segreti%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M571.8%2055.7%20C621.4%2054.1%20671.0%2055.2%20720.6%2054.9%20C724.5%2054.7%20729.9%2058.5%20730.3%2063.5%20C730.7%2087.3%20728.7%20111.1%20729.7%20134.9%20C729.8%20138.9%20726.9%20143.9%20723.1%20144.5%20C673.0%20142.6%20623.0%20143.3%20572.9%20144.1%20C568.7%20144.2%20564.6%20140.1%20564.1%20136.2%20C565.7%20111.9%20566.4%2087.5%20565.7%2063.1%20C565.4%2059.0%20567.2%2056.0%20571.8%2055.7%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23A98BFF%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22647.0%22%20y%3D%2278.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2210%22%20fill%3D%22%23A98BFF%22%20font-weight%3D%22bold%22%3E4.%20SESSION%20LOG%3C/text%3E%0A%20%20%3Ctext%20x%3D%22647.0%22%20y%3D%2296.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%239A9A9A%22%20font-style%3D%22italic%22%3EStato%20esterno%3C/text%3E%0A%20%20%3Ctext%20x%3D%22647.0%22%20y%3D%22122.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229%22%20fill%3D%22%23F2F2F2%22%3ELog%20immutabile%20%28JSONL%29%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M205.0%20100.0%20C208.3%2099.3%20211.7%20100.9%20215.0%20100.0%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M203.8%20106.0%20L215.0%20100.0%20L204.2%2094.3%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M380.0%20100.0%20C383.3%2099.4%20386.7%2099.7%20390.0%20100.0%22%20fill%3D%22none%22%20stroke%3D%22%235CBF60%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M380.9%20104.8%20L390.0%20100.0%20L381.7%2095.6%22%20fill%3D%22none%22%20stroke%3D%22%235CBF60%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M555.0%20100.0%20C558.3%2099.6%20561.7%20100.4%20565.0%20100.0%22%20fill%3D%22none%22%20stroke%3D%22%23A98BFF%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M554.8%20105.4%20L565.0%20100.0%20L554.5%2094.4%22%20fill%3D%22none%22%20stroke%3D%22%23A98BFF%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M46.7%20155.8%20C268.2%20154.3%20489.8%20153.2%20711.4%20153.9%20C715.2%20153.5%20720.0%20159.3%20720.5%20163.4%20C720.8%20192.8%20721.1%20222.2%20718.7%20251.5%20C719.3%20256.3%20718.4%20258.7%20713.4%20258.7%20C491.9%20258.1%20270.3%20258.1%2048.8%20259.0%20C44.9%20259.6%2039.5%20256.3%2039.5%20251.8%20C38.6%20222.6%2039.2%20193.4%2038.9%20164.2%20C39.4%20160.1%2042.1%20155.1%2046.7%20155.8%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235CBF60%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22380.0%22%20y%3D%22175.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2210.5%22%20fill%3D%22%235CBF60%22%20font-weight%3D%22bold%22%3ESCALABILIT%C3%80%20SU%20TASK%20COMPLESSI%3A%20PATTERN%20A%20TURNI%20INDIPENDENTI%20CON%20ANTIGRAVITY%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M63.4%20188.3%20C160.0%20188.3%20256.5%20187.9%20353.0%20188.0%20C357.2%20188.2%20359.3%20191.0%20360.0%20195.5%20C358.9%20211.0%20361.8%20226.4%20361.0%20241.9%20C361.0%20246.8%20356.8%20249.2%20352.3%20249.7%20C255.5%20250.9%20158.7%20251.0%2061.9%20251.2%20C57.5%20250.8%2053.6%20247.5%2053.7%20242.8%20C54.8%20227.5%2055.1%20212.2%2055.4%20196.8%20C54.7%20192.1%2058.6%20187.9%2063.4%20188.3%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235AA9F5%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22207.0%22%20y%3D%22206.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2210%22%20fill%3D%22%235AA9F5%22%20font-weight%3D%22bold%22%3EFASE%201%3A%20Pianificazione%20%26amp%3B%20Specifiche%3C/text%3E%0A%20%20%3Ctext%20x%3D%22207.0%22%20y%3D%22222.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%23CBD5E1%22%3ESkill%3A%20/grill-with-docs%2C%20/to-spec%2C%20/to-tickets%3C/text%3E%0A%20%20%3Ctext%20x%3D%22207.0%22%20y%3D%22238.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%23F2F2F2%22%3EProduce%3A%20spec.md%20e%20fette%20verticali%20in%20.scratch/%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M360.0%20219.0%20C371.7%20218.8%20383.3%20218.0%20395.0%20219.0%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M385.0%20224.3%20L395.0%20219.0%20L386.6%20214.5%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22378.0%22%20y%3D%22208.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%227.5%22%20fill%3D%22%23F2A03D%22%3EStato%20su%20disco%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M402.5%20188.1%20C500.9%20188.7%20599.3%20189.3%20697.7%20189.2%20C702.8%20188.6%20706.0%20192.6%20705.6%20197.2%20C703.8%20211.9%20706.6%20226.8%20704.8%20241.5%20C704.2%20245.9%20700.8%20249.7%20696.2%20250.3%20C598.7%20250.3%20501.1%20250.1%20403.5%20250.5%20C399.6%20250.2%20396.1%20247.6%20396.2%20242.9%20C395.0%20226.9%20394.5%20210.9%20396.1%20194.9%20C395.8%20190.7%20398.1%20188.7%20402.5%20188.1%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235CBF60%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22550.0%22%20y%3D%22206.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2210%22%20fill%3D%22%235CBF60%22%20font-weight%3D%22bold%22%3EFASE%202%3A%20Sviluppo%20a%20Memoria%20Fresca%20%28/implement%29%3C/text%3E%0A%20%20%3Ctext%20x%3D%22550.0%22%20y%3D%22222.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%23CBD5E1%22%3ERiavvio%20pulito%3A%20isola%201%20sola%20fetta%20verticale%3C/text%3E%0A%20%20%3Ctext%20x%3D%22550.0%22%20y%3D%22238.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%23F2F2F2%22%3ECiclo%20TDD%20%28Red-Green-Refactor%29%20e%20git%20commit%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M40.0%20272.0%20C266.7%20271.5%20493.3%20271.3%20720.0%20272.0%22%20fill%3D%22none%22%20stroke%3D%22%238C90A8%22%20stroke-width%3D%221.8%22%20stroke-dasharray%3D%228%206%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22380.0%22%20y%3D%22294.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%23F2A03D%22%3ETrattare%20l%27agente%20come%20programmatori%20indipendenti%20con%20amnesia%3A%20ogni%20turno%20lavora%20su%20ticket%20atomici%20e%20contesto%20fresco%3C/text%3E%0A%20%20%3Ctext%20x%3D%22380.0%22%20y%3D%22309.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.8%22%20fill%3D%22%239A9A9A%22%3ELa%20persistenza%20su%20disco%20%28.scratch/%2C%20spec.md%29%20e%20Git%20sostituiscono%20la%20memoria%20volatile%20evitando%20il%20collasso%20attentivo%3C/text%3E%0A%0A%3C/svg%3E",
+          "didascalia": "Figura 2.3 - Architettura a 4 componenti disaccoppiati e protocollo a turni indipendenti in Antigravity (Pianificazione vs Implementazione).",
+          "alt": "Diagramma hand-drawn con Brain LLM, Harness, Hands Sandbox e Session Log in alto, e il flusso a turni di pianificazione (/to-tickets) e implementazione a contesto fresco (/implement) in basso."
+        },
+        "commento": "Il pattern a turni indipendenti: trattare il lavoro come sviluppatori con amnesia. La fase di pianificazione (/grill-with-docs, /to-spec, /to-tickets) scompone il lavoro in ticket su disco (.scratch/); ogni turno di sviluppo (/implement) riparte da un contesto fresco leggendo lo stato dal disco ed eseguendo il TDD sul singolo ticket.",
+        "approfondimento": "<h4>Regia e fonti (segmento 2 · 8 min)</h4><p><strong>Fonti primarie:</strong> Anthropic Research (<a href='https://www.anthropic.com/research/managed-agents' target='_blank'>Scaling managed agents: Decoupling the brain from the hands</a>); Google Antigravity Skills Hub; GLOSSARY.md.</p><p><strong>Concetto chiave:</strong> Di fronte a compiti che richiedono ore di lavoro, lasciar correre un agente in una singola conversazione infinita porta a saturazione e tentativi azzardati. L'approccio professionale è a turni: la pianificazione (/grill-with-docs, /to-spec, /to-tickets) scompone l'obiettivo in ticket atomici su disco (.scratch/), e ciascun turno di /implement si sveglia a memoria fresca, legge lo stato, implementa un solo ticket con TDD e salva con un commit pulito.</p>"
       },
       {
         "id": 13,
-        "tipo": "SEZIONE",
-        "numeroSezione": "02",
-        "titolo": "Raggi X dell'harness e dimostrazione plenaria di BookSwap v1",
-        "descrizione": "00:25–01:00 (35 minuti) · 5 minuti di ispezione dal vivo dell'harness di Google Antigravity seguiti da 30 minuti di sviluppo incrementale di BookSwap v1.",
-        "badge": "Blocco 2 · Ispezione e dimostrazione",
-        "approfondimento": "<h4>Regia e fonti (00:25–01:00)</h4><p>Parte A (00:25–00:30, 5 min): ispezione dal vivo dell'harness dentro Antigravity. Parte B (00:30–01:00, 30 min): /to-tickets (8 min) + /implement binario A in Python/Streamlit (15 min) + anteprima binario B in HTML5/JS (7 min).</p>"
-      },
-      {
-        "id": 14,
         "tipo": "SEQUENZA",
-        "badge": "Parte A · 00:25–00:30 (5 min di ispezione dal vivo)",
-        "titolo": "Ispezione dal vivo dell'harness in Google Antigravity",
-        "lead": "Quattro file reali da aprire a schermo intero per toccare con mano Brain, Harness, Hands e Session Log.",
+        "badge": "Protocollo a turni · Sviluppo professionale",
+        "titolo": "Anatomia di un turno di sviluppo ad agente a memoria fresca",
+        "lead": "La sequenza rigorosa che ogni turno di sviluppo agentico esegue in Antigravity per garantire convergenza senza accumulare rumore.",
         "step": [
           {
             "numero": 1,
-            "fase": "Passo 1: aprire AGENTS.md (configurazione persistente)",
-            "descrizione": "Mostrare come poche righe di regole globali istruiscano l'Harness sulla struttura di .scratch/, sul glossario di dominio e sugli standard linguistici a ogni sessione.",
-            "ruolo": "Regole globali"
+            "fase": "Risveglio e ispezione dello stato su disco",
+            "descrizione": "L'agente si avvia con contesto pulito. Non si fida di memorie vaghe: consulta i ticket nella cartella .scratch/, legge la specifica spec.md e verifica lo storico dei commit Git per capire dove si trova il progetto.",
+            "ruolo": "Ispezione dello stato"
           },
           {
             "numero": 2,
-            "fase": "Passo 2: aprire to-tickets/SKILL.md (divulgazione progressiva)",
-            "descrizione": "Confrontare le 3 righe dell'intestazione YAML (lette all'avvio) con il corpo procedurale (letto solo quando invochiamo /to-tickets).",
-            "ruolo": "Skill modulare"
+            "fase": "Selezione atomica di un singolo ticket non completato",
+            "descrizione": "Isola una sola fetta verticale da implementare. Ignora tutto il resto per mantenere intatta la lucidità logica ed evitare di toccare codice o file non correlati.",
+            "ruolo": "Focus sul singolo ticket"
           },
           {
             "numero": 3,
-            "fase": "Passo 3: osservare pensiero -> azione -> osservazione in diretta",
-            "descrizione": "Lanciare un comando nell'IDE e osservare il blocco di pensiero del Brain, la chiamata allo strumento bash o view_file nella Sandbox e l'output restituito.",
-            "ruolo": "Ciclo ReAct"
+            "fase": "Ciclo TDD: scrittura test, implementazione, verifica",
+            "descrizione": "Scrive prima il test automatico di fallimento sul contratto pubblico, implementa il codice minimo per farlo passare, e lancia la suite di test nella sandbox verificando l'uscita a codice zero.",
+            "ruolo": "Sviluppo TDD Red-Green"
           },
           {
             "numero": 4,
-            "fase": "Passo 4: ispezionare transcript.jsonl (Session Log)",
-            "descrizione": "Aprire il file JSON Lines generato dal sistema per mostrare come ogni passo sia tracciato in modo immutabile fuori dalla finestra di contesto.",
-            "ruolo": "Registro di audit"
+            "fase": "Aggiornamento progresso e commit atomico",
+            "descrizione": "Marca il ticket come completato nel file di tracciamento su disco, formula un messaggio di commit semantico e si arresta, lasciando il repository pronto per il turno successivo.",
+            "ruolo": "Chiusura del turno e commit"
           }
         ],
-        "approfondimento": "<h4>Regia e fonti (00:25–00:30)</h4><p>Fonte: ticket 02 e spec.md sez. 5.2. Questa dimostrazione di 5 minuti demistifica completamente l'IDE agentico agli occhi dei docenti: non c'è magia, sono file di testo e registri JSON ispezionabili.</p>"
+        "approfondimento": "<h4>Regia e fonti (segmento 2 · 6 min)</h4><p><strong>Fonti primarie:</strong> Anthropic Research – <em>Effective harnesses for long-running agents</em>; Google Antigravity Best Practices.</p><p><strong>Valore didattico:</strong> Questo protocollo insegna agli studenti e ai docenti la disciplina professionale: vietato procedere a caso; ogni intervento deve essere circoscritto, documentato sul filesystem e certificato da un commit con test verdi.</p>"
+      },
+      {
+        "id": 14,
+        "tipo": "ATTENZIONE",
+        "badge": "Clinica degli errori di processo",
+        "titolo": "I 4 limiti strutturali del vibe coding e la regola dei 3 tentativi",
+        "lead": "Perché affidarsi a chat libere non strutturate fallisce inesorabilmente nei progetti reali e quale regola d'arresto applicare.",
+        "punti": [
+          "1. Amnesia e diluizione del contesto: dopo pochi turni di conversazione non strutturata, l'LLM dimentica vincoli architetturali e requisiti fissati all'inizio.",
+          "2. Allucinazione su API e firme: genera chiamate a librerie inesistenti o modifica arbitrariamente le firme delle funzioni già scritte.",
+          "3. Regressioni silenziose a cascata: 'aggiusta' un frammento rompendo altre parti dell'applicazione senza che nessuno se ne accorga in assenza di test automatici.",
+          "4. Accumulo di debito tecnico e moduli superficiali (shallow modules): produce codice monolitico, non documentato e impossibile da manutenere o valutare."
+        ],
+        "callout": "La regola dei 3 tentativi: se l'agente non risolve un bug o un test entro 3 tentativi consecutivi, FERMARSI IMMEDIATAMENTE. Non insistere nella chat: resettare il contesto, ispezionare il git diff, isolare il problema con un test minimale e riformulare il vincolo nella specifica.",
+        "approfondimento": "<h4>Regia e clinica d'aula (segmento 2 · 5 min)</h4><p><strong>Fonti primarie:</strong> Matt Pocock – <em>The Rule of Three Tries</em>; John Ousterhout – <em>A Philosophy of Software Design</em>.</p><p><strong>Esperienza d'aula:</strong> Chiedere a quanti docenti è capitato di vedere l'IA entrare in un loop distruttivo dove cancella file o ripete lo stesso errore. Introdurre la regola dei 3 tentativi come salvavita operativo per i laboratori con gli studenti.</p>"
       },
       {
         "id": 15,
-        "tipo": "LABORATORIO",
-        "badge": "Prompt non ridondante #3 · /to-tickets (00:30–00:38)",
-        "titolo": "Scomporre spec.md in 3 ticket verticali con /to-tickets",
-        "lead": "Passiamo a /to-tickets solo il riferimento a spec.md e il vincolo temporale dello sprint odierno di 90 minuti.",
-        "obiettivo": "Generare 3 file di ticket verticali sotto .scratch/bookswap/issues/ che coprano l'intera versione minima (v1), bloccando le estensioni opzionali sui ticket successivi.",
-        "contesto": "Dimostrazione plenaria su BookSwap d'istituto (00:30–00:38) e avvio dello sprint individuale.",
-        "passi": [
-          "Assicurarsi che .scratch/<project-slug>/spec.md sia salvato e aggiornato.",
-          "Inviare il prompt /to-tickets indicando di calibrare i primi 3 ticket verticali per consegnare la versione minima (v1) in 90 minuti.",
-          "Rispondere al breve quesito di granularità proposto dalla skill confermando le 3 fette complete e i legami di dipendenza ('Blocked by')."
+        "tipo": "GRIGLIA",
+        "badge": "Ambiente operativo · Google Antigravity",
+        "titolo": "Google Antigravity: IDE, CLI agy e gestione gerarchica delle skill",
+        "lead": "Dalla chat web istituzionale all'ambiente agentico professionale: isolamento dei tool, Progressive Disclosure e configurazione delle skill.",
+        "schede": [
+          {
+            "evidenza": "Superfici operative",
+            "titolo": "Antigravity IDE vs CLI agy",
+            "testo": "Due interfacce per lo stesso runtime: l'IDE (basato su VS Code con chat laterale e diff visivo) per lo sviluppo visuale; la CLI agy per l'interazione veloce da terminale e l'automazione.",
+            "punti": [
+              "IDE: pannello agentico e diff visuali",
+              "CLI agy: automazione veloce nel terminale"
+            ]
+          },
+          {
+            "evidenza": "Ambiente macchina",
+            "titolo": "Skill globali (workstation)",
+            "testo": "Disponibili in qualunque cartella della macchina locale. Vengono installate nella configurazione utente (~/.gemini/config/skills/ su macOS, $HOME\\.gemini\\config\\skills\\ su Windows).",
+            "punti": [
+              "macOS: ~/.gemini/config/skills/",
+              "Windows: $HOME\\.gemini\\config\\skills\\"
+            ]
+          },
+          {
+            "evidenza": "Repository condiviso",
+            "titolo": "Skill di progetto (workspace)",
+            "testo": "Incapsulate nel repository sotto .agents/skills/. Hanno precedenza di caricamento rispetto alle skill globali e vengono versionate con Git per la classe o il team.",
+            "punti": [
+              "Cartella: .agents/skills/<nome>/",
+              "Precedenza su configurazioni globali"
+            ]
+          },
+          {
+            "evidenza": "Fase 0 · Inizializzazione",
+            "titolo": "/setup-matt-pocock-skills",
+            "testo": "Skill di avvio da eseguire una tantum per ogni nuovo progetto: ispeziona il contesto del repo, imposta AGENTS.md, configura il tracking (.scratch/ o GitHub) e la struttura di dominio.",
+            "punti": [
+              "Configura AGENTS.md e .scratch/",
+              "Prepara il repo per il protocollo a 6 stadi"
+            ]
+          }
         ],
-        "promptEsempio": "/to-tickets .scratch/bookswap/spec.md . Calibra i primi 3 ticket verticali per consegnare la versione minima completa (v1) entro lo sprint odierno di 90 minuti, collocando le estensioni opzionali in ticket successivi bloccati dalla v1.",
-        "approfondimento": "<h4>Regia e fonti (00:30–00:38)</h4><p>Fonte: spec.md sez. 4 (prompt #3). Mostrare i 3 file generati: 01-student-and-book-catalog.md, 02-loan-and-deposit-lock.md, 03-return-and-credit-settlement.md.</p>"
+        "approfondimento": "<h4>Regia e transizione operativa (segmento 2 · 8 min)</h4><p>Mostrare il salto di qualità tra la chat di Gemini (esplorata nella sessione 1) e l'ambiente Antigravity: qui l'agente può leggere e modificare file reali, eseguire comandi terminale in sandbox e attivare skill modulari via slash command.</p><p><strong>Guida tecnica completa:</strong> Consultare <code>didattica/Corso IA e Coding per Informatica e TLC/guida_installazione_antigravity_e_skill.md</code> per le istruzioni dettagliate di installazione da zero su Windows e macOS.</p>"
       },
       {
         "id": 16,
-        "tipo": "GRIGLIA",
-        "badge": "Risultato di /to-tickets · BookSwap v1",
-        "titolo": "Le 3 fette verticali di BookSwap v1",
-        "lead": "Ogni ticket attraversa il motore di dominio (bookswap_engine.py), la persistenza locale e l'interfaccia essenziale.",
-        "schede": [
-          {
-            "evidenza": "Ticket 01 · Fondamenta",
-            "titolo": "01 - Catalogo studenti, bonus di terzo anno e valutazione dei libri",
-            "testo": "Registra gli studenti (con accredito automatico di 60 crediti per le classi terze) e cataloga i libri calcolando il valore in crediti in base allo stato d'uso (100%, 75%, 50%).",
-            "punti": [
-              "Sbloccato (frontiera iniziale)",
-              "Seam: register_student() e calculate_book_credits()"
-            ]
-          },
-          {
-            "evidenza": "Ticket 02 · Prestito",
-            "titolo": "02 - Richiesta di prestito e blocco della cauzione (15 crediti)",
-            "testo": "Verifica che il prestatario abbia crediti sufficienti (valore del libro + 15 crediti di cauzione), scala il saldo disponibile, blocca la cauzione e imposta il libro come prestato.",
-            "punti": [
-              "Bloccato da: 01",
-              "Seam: request_loan(book_id, borrower_id, start_date)"
-            ]
-          },
-          {
-            "evidenza": "Ticket 03 · Chiusura",
-            "titolo": "03 - Restituzione, liquidazione della cauzione e soglia di quinto anno",
-            "testo": "Chiude il prestito: se integro e puntuale rimborsa i 15 crediti + 10 di bonus cura; se degradato o in ritardo trasferisce i 15 crediti al proprietario e verifica la soglia di 150 crediti per il quinto anno.",
-            "punti": [
-              "Bloccato da: 02",
-              "Seam: close_loan(loan_id, return_date, final_condition)"
-            ]
-          }
-        ],
-        "approfondimento": "<h4>Regia e fonti</h4><p>Far notare l'eleganza didattica di questa tripartizione: anche in una classe quarta ITT, un gruppo di studenti può fermarsi al ticket 02 avendo comunque un software funzionante e collaudato!</p>"
+        "tipo": "SEZIONE",
+        "numeroSezione": "03",
+        "titolo": "Il metodo pragmatico: protocollo a skill e sviluppo incrementale",
+        "lead": "01:20–02:45 (85 minuti) · La disciplina ingegneristica ispirata a Matt Pocock: setup iniziale con /setup-matt-pocock-skills, le 6 fasi del protocollo, scomposizione con /to-tickets e sviluppo della versione minima (v1) a fette verticali.",
+        "badge": "Blocco 3 · Laboratorio operativo",
+        "approfondimento": "<h4>Regia e scansione del laboratorio (01:20–01:25)</h4><p>Scansione degli 85 minuti operativi: panoramica del protocollo a skill e scomposizione a fette verticali (15 min); dimostrazione plenaria agnostica del formatore sul Tutor Maieutico (20 min); laboratorio individuale dei docenti sui propri 4 Problem Brief (50 min).</p><p><strong>Fonti primarie:</strong> Matt Pocock (<a href='https://www.aihero.dev/topics/ai-skills-for-real-engineers' target='_blank'>AI skills for real engineers</a>); Andrew Hunt & David Thomas (<em>The Pragmatic Programmer</em>).</p>"
       },
       {
         "id": 17,
-        "tipo": "LABORATORIO",
-        "badge": "Prompt non ridondante #4a · /implement (00:38–00:53)",
-        "titolo": "Implementare una fetta alla volta con /implement",
-        "lead": "La skill /implement richiama internamente il ciclo TDD sul punto di giunzione concordato: il nostro prompt specifica solo il ticket di destinazione e i confini di persistenza.",
-        "obiettivo": "Costruire i ticket 01, 02 e 03 mantenendo bookswap_engine.py puro e verificando il git diff dopo ciascun ticket.",
-        "contesto": "Dimostrazione plenaria (15 min Python/Streamlit + SQLite) e sprint individuale.",
-        "passi": [
-          "Inviare il prompt /implement puntando al file .scratch/<project-slug>/issues/01-<slug>.md.",
-          "Osservare l'agente mentre crea prima i test sul modulo motore, implementa la logica, verifica il verde e collega l'interfaccia.",
-          "Ispezionare il git diff nel pannello Git dell'IDE ed eseguire il commit atomico prima di passare al ticket 02."
-        ],
-        "promptEsempio": "/implement .scratch/bookswap/issues/01-student-and-book-catalog.md . Esegui pytest contro il seam pubblico di bookswap_engine.py e mantieni la persistenza all'interno di SQLite o JSON locale.",
-        "approfondimento": "<h4>Regia e fonti (00:38–00:53)</h4><p>Fonte: spec.md sez. 4 (prompt #4a). Per i docenti del binario B, mostrare la variante esatta del prompt: '/implement .scratch/<slug>/issues/01-<slug>.md . Verifica la checklist nel browser sul modulo JS di calcolo separato dal DOM e mantieni la persistenza in localStorage.'</p>"
+        "tipo": "FIGURA",
+        "badge": "Protocollo metodologico · Ispirato a Matt Pocock",
+        "titolo": "Protocollo a skill per il coding assistito da IA",
+        "lead": "La mappa end-to-end dello sviluppo professionale guidato da skill: dalla chiarificazione dei requisiti al commit verificato e alla retrospettiva.",
+        "media": {
+          "sorgente": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22760%22%20height%3D%22320%22%20viewBox%3D%220%200%20760%20320%22%20role%3D%22img%22%3E%0A%20%20%3Ctitle%3EProtocollo%20a%20skill%20per%20il%20coding%20assistito%20da%20IA%20%28ispirato%20a%20Matt%20Pocock%29%3C/title%3E%0A%20%20%3Cdesc%3EDiagramma%20hand-drawn%20del%20protocollo%20a%20skill%20a%206%20stadi%3A%20focus%20su%20to-tickets%20e%20implement%20per%20la%20Lezione%202%2C%20con%20arresto%20a%20implement.%3C/desc%3E%0A%20%20%3Crect%20width%3D%22760%22%20height%3D%22320%22%20fill%3D%22%230F172A%22/%3E%0A%20%20%3Ctext%20x%3D%2240.0%22%20y%3D%2226.0%22%20text-anchor%3D%22start%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2213%22%20fill%3D%22%23F2F2F2%22%20font-weight%3D%22bold%22%3EProtocollo%20a%20skill%20per%20il%20coding%20assistito%20da%20IA%20%28ispirato%20a%20Matt%20Pocock%29%3C/text%3E%0A%20%20%3Ctext%20x%3D%2240.0%22%20y%3D%2242.0%22%20text-anchor%3D%22start%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%239A9A9A%22%3EIngabbiare%20l%27autonomia%20dell%27agente%20in%20un%20flusso%20rigoroso%20governato%20da%20skill%20e%20artefatti%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M48.4%2058.4%20C114.4%2058.4%20180.3%2060.3%20246.3%2058.9%20C250.5%2058.7%20254.0%2060.5%20254.5%2065.6%20C256.3%2089.6%20255.0%20113.6%20255.6%20137.6%20C255.1%20142.0%20252.2%20146.3%20248.3%20145.9%20C181.4%20147.2%20114.5%20144.1%2047.6%20144.7%20C43.8%20145.3%2040.7%20142.1%2040.7%20137.2%20C39.2%20113.6%2041.8%2090.0%2039.9%2066.5%20C40.5%2062.4%2044.6%2058.5%2048.4%2058.4%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235AA9F5%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22147.0%22%20y%3D%2280.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2211%22%20fill%3D%22%235AA9F5%22%20font-weight%3D%22bold%22%3E1.%20/grill-with-docs%3C/text%3E%0A%20%20%3Ctext%20x%3D%22147.0%22%20y%3D%22102.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%23F2F2F2%22%20font-weight%3D%22bold%22%3EProduce%3A%20GLOSSARY.md%3C/text%3E%0A%20%20%3Ctext%20x%3D%22147.0%22%20y%3D%22126.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%239A9A9A%22%3ERequisiti%20e%20casi%20limite%20%28Lez.%201%29%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M255.0%20102.0%20C260.0%20102.4%20265.0%20102.1%20270.0%20102.0%22%20fill%3D%22none%22%20stroke%3D%22%238C90A8%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M259.2%20107.8%20L270.0%20102.0%20L258.7%2096.0%22%20fill%3D%22none%22%20stroke%3D%22%238C90A8%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M278.0%2057.1%20C344.2%2058.4%20410.4%2057.3%20476.6%2058.9%20C481.5%2059.0%20485.7%2060.0%20485.6%2065.1%20C487.3%2089.7%20485.5%20114.4%20486.1%20139.0%20C485.6%20143.5%20480.7%20146.5%20475.7%20146.4%20C409.7%20146.1%20343.7%20146.8%20277.7%20144.8%20C272.7%20144.5%20270.1%20143.2%20269.5%20138.4%20C268.1%20114.1%20267.5%2089.8%20268.9%2065.5%20C269.6%2061.7%20273.6%2056.8%20278.0%2057.1%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235AA9F5%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22377.0%22%20y%3D%2280.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2211%22%20fill%3D%22%235AA9F5%22%20font-weight%3D%22bold%22%3E2.%20/to-spec%3C/text%3E%0A%20%20%3Ctext%20x%3D%22377.0%22%20y%3D%22102.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%23F2F2F2%22%20font-weight%3D%22bold%22%3EProduce%3A%20spec.md%3C/text%3E%0A%20%20%3Ctext%20x%3D%22377.0%22%20y%3D%22126.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%239A9A9A%22%3EArchitettura%20e%20seam%20%28Lez.%201%29%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M485.0%20102.0%20C490.0%20101.2%20495.0%20101.2%20500.0%20102.0%22%20fill%3D%22none%22%20stroke%3D%22%238C90A8%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M488.7%20108.0%20L500.0%20102.0%20L489.1%2096.2%22%20fill%3D%22none%22%20stroke%3D%22%238C90A8%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M507.1%2057.6%20C573.4%2058.1%20639.8%2057.0%20706.1%2057.5%20C710.9%2057.6%20716.1%2060.7%20716.1%2064.7%20C716.3%2089.3%20715.4%20113.9%20715.8%20138.6%20C716.1%20143.5%20709.6%20145.2%20705.7%20144.7%20C639.8%20144.0%20574.0%20147.9%20508.2%20147.1%20C503.4%20147.2%20499.7%20143.6%20499.8%20138.6%20C498.6%20114.9%20498.8%2091.1%20500.9%2067.4%20C501.4%2063.2%20502.6%2057.3%20507.1%2057.6%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23F2A03D%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22607.0%22%20y%3D%2280.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2211%22%20fill%3D%22%23F2A03D%22%20font-weight%3D%22bold%22%3E3.%20/to-tickets%3C/text%3E%0A%20%20%3Ctext%20x%3D%22607.0%22%20y%3D%22102.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%23F2F2F2%22%20font-weight%3D%22bold%22%3EProduce%3A%20Ticket%20atomici%3C/text%3E%0A%20%20%3Ctext%20x%3D%22607.0%22%20y%3D%22126.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%239A9A9A%22%3E3%20fette%20verticali%20%28Lez.%202%29%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M607.0%20146.0%20C606.0%20152.0%20607.9%20158.0%20607.0%20164.0%22%20fill%3D%22none%22%20stroke%3D%22%238C90A8%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M600.9%20152.6%20L607.0%20164.0%20L613.0%20152.8%22%20fill%3D%22none%22%20stroke%3D%22%238C90A8%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M509.1%20164.5%20C575.5%20163.3%20642.0%20163.7%20708.4%20163.8%20C712.8%20164.5%20715.2%20168.3%20714.6%20172.1%20C714.4%20195.6%20713.6%20219.2%20715.5%20242.7%20C715.7%20246.6%20710.1%20250.8%20705.9%20251.3%20C640.1%20252.0%20574.2%20251.3%20508.3%20250.9%20C503.3%20250.7%20499.9%20247.8%20500.4%20243.0%20C499.8%20218.9%20501.1%20194.8%20500.6%20170.7%20C501.3%20165.9%20504.2%20164.9%20509.1%20164.5%20Z%22%20fill%3D%22none%22%20stroke%3D%22%235CBF60%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22607.0%22%20y%3D%22186.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2211%22%20fill%3D%22%235CBF60%22%20font-weight%3D%22bold%22%3E4.%20/implement%3C/text%3E%0A%20%20%3Ctext%20x%3D%22607.0%22%20y%3D%22208.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%23F2F2F2%22%20font-weight%3D%22bold%22%3EProduce%3A%20Codice%20%2B%20TDD%3C/text%3E%0A%20%20%3Ctext%20x%3D%22607.0%22%20y%3D%22232.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%239A9A9A%22%3ETraguardo%20Lez.%202%20%28commit%29%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M500.0%20208.0%20C495.0%20207.8%20490.0%20207.7%20485.0%20208.0%22%20fill%3D%22none%22%20stroke%3D%22%238C90A8%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M493.1%20203.7%20L485.0%20208.0%20L495.4%20213.5%22%20fill%3D%22none%22%20stroke%3D%22%238C90A8%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M277.2%20164.3%20C343.4%20165.6%20409.6%20165.2%20475.9%20164.0%20C480.0%20164.3%20485.1%20169.1%20485.6%20173.2%20C484.1%20196.4%20486.8%20219.7%20485.4%20243.0%20C484.9%20247.7%20482.2%20253.5%20478.4%20252.9%20C411.4%20253.7%20344.3%20251.6%20277.3%20251.6%20C273.6%20251.3%20270.7%20248.6%20270.3%20243.6%20C268.2%20219.6%20269.9%20195.5%20269.1%20171.4%20C268.4%20166.8%20272.9%20164.2%20277.2%20164.3%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23A98BFF%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22377.0%22%20y%3D%22186.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2211%22%20fill%3D%22%23A98BFF%22%20font-weight%3D%22bold%22%3E5.%20/code-review%3C/text%3E%0A%20%20%3Ctext%20x%3D%22377.0%22%20y%3D%22208.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%23F2F2F2%22%20font-weight%3D%22bold%22%3EProduce%3A%20Report%20review%3C/text%3E%0A%20%20%3Ctext%20x%3D%22377.0%22%20y%3D%22232.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%239A9A9A%22%3EVerifica%20%28Lezione%204%29%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M270.0%20208.0%20C265.0%20208.3%20260.0%20208.1%20255.0%20208.0%22%20fill%3D%22none%22%20stroke%3D%22%238C90A8%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M266.3%20202.0%20L255.0%20208.0%20L265.8%20213.7%22%20fill%3D%22none%22%20stroke%3D%22%238C90A8%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M47.7%20164.5%20C113.9%20163.0%20180.1%20165.6%20246.3%20163.8%20C251.3%20164.1%20253.2%20166.7%20253.7%20171.6%20C255.7%20195.6%20253.3%20219.6%20254.1%20243.7%20C254.3%20248.6%20251.9%20252.6%20247.3%20253.3%20C180.5%20252.2%20113.7%20255.0%2046.9%20253.3%20C42.7%20253.3%2039.9%20248.4%2039.4%20244.6%20C38.8%20220.4%2040.5%20196.2%2039.2%20172.0%20C39.5%20167.2%2042.9%20164.6%2047.7%20164.5%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23A98BFF%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22147.0%22%20y%3D%22186.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%2211%22%20fill%3D%22%23A98BFF%22%20font-weight%3D%22bold%22%3E6.%20/retro%3C/text%3E%0A%20%20%3Ctext%20x%3D%22147.0%22%20y%3D%22208.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%23F2F2F2%22%20font-weight%3D%22bold%22%3EProduce%3A%20Aggiorna%20regole%3C/text%3E%0A%20%20%3Ctext%20x%3D%22147.0%22%20y%3D%22232.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.5%22%20fill%3D%22%239A9A9A%22%3EMiglioramento%20repo%20%28Lez.%204%29%3C/text%3E%0A%20%20%3Cpath%20d%3D%22M40.0%20272.0%20C266.7%20272.7%20493.3%20271.9%20720.0%20272.0%22%20fill%3D%22none%22%20stroke%3D%22%238C90A8%22%20stroke-width%3D%221.8%22%20stroke-dasharray%3D%228%206%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Ctext%20x%3D%22380.0%22%20y%3D%22294.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%229.5%22%20fill%3D%22%23F2A03D%22%20font-weight%3D%22bold%22%3EFocus%20Lezione%202%3A%20Fasi%203%20e%204.%20Lo%20sviluppo%20si%20arresta%20a%20/implement%20con%20il%20primo%20commit%20atomico%20del%20Ticket%201%3C/text%3E%0A%20%20%3Ctext%20x%3D%22380.0%22%20y%3D%22309.0%22%20text-anchor%3D%22middle%22%20font-family%3D%22%27Chilanka%27%2C%27Patrick%20Hand%27%2C%27Kalam%27%2C%27Comic%20Neue%27%2C%27Comic%20Sans%20MS%27%2C%27Segoe%20Print%27%2C%27Bradley%20Hand%27%2Ccursive%22%20font-size%3D%228.8%22%20fill%3D%22%239A9A9A%22%3EVerifica%20con%20TDD%20e%20diagnosing-bugs%20in%20Lezione%203%3B%20code-review%20su%20due%20assi%20e%20retrospettiva%20in%20Lezione%204%3C/text%3E%0A%0A%3C/svg%3E",
+          "didascalia": "Figura 2.4 - Il protocollo a skill a 6 stadi: /grill-with-docs, /to-spec, /to-tickets, /implement, /code-review e /retro.",
+          "alt": "Diagramma hand-drawn a 6 riquadri che illustra i comandi del protocollo a skill e gli artefatti prodotti su disco: GLOSSARY.md, spec.md, ticket verticali, codice TDD, report review e regole repo."
+        },
+        "commento": "I tre comandamenti del protocollo a skill: nessun codice senza specifica approvata (/to-spec); nessun commit senza test TDD sul seam (/implement); nessuna sessione senza retrospettiva per blindare i guardrail (/retro).",
+        "approfondimento": "<h4>Regia e fonti (segmento 3 · 8 min)</h4><p><strong>Fonti primarie:</strong> Matt Pocock – <em>The Main Flow / AI skills for real engineers</em> (<a href='https://www.aihero.dev' target='_blank'>aihero.dev</a>); GLOSSARY.md.</p><p><strong>Evidenziazione per i docenti:</strong> Mostrare come il protocollo a skill trasformi il coding assistito da IA da gioco d'azzardo a disciplina scientifica riproducibile, perfettamente valutabile tramite gli artefatti salvati su disco in ogni singolo stadio.</p>"
       },
       {
         "id": 18,
-        "tipo": "BIVIO",
-        "badge": "Confronto architetturale · 00:53–01:00 (7 min)",
-        "titolo": "BookSwap v1 in azione: binario A (Python/Streamlit) e binario B (HTML5/JS)",
-        "lead": "La stessa specifica e gli stessi 3 ticket verticali realizzati nei due ambienti del corso.",
-        "opzioneA": {
-          "etichetta": "Binario A: Python + Streamlit + SQLite + pytest",
-          "sottotitolo": "3 file disaccoppiati: bookswap_engine.py, db.py, app.py",
-          "testo": "Il file bookswap_engine.py contiene solo funzioni pure e classi di dati (zero dipendenze da Streamlit). Il file app.py legge lo stato da SQLite o session_state e invoca il motore.",
-          "esito": "Eseguendo 'pytest' da terminale, i test sulle 3 fette girano in 0,04 secondi senza bisogno di aprire il browser."
-        },
-        "opzioneB": {
-          "etichetta": "Binario B: singolo file HTML5 + Vanilla JS + localStorage",
-          "sottotitolo": "1 file autonomo (index.html) con oggetto puro BookSwapEngine",
-          "testo": "All'interno dell'elemento <script>, l'oggetto puro BookSwapEngine calcola crediti, cauzioni e soglie senza toccare document.getElementById. Le funzioni dell'interfaccia aggiornano la tabella DOM e salvano in localStorage.",
-          "esito": "Doppio clic sul file index.html: funziona senza rete su qualsiasi computer scolastico e conserva i prestiti anche ricaricando la pagina (F5)."
-        },
-        "approfondimento": "<h4>Regia e fonti (00:53–01:00)</h4><p>Mostrare per 7 minuti la versione HTML5/JS di BookSwap (o di un simulatore fisico equivalente) per dare ai 4 docenti STEM un modello visivo immediato prima della pausa delle 01:00.</p>"
+        "tipo": "GRIGLIA",
+        "badge": "Matrice artefatti del protocollo a skill",
+        "titolo": "Le 6 fasi operative del protocollo a skill e i file generati su disco",
+        "lead": "Cosa fa ciascun comando operativo, quale abilità invoca e quale documento permanente genera nel repository.",
+        "schede": [
+          {
+            "evidenza": "Fase 1 · Discovery (Lezione 1)",
+            "titolo": "/grill-with-docs",
+            "testo": "Intervista socratica dell'agente verso l'umano per chiarire requisiti ambigui ed estrarre casi limite.",
+            "punti": [
+              "Aggiorna GLOSSARY.md",
+              "Redige ADR su decisioni irreversibili"
+            ]
+          },
+          {
+            "evidenza": "Fase 2 · Specifica (Lezione 1)",
+            "titolo": "/to-spec",
+            "testo": "Formalizza l'architettura, le strutture dati e il seam di collaudo logico puro senza generare codice applicativo.",
+            "punti": [
+              "Genera spec.md esecutivo",
+              "Fissa contratti di input/output e invarianti"
+            ]
+          },
+          {
+            "evidenza": "Fase 3 · Pianificazione (Lezione 2)",
+            "titolo": "/to-tickets",
+            "testo": "Scompone la specifica in 3 fette verticali tracer bullet autonome, ordinate per dipendenza logica e verificabili end-to-end.",
+            "punti": [
+              "Crea file di ticket in .scratch/",
+              "Definisce criteri di accettazione atomici"
+            ]
+          },
+          {
+            "evidenza": "Fase 4 · Esecuzione (Traguardo Lezione 2)",
+            "titolo": "/implement",
+            "testo": "Sviluppa il primo ticket dalla frontiera con TDD rigoroso (Red-Green-Refactor) sul seam puro a memoria fresca (/clear).",
+            "punti": [
+              "Esegue la test suite nella Sandbox",
+              "Genera commit atomico dopo verifica del diff"
+            ]
+          },
+          {
+            "evidenza": "Fase 5 · Revisione (Lezione 4)",
+            "titolo": "/code-review",
+            "testo": "Ispezione automatizzata su due assi ortogonali (Standards e Spec), oggetto di approfondimento nella sessione 4.",
+            "punti": [
+              "Due sub-agenti paralleli",
+              "Genera report di revisione obiettivo"
+            ]
+          },
+          {
+            "evidenza": "Fase 6 · Retrospettiva (Lezione 4)",
+            "titolo": "/retro",
+            "testo": "Analisi della sessione e degli errori emersi per raffinare le regole di progetto e i prompt permanenti.",
+            "punti": [
+              "Aggiorna AGENTS.md e guardrail",
+              "Previene il ripetersi dei medesimi intoppi"
+            ]
+          }
+        ],
+        "approfondimento": "<h4>Regia e fonti (segmento 3 · 7 min)</h4><p><strong>Fonti primarie:</strong> Matt Pocock – <em>The Main Flow</em>; Skill Hub Antigravity.</p><p><strong>Focus metodologico:</strong> Sottolineare la progressione didattica tra le sessioni: la Lezione 1 ha coperto le Fasi 1 e 2 (/grill-with-docs e /to-spec). La Lezione 2 si concentra operativamente sulle Fasi 3 e 4 (/to-tickets e /implement), arrestandosi rigorosamente al commit atomico del Ticket 1. Le Fasi 5 e 6 (/code-review e /retro) saranno invece affrontate nella Lezione 4, dopo il lavoro sul testing e debugging scientifico della Lezione 3.</p>"
       },
       {
         "id": 19,
-        "tipo": "SEZIONE",
-        "numeroSezione": "03",
-        "titolo": "Sprint del progetto individuale: costruire la versione minima (v1)",
-        "descrizione": "01:15–02:45 (90 minuti, dopo 15 min di pausa) · Scomposizione di spec.md in 3 ticket verticali e sviluppo incrementale della v1 con Git e PROMPT_LOG.md.",
-        "badge": "Blocco 3 · Sprint individuale (90 min)",
-        "approfondimento": "<h4>Regia e fonti (01:15–02:45)</h4><p>Obiettivo dei 90 minuti: ogni docente esce dall'aula alle 17:15 con il proprio repository Git inizializzato, 3 ticket verticali in .scratch/<slug>/issues/ e la versione minima (v1) funzionante e salvata con commit.</p>"
+        "tipo": "LABORATORIO",
+        "badge": "Esercitazione plenaria guidata · Fase 3",
+        "titolo": "Scomporre la specifica del Tutor Maieutico in 3 fette verticali con /to-tickets",
+        "lead": "Prendere il documento spec.md del Tutor Maieutico e guidare l'agente a estrarre 3 ticket verticali tracer bullet con dipendenze esplicite.",
+        "obiettivo": "Generare i 3 file di ticket per la versione minima (v1) del Tutor Maieutico su .scratch/tutor-maieutico/issues/, ciascuno dotato di seam puro (core/tutor_logic.py) e criteri di accettazione.",
+        "contesto": "Ambiente Google Antigravity (IDE o CLI agy). Specifica spec.md validata nella sessione 1 per il Tutor Maieutico Locale 100% offline su loopback (127.0.0.1:1234).",
+        "passi": [
+          "1. Verificare che spec.md definisca chiaramente il seam logico puro core/tutor_logic.py e i vincoli Zero-Data d'Istituto.",
+          "2. Invocare l'abilità /to-tickets passando come riferimento la specifica approvata del Tutor Maieutico.",
+          "3. Verificare che l'agente generi esattamente 3 fette verticali tracer bullet (Ticket 1 nella frontiera; Ticket 2 bloccato da T1; Ticket 3 bloccato da T2) e non un taglio orizzontale a strati tecnici.",
+          "4. Ispezionare i criteri di accettazione di ciascun ticket in .scratch/ prima di avviare qualsiasi scrittura di codice."
+        ],
+        "promptEsempio": "/to-tickets .scratch/tutor-maieutico/spec.md . Scomponi la specifica del Tutor Maieutico Locale in 3 ticket verticali tracer bullet con dipendenze esplicite, sul seam primario puro core/tutor_logic.py.",
+        "approfondimento": "<h4>Regia e fonti (segmento 3 · 10 min)</h4><p><strong>Fonti primarie:</strong> Matt Pocock – <em>/to-tickets</em>; Andrew Hunt & David Thomas (<em>The Pragmatic Programmer</em> - Tracer Bullets); Guida Flusso Principale del Metodo.</p><p><strong>Accortezza metodologica:</strong> Verificare che nessun docente accetti ticket divisi per 'strati orizzontali' (es. Ticket 1 solo database, Ticket 2 solo UI). I ticket devono essere 'fette verticali' (tracer bullets): ciascuno attraversa l'applicazione rendendo un comportamento verificabile end-to-end sul seam puro.</p>"
       },
       {
         "id": 20,
-        "tipo": "TABELLA",
-        "badge": "Traguardi v1 · Allineamento ai 5 progetti individuali",
-        "titolo": "Cosa deve fare la versione minima (v1) di ciascun brief a fine sessione 2",
-        "lead": "Riferimento rapido dal campo #6 ('Versione minima della sessione 2') dei 5 tracce del progetto individuale per evitare derive dei requisiti.",
-        "colonne": [
-          "Tracce del progetto individuale",
-          "Modulo profondo (seam puro)",
-          "Funzionalità della versione minima (v1 in 90 min)"
+        "tipo": "GRIGLIA",
+        "badge": "Architettura a fette verticali · Demo plenaria Tutor Maieutico",
+        "titolo": "Le 3 fette verticali del Tutor Maieutico (v1)",
+        "lead": "I 3 ticket tracer bullet generati da /to-tickets per il Tutor Maieutico Locale 100% offline, con grafo di dipendenza sequenziale.",
+        "schede": [
+          {
+            "evidenza": "Fetta 1 · Tracer Bullet v1.1 (Frontier)",
+            "titolo": "Ticket 1: Guardrail PII & Secret pre-inferenza",
+            "testo": "Modulo di validazione deterministica con regex per bloccare codici fiscali, email, API key e riferimenti PDP/PEI in <5ms, con test unitari completi sul seam primario core/tutor_logic.py.",
+            "punti": [
+              "Blocked by: Nessuno (immediatamente eseguibile nella frontier)",
+              "Garantisce il regime Zero-Data (PUIA §4) prima di qualsiasi chiamata"
+            ]
+          },
+          {
+            "evidenza": "Fetta 2 · Tracer Bullet v1.2",
+            "titolo": "Ticket 2: Client LM Studio strutturato e scaffolding maieutico",
+            "testo": "Chiamata HTTP locale su 127.0.0.1:1234 con schema JSON Pydantic, gestione dell'avanzamento dei 3 livelli di scaffolding (domande socratiche) e validatore deterministico anti-spoiler in uscita.",
+            "punti": [
+              "Blocked by: Ticket 1",
+              "Impedisce il code leak e rispetta l'invariante maieutico"
+            ]
+          },
+          {
+            "evidenza": "Fetta 3 · Tracer Bullet v1.3",
+            "titolo": "Ticket 3: Interfaccia Streamlit locale e report trasparenza AUP",
+            "testo": "Interfaccia web isolata su loopback con gestione dello stato della sessione in RAM e generatore della Dichiarazione d'uso IA conforme all'AUP-IA §4.4 dell'istituto in formato Markdown.",
+            "punti": [
+              "Blocked by: Ticket 2",
+              "Chiusura del flusso applicativo end-to-end senza persistenza su disco"
+            ]
+          }
         ],
-        "righe": [
-          [
-            "Brief 1 · Animazioni di protocolli e architetture",
-            "protocol_validator.py / modulo JS fotogrammi",
-            "Costruttore parametrizzato per 1 famiglia di protocollo, validazione dei passi (durata > 0, attori presenti), libreria locale con filtro e anteprima passo-passo."
-          ],
-          [
-            "Brief 2 · Prenotazione laboratori e kit hardware",
-            "booking_engine.py / modulo JS intervalli",
-            "Catalogo di 4 risorse con stato operativo, creazione di prenotazioni con blocco delle sovrapposizioni [inizio, fine), persistenza locale e tabella filtrabile."
-          ],
-          [
-            "Brief 3 · Autovalutazione codice e tutor",
-            "runner_engine.py / valutatore dei test",
-            "Selettore per 2 esercizi precaricati, invio della funzione, esecuzione su 3 test unitari, registro dei tentativi persistente e generatore di indizio socratico anti-spoiler."
-          ],
-          [
-            "Brief 4 · Laboratorio virtuale di Fisica e misure",
-            "physics_model.js / physics_engine.py",
-            "Simulazione interattiva di 1 fenomeno fisico con 3 cursori validati, comandi Avvia/Pausa/Azzera/Registra misura, grafico in tempo reale e tabella in localStorage."
-          ],
-          [
-            "Brief 5 · Analizzatore di log e audit di sicurezza",
-            "log_analyzer.py / parser JS",
-            "Parser per 1 formato di log (con file campione incluso), rilevatore di anomalie a soglia, grafico degli indirizzi IP più frequenti e archivio dei rapporti persistente."
-          ]
-        ],
-        "approfondimento": "<h4>Regia e fonti</h4><p>Fonte: spec.md sez. 6 (campo 6 di ogni brief). Ripetere ai docenti: 'Oggi costruiamo SOLO la colonna di destra (v1). Tutto il resto rimane bloccato nei ticket di estensione per la sessione 4!'</p>"
+        "approfondimento": "<h4>Regia e fonti (segmento 3 · 6 min)</h4><p><strong>Fonti primarie:</strong> Andrew Hunt & David Thomas – <em>The Pragmatic Programmer</em> (Tracer Bullets); Matt Pocock – <em>AI skills for real engineers: /to-tickets</em>; Guida Flusso Principale del Metodo (Tutor Maieutico Locale).</p><p><strong>Principio cardine per l'aula:</strong> Mostrare la coerenza assoluta tra la guida del metodo e la demo plenaria. Il Ticket 1 è l'unico sbloccato nella frontier perché non ha dipendenze bloccanti. La scomposizione in fette verticali collega sicurezza, conformità al PUIA e logica al seam puro fin dal primo passo, senza accumulare complessità nascosta.</p>"
       },
       {
         "id": 21,
-        "tipo": "ATTENZIONE",
-        "badge": "Clinica di supporto · 02:00–02:10",
-        "titolo": "Clinica di metà sprint: i 3 intoppi tipici della sessione 2 e come risolverli",
-        "avviso": "Alle 02:00 facciamo un controllo rapido di 5 minuti sugli schermi: ecco le soluzioni immediate ai 3 problemi tecnici più frequenti.",
-        "dettagli": "1) Ticket orizzontali: se /to-tickets ha proposto 'ticket 1: database, ticket 2: backend, ticket 3: interfaccia', rifiutate subito e chiedete 3 fette verticali complete. 2) Perdita dello stato in Streamlit (binario A): se premendo un pulsante l'applicazione dimentica i dati, assicuratevi che il salvataggio avvenga su SQLite, JSON o st.session_state al confine del modulo e non in variabili locali volatili. 3) Scia fantasma sul Canvas HTML5 (binario B): se l'animazione fisica disegna i fotogrammi uno sopra l'altro senza cancellare i precedenti, inserite ctx.clearRect(0, 0, canvas.width, canvas.height) come prima riga della funzione di disegno.",
-        "approfondimento": "<h4>Regia e fonti (02:00–02:10)</h4><p>Fonte: spec.md sez. 5.2 (tabella di risoluzione problemi della sessione 2). Tenere questa slide proiettata durante la seconda metà del laboratorio individuale.</p>"
+        "tipo": "LABORATORIO",
+        "badge": "Esercitazione plenaria guidata · Fase 4 (Traguardo Lezione 2)",
+        "titolo": "Implementare il Ticket 1 dalla frontiera con /implement",
+        "lead": "Prendere in carico la prima fetta verticale non bloccata in una sessione pulita (/clear), applicando il ciclo TDD e commit atomico.",
+        "obiettivo": "Portare a termine il Ticket 1 del Tutor Maieutico sul seam puro core/tutor_logic.py: scrivere il test rosso, renderlo verde con codice minimo, verificare il git diff ed effettuare il commit.",
+        "contesto": "Repository locale in Google Antigravity. Ticket 1 formalizzato in .scratch/tutor-maieutico/issues/01-guardrail-pii-secret.md. La sessione si conclude con questo rilascio atomico.",
+        "passi": [
+          "1. Ripulire la finestra di contesto con /clear prima di prendere in carico il ticket (igiene del contesto a memoria fresca).",
+          "2. Invocare /implement indicando il file del Ticket 1 (.scratch/tutor-maieutico/issues/01-guardrail-pii-secret.md).",
+          "3. Verificare che l'agente scriva prima il test automatico fallimentare (fase rossa) su core/tutor_logic.py e poi il codice minimo (fase verde).",
+          "4. Ispezionare riga per riga il git diff ed eseguire il commit atomico: la Lezione 2 si arresta qui, lasciando i ticket successivi e la revisione alle sessioni successive."
+        ],
+        "promptEsempio": "/clear\n/implement Prendi in carico il Ticket 1: .scratch/tutor-maieutico/issues/01-guardrail-pii-secret.md . Usa pytest sul seam primario puro core/tutor_logic.py, valida il ciclo Red-Green e registra il commit atomico dopo verifica del diff.",
+        "approfondimento": "<h4>Regia e fonti (segmento 3 · 10 min)</h4><p><strong>Fonti primarie:</strong> Matt Pocock – <em>/implement</em>; Kent Beck (<em>Test-Driven Development by Example</em>); Guida Flusso Principale del Metodo.</p><p><strong>Regola d'aula e confine operativo:</strong> La Lezione 2 si arresta tassativamente al commit atomico del Ticket 1. Vietato passare a /code-review o /retro! Questa disciplina abitua docenti e studenti al rilascio continuo a piccoli passi: nella Lezione 3 sottoporremo questo modulo a TDD avanzato e diagnosi scientifica di regressioni (diagnosing-bugs), e solo nella Lezione 4 eseguiremo code review a due assi e retrospettiva.</p>"
       },
       {
         "id": 22,
-        "tipo": "LISTA_SPUNTA",
-        "badge": "Controllo avanzamento · Sprint sessione 2",
-        "titolo": "Lista di controllo operativa della versione minima (v1)",
-        "lead": "Verifica di aver completato i passi ingegneristici fondamentali prima delle 02:45.",
-        "elementi": [
+        "tipo": "TABELLA",
+        "badge": "Traguardi di sessione · Capstone ITT",
+        "titolo": "Matrice di avanzamento della versione minima (v1) nei 4 problem brief",
+        "lead": "Cosa deve realizzare e verificare ciascun docente entro la fine dei 90 minuti di laboratorio.",
+        "colonne": [
           {
-            "id": "s2_chk1",
-            "testo": "Inizializzato il repository Git locale (git init) nella cartella del progetto individuale"
+            "chiave": "brief",
+            "etichetta": "Problem brief"
           },
           {
-            "id": "s2_chk2",
-            "testo": "Generati i 3 ticket verticali in .scratch/<slug>/issues/ tramite /to-tickets"
+            "chiave": "seam",
+            "etichetta": "Seam logico puro"
           },
           {
-            "id": "s2_chk3",
-            "testo": "Implementato e salvato con commit il ticket 01 verificando che la logica di dominio sia separata dall'interfaccia"
+            "chiave": "v1_funzioni",
+            "etichetta": "Funzioni minime v1"
           },
           {
-            "id": "s2_chk4",
-            "testo": "Implementati e salvati con commit i ticket 02 e 03 ispezionando il git diff prima di ogni commit"
-          },
-          {
-            "id": "s2_chk5",
-            "testo": "Verificato che i dati (SQLite/JSON o localStorage) sopravvivano al riavvio o al ricaricamento della pagina"
-          },
-          {
-            "id": "s2_chk6",
-            "testo": "Aggiornato PROMPT_LOG.md annotando i prompt usati e almeno 1 modifica rifiutata o corretta"
+            "chiave": "test_minimo",
+            "etichetta": "Test automatico richiesto"
           }
         ],
-        "approfondimento": "<h4>Regia e fonti</h4><p>Passare tra i banchi per verificare che ciascuno abbia almeno 2–3 commit atomici nella cronologia Git prima di passare alla scheda ponte delle 02:45.</p>"
+        "righe": [
+          {
+            "brief": "Brief 1: BookSwap d'Istituto",
+            "seam": "bookswap_engine.py",
+            "v1_funzioni": "Inserimento libro, cambio stato a 'in prestito' e restituzione.",
+            "test_minimo": "Transizione libro disponibile -> prestato -> disponibile."
+          },
+          {
+            "brief": "Brief 2: Prenotazione Laboratori/Apparati",
+            "seam": "booking_engine.py",
+            "v1_funzioni": "Prenotazione slot orario e blocco su slot già occupato.",
+            "test_minimo": "Eccezione o rifiuto deterministico su sovrapposizione oraria."
+          },
+          {
+            "brief": "Brief 3: Piattaforma Autovalutazione Coding",
+            "seam": "eval_engine.py",
+            "v1_funzioni": "Esecuzione test runner su esercizio Python base.",
+            "test_minimo": "Riconoscimento esito verde/rosso su asserzione controllata."
+          },
+          {
+            "brief": "Brief 5: Analizzatore Log e Security Audit",
+            "seam": "log_parser.py",
+            "v1_funzioni": "Parsing log syslog/web e alert su tentativi falliti > soglia.",
+            "test_minimo": "Conteggio esatto tentativi IP e scatto dell'allarme."
+          }
+        ],
+        "approfondimento": "<h4>Regia e fonti (segmento 3 · 8 min)</h4><p><strong>Fonti primarie:</strong> Scheda Corso Marconi-Hack; Problem Brief del Capstone Project; PUIA §7 CU-09.</p><p><strong>Guida d'aula:</strong> Durante i 50 minuti di laboratorio individuale, il formatore monitora che ogni docente mantenga la coerenza tra il Problem Brief scelto nella Sessione 1 e il seam logico implementato, assicurando assistenza individuale su eventuali intoppi.</p>"
       },
       {
         "id": 23,
-        "tipo": "VERIFICA",
-        "badge": "Riflessione architetturale · Moduli profondi",
-        "titolo": "Verifica: riconoscere un modulo profondo (deep module)",
-        "domanda": "Un docente del binario B sta costruendo il simulatore della legge di Ohm in un singolo file index.html. Quale struttura del codice rispetta il principio dei moduli profondi di Ousterhout?",
-        "opzioni": [
+        "tipo": "LISTA_SPUNTA",
+        "badge": "Autovalutazione del codice",
+        "titolo": "Lista di controllo operativa dello sviluppatore per la versione minima (v1)",
+        "lead": "Prima di dichiarare conclusa la v1, verificare punto per punto la conformità del codice prodotto.",
+        "elementi": [
           {
-            "id": "A",
-            "testo": "Scrivere tutte le formule fisiche direttamente dentro l'attributo onclick=\"...\" dei pulsanti HTML leggendo i valori con document.getElementById a ogni riga.",
-            "corretta": false
+            "id": "chk_1",
+            "testo": "Tutti i 3 ticket della v1 sono contrassegnati come completati con test automatici passati a verde."
           },
           {
-            "id": "B",
-            "testo": "Incapsulare il modello fisico in una funzione pura calcolaCircuito(Vin, R1, R2, RL) che valida i parametri e restituisce {Req, Vout, I}, chiamata poi dalla funzione di disegno sul Canvas.",
-            "corretta": true
+            "id": "chk_2",
+            "testo": "Il modulo logico (seam) è puro: nessuna dipendenza diretta da widget grafici o framework UI."
           },
           {
-            "id": "C",
-            "testo": "Dividere il file HTML in 25 micro-file JavaScript da 3 righe ciascuno che si passano variabili globali.",
-            "corretta": false
+            "id": "chk_3",
+            "testo": "I casi di errore e gli input non validi generano eccezioni controllate o messaggi deterministici."
           },
           {
-            "id": "D",
-            "testo": "Delegare il calcolo della tensione a una chiamata di rete verso un LLM a ogni movimento del cursore.",
-            "corretta": false
+            "id": "chk_4",
+            "testo": "Ogni ticket corrisponde a un commit Git atomico con messaggio semantico chiaro ed esplicativo."
+          },
+          {
+            "id": "chk_5",
+            "testo": "Il git diff è stato ispezionato e non contiene file temporanei, segreti o righe di codice non concordate."
           }
         ],
-        "spiegazione": "Esatto! Anche in un progetto racchiuso in un singolo file HTML5, separare la funzione matematica pura calcolaCircuito(Vin, R1, R2, RL) dal codice DOM e Canvas crea un modulo profondo: interfaccia semplicissima, logica fisica protetta e testabilità immediata!",
-        "approfondimento": "<h4>Regia e fonti</h4><p>Mostrare come questo principio unifichi il binario A e il binario B: che si tratti di un file .py o di una funzione JS pura, il punto di giunzione per i test è concettualmente identico.</p>"
+        "approfondimento": "<h4>Regia e autovalutazione (segmento 3 · 5 min)</h4><p>Invitare i docenti a marcare le caselle man mano che completano le verifiche. Questo momento fissa la differenza tra 'far funzionare il codice per caso' e aver prodotto un deliverable solido e verificato.</p>"
       },
       {
         "id": 24,
-        "tipo": "SEZIONE",
-        "numeroSezione": "04",
-        "titolo": "Ponte didattico continuo: lunedì in classe (scheda #2)",
-        "descrizione": "02:45–03:00 (15 minuti) · Usare /implement per generare una micro-simulazione da proiettare alla LIM (riquadro A) e progettare il passo 2 assistito da IA del laboratorio studenti (riquadro B).",
-        "badge": "Blocco 4 · Trasposizione didattica",
-        "approfondimento": "<h4>Regia e fonti (02:45–03:00)</h4><p>10 minuti di scrittura individuale su Scheda ponte #2 (Scheda ponte (BRIDGE_CARDS.md)) + 5 minuti di condivisione plenaria.</p>"
+        "tipo": "VERIFICA",
+        "badge": "Verifica di architettura software",
+        "titolo": "Verifica architetturale: riconoscere un modulo profondo (deep module)",
+        "lead": "Collega la progettazione del seam ai canoni di John Ousterhout (A Philosophy of Software Design).",
+        "domanda": "Quale delle seguenti caratteristiche identifica in modo inequivocabile un 'modulo profondo' (Deep Module) rispetto a un 'modulo superficiale' (Shallow Module)?",
+        "opzioni": [
+          {
+            "id": "A",
+            "testo": "Il modulo possiede un'interfaccia pubblica complessa con oltre 30 funzioni per coprire ogni minima opzione di configurazione.",
+            "corretta": false,
+            "spiegazione": "Sbagliato: un'interfaccia complessa è sintomo di un modulo superficiale o pass-through, dove la complessità viene scaricata su chi chiama."
+          },
+          {
+            "id": "B",
+            "testo": "Il modulo espone un'interfaccia pubblica semplice e minimale, ma nasconde al proprio interno una logica di elaborazione potente e complessa (information hiding).",
+            "corretta": true,
+            "spiegazione": "Risposta corretta. La definizione cardine di Ousterhout: 'I migliori moduli sono quelli che offrono grandi funzionalità attraverso un'interfaccia semplice'."
+          },
+          {
+            "id": "C",
+            "testo": "Il modulo richiede necessariamente una base di dati SQL relazionale per poter funzionare correttamente.",
+            "corretta": false,
+            "spiegazione": "Sbagliato: la profondità di un modulo è una proprietà di design astratto e information hiding, non legata allo stack tecnologico o al DB."
+          },
+          {
+            "id": "D",
+            "testo": "Il modulo contiene solo funzioni di passaggio (pass-through) che inoltrano parametri da un layer all'altro senza trasformarli.",
+            "corretta": false,
+            "spiegazione": "Sbagliato: i metodi pass-through sono il classico anti-pattern dei moduli superficiali."
+          }
+        ],
+        "approfondimento": "<h4>Regia e discussione (segmento 3 · 4 min)</h4><p><strong>Fonti primarie:</strong> John Ousterhout – <em>A Philosophy of Software Design</em> (Capitolo 4: Deep Modules); GLOSSARY.md.</p><p><strong>Rilievo didattico:</strong> Questa distinzione è fondamentale per gli studenti di Informatica: insegnare loro che la qualità di un'API non si misura dal numero di metodi esposti, ma da quanto valore incapsula dietro una facciata pulita.</p>"
       },
       {
         "id": 25,
-        "tipo": "LABORATORIO",
-        "badge": "Consegna finale · Scheda ponte #2 (Scheda ponte (BRIDGE_CARDS.md))",
-        "titolo": "Compilazione della scheda ponte #2 (sviluppo incrementale e LIM)",
-        "lead": "Come trasformiamo /to-tickets e /implement in uno strumento per arricchire la spiegazione teorica e strutturare il laboratorio degli studenti?",
-        "obiettivo": "Compilare la scheda #2 nel file Scheda ponte (BRIDGE_CARDS.md) collegandola allo stesso argomento curricolare scelto nella scheda #1.",
-        "contesto": "Ultimi 15 minuti della sessione 2 (02:45–03:00).",
-        "passi": [
-          "Aprire Scheda ponte (BRIDGE_CARDS.md) sotto la scheda #1 compilata venerdì scorso.",
-          "Riquadro A (lezione teorica alla LIM): descrivere una micro-simulazione interattiva HTML/JS di 5 minuti (o scena Manim) generabile con /implement per visualizzare alla LIM il concetto astratto della lezione.",
-          "Riquadro B (passo 2 laboratorio studenti alla postazione [AI-Powered]): definire come gli studenti implementano 1 fetta verticale alla volta usando l'IA, cosa devono registrare in PROMPT_LOG.md e quale controllo svolgono sul git diff prima del commit."
-        ],
-        "promptEsempio": "# Scheda #2 - Sessione 2 (to-tickets + implement)\n- Riquadro A (lezione teorica - artefatto LIM): micro-simulatore HTML5/JS proiettato per 5 min alla LIM con cursori interattivi per mostrare dal vivo l'effetto della variazione dei parametri.\n- Riquadro B (passo 2 laboratorio studenti - AI-Powered): lo studente usa l'IA per generare il solo modulo di calcolo sulla base della specifica del passo 1, incolla il prompt in PROMPT_LOG.md, verifica che non ci sia codice grafico intruso nel diff ed esegue il primo commit.",
-        "approfondimento": "<h4>Regia e fonti</h4><p>Fonte: spec.md sez. 5.2 e 7.1. Far notare la continuità: nella scheda #1 lo studente ha scritto la specifica e calcolato 3 test a mano (a prova di IA); nella scheda #2 lo studente guida l'IA a generare il modulo e ne controlla le differenze (assistito da IA).</p>"
+        "tipo": "SEZIONE",
+        "numeroSezione": "04",
+        "titolo": "Ponte didattico continuo: lunedì in classe",
+        "lead": "02:45–03:00 (15 minuti) · Compilazione della Scheda ponte #2: come portare i concetti di ACI, context engineering, Google Antigravity e fette verticali nelle lezioni e nei laboratori con gli studenti.",
+        "badge": "Blocco 4 · Trasposizione d'aula",
+        "approfondimento": "<h4>Regia e chiusura d'aula (segmento 4 · 15 min)</h4><p>Spiegare che la sessione non è finita con il codice: ogni docente deve compilare la Scheda ponte #2 per ancorare quanto appreso alla didattica curricolare.</p><p><strong>Fonti primarie:</strong> Scheda Corso Marconi-Hack; UNITA_DIDATTICA.md; BRIDGE_CARDS.md.</p>"
       },
       {
         "id": 26,
-        "tipo": "CITAZIONE",
-        "badge": "Principio di progettazione · John Ousterhout",
-        "titolo": "Investire nella progettazione strategica riduce il debito tecnico",
-        "citazione": "I moduli migliori sono quelli profondi: offrono funzionalità potenti attraverso interfacce semplici. Un'interfaccia semplice nasconde all'esterno la complessità implementativa anziché riversarla su chi usa il modulo.",
-        "autore": "John Ousterhout, A Philosophy of Software Design (Stanford University)",
-        "commento": "Nell'era degli agenti di IA, progettare interfacce di modulo semplici (moduli profondi) non serve solo ai programmatori umani: è ciò che permette all'agente di lavorare su un singolo file senza perdersi e allo studente di verificare ogni funzione con chiarezza.",
-        "approfondimento": "<h4>Regia e fonti</h4><p>Collegare la citazione di Ousterhout a quanto appena sperimentato nello sprint di 90 minuti.</p>"
+        "tipo": "LABORATORIO",
+        "badge": "Trasposizione didattica continua",
+        "titolo": "Compilazione della scheda ponte #2 (BRIDGE_CARDS.md)",
+        "lead": "Formalizzare l'applicazione didattica del Modulo 2 nel file delle schede ponte del proprio progetto.",
+        "obiettivo": "Compilare il Box A (progettazione della lezione teorica di 60 min su ACI/Context Engineering) e il Box B (consegna del laboratorio pratico a fette verticali con fasi AI-Proof e AI-Powered).",
+        "contesto": "File BRIDGE_CARDS.md nel repository. La scheda #2 è dedicata all'anatomia degli agenti e al protocollo a skill.",
+        "passi": [
+          "1. Aprire il file BRIDGE_CARDS.md e posizionarsi sulla Scheda #2 (Modulo 2).",
+          "2. Nel Box A (Lezione Teorica): descrivere l'esperimento concettuale o il diagramma alla LIM per spiegare il ciclo ACI in 4 passaggi.",
+          "3. Nel Box B (Laboratorio Studenti): definire la consegna a 2 fette verticali, specificando la fase AI-Proof (casi di test a mano) e la fase AI-Powered (sviluppo con skill).",
+          "4. Effettuare il commit del file BRIDGE_CARDS.md con messaggio: 'docs(didattica): compilazione scheda ponte #2'."
+        ],
+        "promptEsempio": "Aiutami a compilare la Scheda ponte #2 nel file BRIDGE_CARDS.md per la mia classe di Informatica. Nel Box A vogliamo una metafora visiva per spiegare l'architettura ACI; nel Box B una traccia di laboratorio a 2 fette verticali sul nostro Problem Brief con vincolo TDD.",
+        "approfondimento": "<h4>Regia e supporto docente (segmento 4 · 10 min)</h4><p>Garantire che tutti i docenti salvino e committino la scheda ponte prima dell'uscita. La scheda ponte #2 sarà ripresa nel modulo 5 per la costruzione dell'Unità Didattica Completa.</p>"
       },
       {
         "id": 27,
         "tipo": "ENUNCIATO",
-        "badge": "Regola aurea della sessione 2",
-        "titolo": "Nessun commit senza ispezione delle differenze",
-        "affermazione": "L'agente propone le modifiche nella Sandbox, ma solo l'ingegnere umano firma il commit: accettare un git diff che non si è letto equivale a consegnare in bianco il timone architetturale del progetto.",
-        "nota": "Abituare gli studenti a eseguire piccoli commit atomici dopo ogni fetta verticale trasforma Git da fastidio burocratico a rete di salvataggio e prova documentale di autorialità.",
-        "approfondimento": "<h4>Regia e fonti</h4><p>Preparare il terreno per la sessione 3: ora che abbiamo una v1 funzionante sul 'caso felice', cosa succede quando arrivano gli input imprevisti, i casi limite e le distorsioni sistematiche?</p>"
+        "badge": "Massima deontologica dell'ingegneria assistita",
+        "titolo": "Nessun commit senza ispezione del git diff",
+        "enunciato": "Un ingegnere del software non accetta mai codice da un agente senza aver ispezionato personalmente ogni singola riga del git diff.",
+        "spiegazione": "L'agente propone; lo sviluppatore valida, certifica e assume la piena responsabilità legale e tecnica del rilascio.",
+        "approfondimento": "<h4>Regia e deontologia professionale (segmento 4 · 3 min)</h4><p><strong>Fonti primarie:</strong> Matt Pocock – <em>The Human-in-the-Loop Imperative</em>; AUP-IA IISS Marconi-Hack §4.4.</p><p><strong>Messaggio conclusivo:</strong> Far comprendere ai docenti che la firma sul commit Git è l'equivalente della firma del medico su una ricetta. L'IA può preparare la bozza, ma l'umano è l'unico responsabile del codice in produzione.</p>"
       },
       {
         "id": 28,
         "tipo": "CONCLUSIONI",
-        "badge": "Chiusura lezione 2 · Arrivederci a giovedì 29 ottobre",
-        "titolo": "Versione minima (v1) completata: verso il collaudo scientifico",
-        "messaggio": "Complimenti! Avete ispezionato l'harness di un agente reale, scomposto la vostra specifica in 3 ticket verticali e costruito la versione minima (v1) del vostro progetto individuale insieme alla scheda #2. Nella lezione 3 metteremo sotto stress i nostri software con i 3 casi limite riservati, il test-driven development (/tdd), il debugging scientifico (/diagnosing-bugs) e il diario dei bug.",
-        "prossimoPasso": "Giovedì 29 ottobre 2026 (14:30–17:30): verifica rigorosa con /tdd, /diagnosing-bugs, distorsioni algoritmiche e sicurezza.",
-        "approfondimento": "<h4>Regia e fonti</h4><p>Assicurarsi che tutti i docenti abbiano eseguito il commit Git della loro v1 e salvato Scheda ponte #2 (Scheda ponte (BRIDGE_CARDS.md)).</p>"
+        "badge": "Chiusura sessione 2 e ponte verso il modulo 3",
+        "titolo": "Versione minima (v1) avviata: verso il collaudo scientifico",
+        "messaggio": "Oggi abbiamo aperto la scatola nera degli agenti, compreso tool calling e context engineering, e avviato lo sviluppo incrementale del Tutor Maieutico arrestandoci rigorosamente al traguardo di /implement (Ticket 1 al verde e commit atomico). Nella Lezione 3 passeremo alla verifica scientifica avanzata con TDD, diagnosi dei difetti (diagnosing-bugs) e caccia ai bug; nella Lezione 4 esploreremo la code review a due assi e la retrospettiva.",
+        "prossimiPassi": [
+          "Sessione 3 (Giovedì 29 ottobre · 14:30): Verifica rigorosa con TDD sui seam pubblici, metodo scientifico S.C.A.N. e protocollo diagnosing-bugs sui casi limite riservati.",
+          "Sessione 4 (Lunedì 2 novembre · 14:30): Revisione a due assi (/code-review), refactoring a moduli profondi, accessibilità UDL/BES e chiusura del cerchio con /retro.",
+          "Compito ponte asincrono: completare la scheda ponte #2 (BRIDGE_CARDS.md) verificando che i test del proprio seam logico eseguano a verde nel repository personale."
+        ],
+        "approfondimento": "<h4>Regia finale e saluti (segmento 4 · 2 min)</h4><p>Ringraziare i docenti per l'impegno laboratoriale e ricordare che il codice prodotto oggi con il Ticket 1 sarà la base su cui faremo collaudo scientifico e diagnosi difetti nella sessione 3.</p>"
       }
     ]
   },
